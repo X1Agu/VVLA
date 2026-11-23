@@ -1,0 +1,12 @@
+{
+  "g4-identity.json": {
+    "source": "benchmarks/pi05-lite-bf16-20261105/results/g4/ours/formal-v11/IDENTITY.json",
+    "sha256": "d4f4397d54a5ab96fed2c3a2529c331f2b65ea21dfae19d592a6f8624cf9e17d",
+    "purpose": "Frozen identity for legacy qualification tests; never a runtime requirement"
+  },
+  "l4-identity.json": {
+    "source": "benchmarks/pi05-b32-20261110/l4-preparation-20261110/L4_FORMAL_V4_IDENTITY.json",
+    "sha256": "aedddeb6f3683b00048740356270de164e00285c0816e2923798f3d1b866eb71",
+    "purpose": "Frozen identity for legacy qualification tests; never a runtime requirement"
+  }
+}

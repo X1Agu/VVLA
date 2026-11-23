@@ -1,0 +1,48 @@
+{
+  "prefix_fp8.py": {
+    "source_sha256": "91ce10642c4eec5ae12aa8369288d867fa61495d2978f48cd65f3d57415279c5",
+    "function_hash_format": "source-lines-including-decorators-LF-v1",
+    "functions": {
+      "_pack_weight": "01b5ff0b59941ff1b5706b3ee7ac549667c19c76e126863cb15c71ddd649fa71"
+    }
+  },
+  "prefix_fp8_native.py": {
+    "source_sha256": "cc110ed857fbfbc01ba408d329d9ee729f2e96d0ec4ed1b076ab6021c48ba6e6",
+    "function_hash_format": "source-lines-including-decorators-LF-v1",
+    "functions": {
+      "native_scaled_mm": "3a87a5cb6dc1920b26d5f390dedf4e53838d7ffe09d4d887c426c419517f8a3f"
+    }
+  },
+  "prefix_fp8_native_kernel.py": {
+    "source_sha256": "be2543272a2c3909bf8b68b58a3262194fc984260a436f2748d7f617eab37389",
+    "function_hash_format": "source-lines-including-decorators-LF-v1",
+    "functions": {}
+  },
+  "prefix_fp8_down_sm89_quantizer_kernel.py": {
+    "source_sha256": "a9cacca104596c6a581a921b0d934a286ccd684aaf392285ade17d45aff93aad",
+    "function_hash_format": "source-lines-including-decorators-LF-v1",
+    "functions": {}
+  },
+  "prefix_fp8_down_sm89_postscale_kernel.py": {
+    "source_sha256": "314a980b89fce5a477b26cad410db1bad150e1392c4fdd01007c54b2ba2c4508",
+    "function_hash_format": "source-lines-including-decorators-LF-v1",
+    "functions": {}
+  },
+  "prefix_fp8_down.py": {
+    "source_sha256": "6524ceb498b90c33d84cd5c0461cc944039bfd4fbeb98178208dc0bb58316fd7",
+    "function_hash_format": "source-lines-including-decorators-LF-v1",
+    "functions": {
+      "_pack_weight": "01b5ff0b59941ff1b5706b3ee7ac549667c19c76e126863cb15c71ddd649fa71"
+    }
+  },
+  "prefix_fp8_down_sm89.py": {
+    "source_sha256": "4a3f4846a10797f1c1fa471025aa1051d4b5dfe897169f8aa66955936baadd97",
+    "function_hash_format": "source-lines-including-decorators-LF-v1",
+    "functions": {
+      "scalar_mm_fp32": "93e29b7f274fc16848a5ac616a60171069497cea4d756a731d773f99f3e2c7a2",
+      "rowwise_postscale": "2f3320c6b8fd9f56b1e8c12a16f93812abf8d9e961350bf03fa43783b660ca47",
+      "native_scaled_mm": "d2b865fa9a2b8985fd8ff62118809fd8214f605331b41407e37b259cc2e0dba1",
+      "scaled_linear": "5ff8669347c255435d99af10b9925943cf3367284cc0f06125e666ec7c21a944"
+    }
+  }
+}

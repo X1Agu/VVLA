@@ -1,0 +1,403 @@
+{
+  "scope": "Measured online settings for the specified checkpoints and GPUs. fifo describes local service. network_fifo records a separate binary HTTP measurement when available. Receipt paths are relative to the reports archive. Options omit machine-specific asset paths.",
+  "profiles": [
+    {
+      "model": "pi05",
+      "gpu": "G4",
+      "evidence_scope": "formal",
+      "recipe": "prefix-fp8-batch-sm120",
+      "options": {
+        "max_batch": 16,
+        "cuda_graph": true
+      },
+      "fifo": {
+        "max_batch": 16,
+        "wait_ms": 0
+      },
+      "receipt": {
+        "path": "pi05-p2-g4-20261119/evidence/services/held-fixed-fifo/service.json",
+        "sha256": "c528afc9f0fd05af06b07725384f3d83c6c149e21797ee23665e4b426108363d"
+      },
+      "network_fifo": {
+        "max_batch": 16,
+        "wait_ms": 2,
+        "receipt": {
+          "path": "cleanup-experiments-20261122/results/colab-g4/audit-http.json",
+          "sha256": "83e78d1e54f114af195da65e727c694bfb3265dbc1263100c31ef260d0b914e4"
+        }
+      }
+    },
+    {
+      "model": "pi05",
+      "gpu": "G4",
+      "evidence_scope": "same-precision control",
+      "recipe": "bf16-batch-sm120",
+      "options": {
+        "max_batch": 16,
+        "cuda_graph": true
+      },
+      "fifo": {
+        "max_batch": 16,
+        "wait_ms": 0
+      },
+      "receipt": {
+        "path": "pi05-p2-g4-20261119/evidence/services/held-fixed-fifo-bf16/service.json",
+        "sha256": "a6ec3b8e884d5d93177b7e4b9f6ee550a66c051586ea3fc01df506e4ef74c557"
+      }
+    },
+    {
+      "model": "pi05",
+      "gpu": "A100 80 GB",
+      "evidence_scope": "frozen formal settings",
+      "recipe": "bf16-portable",
+      "options": {
+        "cuda_graph": true,
+        "max_batch": 4
+      },
+      "fifo": {
+        "max_batch": 4,
+        "wait_ms": 2
+      },
+      "receipt": {
+        "path": "a100-wave2-20261121/evidence/remote/runs/pi05-selection.json",
+        "sha256": "1874889ea12c9107b848c85eed9ef8da8f1bfa9bfb805ff2c970418a608b7746"
+      }
+    },
+    {
+      "model": "pi05",
+      "gpu": "RTX 4090",
+      "evidence_scope": "formal",
+      "recipe": "bf16-batch-sm89",
+      "options": {
+        "cuda_graph": true,
+        "max_batch": 4
+      },
+      "fifo": {
+        "max_batch": 4,
+        "wait_ms": 0.0
+      },
+      "receipt": {
+        "path": "wave2-ssh-20261121/4090/evidence/remote-runs/benchmarks/pi05-primary-held-c8-r0-candidate/result.json",
+        "sha256": "0c36ec1391028ac5a93a3e65dca39f028cc8bfedcfe6e791f3bf0c28162bd82c"
+      }
+    },
+    {
+      "model": "pi05",
+      "gpu": "RTX 3090",
+      "evidence_scope": "formal",
+      "recipe": "bf16-portable",
+      "options": {
+        "cuda_graph": true,
+        "max_batch": 4
+      },
+      "fifo": {
+        "max_batch": 4,
+        "wait_ms": 0.0
+      },
+      "receipt": {
+        "path": "wave2-ssh-20261121/3090/evidence/remote-runs/benchmarks/pi05-primary-held-c8-r0-candidate/result.json",
+        "sha256": "ff54724a4fcd4ed8716a167cfa3cf60fb94c084956a9b22513572d788c024d7c"
+      }
+    },
+    {
+      "model": "oft",
+      "gpu": "G4",
+      "evidence_scope": "formal",
+      "recipe": "bf16-sm120",
+      "options": {
+        "allow_recipe_overrides": true,
+        "paired_image_preprocessing": true,
+        "gpu_image_geometry": true,
+        "native_jpeg": true,
+        "native_state_comparator": true,
+        "versioned_state_checks": true,
+        "native_options": {
+          "batch_camera_views": true,
+          "skip_unused_vision_block": true,
+          "action_only_final": true,
+          "packed_single_kv": true,
+          "fuse_residual_rms": true,
+          "fuse_qkv": true,
+          "pack_gate_up": true,
+          "pack_bucket": 8,
+          "cache_token_layout": true,
+          "parallel_vision": true
+        },
+        "batch_size": 4
+      },
+      "fifo": {
+        "max_batch": 4,
+        "wait_ms": 2
+      },
+      "receipt": {
+        "path": "oft-wave2-dynamic-g4-20261120/raw/services/online-bf16-fifo-1795181290605492207/condition.json",
+        "sha256": "a7f0f6db4ffdbb767ac265b99d4a8333bc03b9559262184635df8b2c23253f32"
+      },
+      "experiment_exact_width": true
+    },
+    {
+      "model": "oft",
+      "gpu": "G4",
+      "evidence_scope": "formal",
+      "recipe": "mlp-fp8-sm120",
+      "options": {
+        "paired_image_preprocessing": true,
+        "native_options": {
+          "batch_camera_views": true,
+          "fp8_scope": "llama"
+        },
+        "batch_size": 4
+      },
+      "fifo": {
+        "max_batch": 4,
+        "wait_ms": 0
+      },
+      "receipt": {
+        "path": "oft-wave2-dynamic-g4-20261120/raw/services/online-fp8-fifo-1795181561797199293/condition.json",
+        "sha256": "269c26c765e457853a5cfc1c3b2ac0d8607337c4040dc558f111e692bd987432"
+      },
+      "experiment_exact_width": true
+    },
+    {
+      "model": "oft",
+      "gpu": "A100 80 GB",
+      "evidence_scope": "frozen formal settings",
+      "recipe": "bf16-portable",
+      "options": {
+        "allow_recipe_overrides": true,
+        "paired_image_preprocessing": true,
+        "gpu_image_geometry": true,
+        "native_jpeg": true,
+        "native_state_comparator": true,
+        "versioned_state_checks": true,
+        "native_options": {
+          "batch_camera_views": true,
+          "skip_unused_vision_block": true,
+          "action_only_final": true,
+          "packed_single_kv": true,
+          "fuse_residual_rms": true,
+          "fuse_qkv": true,
+          "pack_gate_up": true,
+          "pack_bucket": 8,
+          "cache_token_layout": true,
+          "parallel_vision": true,
+          "fuse_rmsnorm": true,
+          "fuse_residual_square": true,
+          "fuse_silu_mul": true,
+          "backend": "vllm_fa2"
+        },
+        "batch_size": 4,
+        "cuda_graph": true,
+        "blas_library": "cublas"
+      },
+      "fifo": {
+        "max_batch": 4,
+        "wait_ms": 2
+      },
+      "receipt": {
+        "path": "a100-wave2-20261121/evidence/remote/runs/oft-selection.json",
+        "sha256": "f5f51fbf6313c34ddb29226c86153457634227a19dbfcd5b0e6fb9ee2b7a885c"
+      },
+      "experiment_exact_width": false
+    },
+    {
+      "model": "oft",
+      "gpu": "RTX 4090",
+      "evidence_scope": "Same-card BF16 / mixed FP8 / official comparison, three 60 s C8 windows",
+      "recipe": "bf16-sm89",
+      "options": {
+        "allow_recipe_overrides": true,
+        "paired_image_preprocessing": true,
+        "gpu_image_geometry": true,
+        "native_jpeg": true,
+        "native_state_comparator": true,
+        "versioned_state_checks": true,
+        "native_options": {
+          "batch_camera_views": true,
+          "skip_unused_vision_block": true,
+          "action_only_final": true,
+          "packed_single_kv": true,
+          "fuse_residual_rms": true,
+          "fuse_qkv": false,
+          "pack_gate_up": false,
+          "pack_bucket": 8,
+          "cache_token_layout": true,
+          "parallel_vision": true,
+          "fuse_rmsnorm": true,
+          "fuse_residual_square": true,
+          "fuse_silu_mul": true,
+          "backend": "vllm_fa2"
+        },
+        "batch_size": 4,
+        "cuda_graph": true,
+        "blas_library": "cublas"
+      },
+      "fifo": {
+        "max_batch": 4,
+        "wait_ms": 0
+      },
+      "receipt": {
+        "path": "cleanup-experiments-20261122/results/ssh-4090/raw/runs/benchmarks/oft-clean-bf16-c8-r0/result.json",
+        "sha256": "2329cbe78ae43834c427f1afcf3ac2dd1211f20933c34d704eed4fe2ca744a0b"
+      },
+      "experiment_exact_width": false
+    },
+    {
+      "model": "oft",
+      "gpu": "RTX 3090",
+      "evidence_scope": "frozen formal settings",
+      "recipe": "bf16-portable",
+      "options": {
+        "allow_recipe_overrides": true,
+        "paired_image_preprocessing": true,
+        "gpu_image_geometry": true,
+        "native_jpeg": true,
+        "native_state_comparator": true,
+        "versioned_state_checks": true,
+        "native_options": {
+          "batch_camera_views": true,
+          "skip_unused_vision_block": true,
+          "action_only_final": true,
+          "packed_single_kv": false,
+          "fuse_residual_rms": true,
+          "fuse_qkv": true,
+          "pack_gate_up": false,
+          "pack_bucket": 8,
+          "cache_token_layout": true,
+          "parallel_vision": true,
+          "fuse_rmsnorm": true,
+          "fuse_residual_square": true,
+          "fuse_silu_mul": true,
+          "backend": "sdpa"
+        },
+        "batch_size": 4,
+        "cuda_graph": true,
+        "blas_library": "cublas"
+      },
+      "fifo": {
+        "max_batch": 4,
+        "wait_ms": 2
+      },
+      "receipt": {
+        "path": "oft-3090-followup-20261121/evidence/frozen.json",
+        "sha256": "9b5f0091dbab2e1a16c943678e28f1a0b8a85d4314a6fbc0a065e54e2f632d0a"
+      },
+      "experiment_exact_width": false
+    },
+    {
+      "model": "oft",
+      "gpu": "RTX 4090",
+      "evidence_scope": "Same-card BF16 / mixed FP8 / official comparison, three 60 s C8 windows",
+      "recipe": "mlp-fp8",
+      "options": {
+        "paired_image_preprocessing": true,
+        "native_options": {
+          "batch_camera_views": true,
+          "fp8_scope": "llama",
+          "fuse_qkv": false,
+          "pack_gate_up": false
+        },
+        "batch_size": 4
+      },
+      "fifo": {
+        "max_batch": 4,
+        "wait_ms": 0
+      },
+      "receipt": {
+        "path": "cleanup-experiments-20261122/results/ssh-4090/raw/runs/benchmarks/oft-clean-mixed-c8-r0/result.json",
+        "sha256": "86dd878576035b32a75a60f840c588d07119cc0a7f50ef72d83b05d095a02410"
+      },
+      "experiment_exact_width": false
+    },
+    {
+      "model": "lingbot",
+      "gpu": "G4",
+      "evidence_scope": "dedicated serial, sustained",
+      "recipe": "cache32-posttopk-fp16-prefix-expert",
+      "options": {},
+      "fifo": {
+        "max_batch": 1,
+        "wait_ms": 0
+      },
+      "receipt": {
+        "path": "lingbot-serving-closeout-20261121/g4/public-check/benchmarks/sustained-serial-r3-180/result.json",
+        "sha256": "70e29b2dbfc14658c9b5ef75fbf7098e5ac681470c190cd305af73e6c09a2705"
+      }
+    },
+    {
+      "model": "lingbot",
+      "gpu": "G4",
+      "evidence_scope": "experimental split-stage, formal",
+      "recipe": "split-stage-posttopk-fp16-prefix-expert",
+      "options": {},
+      "fifo": {
+        "max_batch": 4,
+        "wait_ms": 0
+      },
+      "receipt": {
+        "path": "lingbot-serving-closeout-20261121/g4/raw/benchmarks/held-split-r0-60/result.json",
+        "sha256": "289eedcaf65b493cabd18cfb052de12433b940fdaafb0ca254d5854e23e99391"
+      }
+    },
+    {
+      "model": "lingbot",
+      "gpu": "A100 80 GB",
+      "evidence_scope": "dedicated serial, sustained",
+      "recipe": "cache32-posttopk-fp16-prefix-expert",
+      "options": {},
+      "fifo": {
+        "max_batch": 1,
+        "wait_ms": 0.0
+      },
+      "receipt": {
+        "path": "a100-wave2-20261121/evidence/remote/runs/benchmarks/lingbot-b1-sustained-c8-f302519f0d/result.json",
+        "sha256": "fe3edc071f0af21a2033d316f367a64ff47c39d38a2d2959680922c8c633b211"
+      }
+    },
+    {
+      "model": "lingbot",
+      "gpu": "RTX 4090",
+      "evidence_scope": "Dedicated B1, three 60 s C8 windows",
+      "recipe": "cache32-posttopk-fp16-prefix-expert",
+      "options": {},
+      "fifo": {
+        "max_batch": 1,
+        "wait_ms": 0.0
+      },
+      "receipt": {
+        "path": "cleanup-experiments-20261122/results/ssh-4090/raw-lingbot-1795351740525790057/runs/benchmarks/lingbot-cache32-c8-r0/result.json",
+        "sha256": "2b3214d64b2afd0a9121cee76a6a75879da72d60e70667e8e653bc6cbeecd52f"
+      }
+    },
+    {
+      "model": "lingbot",
+      "gpu": "RTX 3090",
+      "evidence_scope": "Dedicated B1, three 60 s C8 windows",
+      "recipe": "cache32-posttopk-fp16-prefix-expert",
+      "options": {},
+      "fifo": {
+        "max_batch": 1,
+        "wait_ms": 0.0
+      },
+      "receipt": {
+        "path": "cleanup-experiments-20261122/results/ssh-3090/raw/runs/benchmarks/lingbot-cache32-c8-r0/result.json",
+        "sha256": "127c3c80a4e89c84c71f8896c08bf4ec62a86c07a81ab6736a17983815ae2a71"
+      }
+    },
+    {
+      "model": "lingbot",
+      "gpu": "A100 80 GB",
+      "evidence_scope": "Explicit split-stage, three 60 s C8 windows",
+      "recipe": "split-stage-posttopk-fp16-prefix-expert",
+      "options": {},
+      "fifo": {
+        "max_batch": 4,
+        "wait_ms": 0
+      },
+      "receipt": {
+        "path": "cleanup-experiments-20261122/results/colab-a100/raw/runs/lingbot-c8/result.json",
+        "sha256": "818762f35209eb107018ae12a81a3ce403d8f1d8b4f70f57e9022ed1bbea7e9c"
+      }
+    }
+  ]
+}

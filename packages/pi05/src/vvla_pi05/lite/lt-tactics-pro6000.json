@@ -1,0 +1,498 @@
+{
+  "implementation": "source497-dynamic-bf16-lt-v1",
+  "batches": {
+    "1": {
+      "qkv": {
+        "selected_spec": {
+          "algorithm": {
+            "custom_option": 0,
+            "id": 21,
+            "numerical_impl_flags": 131586,
+            "reduction_scheme": 0,
+            "split_k": 1,
+            "stages": 12,
+            "swizzle": 0,
+            "tile": 15
+          },
+          "k": 1024,
+          "layout": "original_nk",
+          "m": 50,
+          "n": 2560,
+          "workspace_bytes": 0
+        }
+      },
+      "gate_up_packed": {
+        "selected_spec": {
+          "algorithm": {
+            "custom_option": 0,
+            "id": 21,
+            "numerical_impl_flags": 131586,
+            "reduction_scheme": 0,
+            "split_k": 1,
+            "stages": 25,
+            "swizzle": 0,
+            "tile": 15
+          },
+          "k": 1024,
+          "layout": "contiguous_kn",
+          "m": 50,
+          "n": 8192,
+          "workspace_bytes": 0
+        }
+      },
+      "attention_out": {
+        "selected_spec": {
+          "algorithm": {
+            "custom_option": 0,
+            "id": 21,
+            "numerical_impl_flags": 131586,
+            "reduction_scheme": 4,
+            "split_k": 9,
+            "stages": 25,
+            "swizzle": 0,
+            "tile": 15
+          },
+          "k": 2048,
+          "layout": "original_nk",
+          "m": 50,
+          "n": 1024,
+          "workspace_bytes": 819200
+        }
+      },
+      "vision_fc2": {
+        "selected_spec": {
+          "algorithm": {
+            "custom_option": 0,
+            "id": 21,
+            "numerical_impl_flags": 131586,
+            "reduction_scheme": 4,
+            "split_k": 3,
+            "stages": 10,
+            "swizzle": 0,
+            "tile": 20
+          },
+          "k": 4304,
+          "layout": "original_nk",
+          "m": 512,
+          "n": 1152,
+          "workspace_bytes": 3538944
+        }
+      }
+    },
+    "2": {
+      "qkv": {
+        "selected_spec": {
+          "algorithm": {
+            "custom_option": 0,
+            "id": 21,
+            "numerical_impl_flags": 131586,
+            "reduction_scheme": 0,
+            "split_k": 1,
+            "stages": 25,
+            "swizzle": 0,
+            "tile": 15
+          },
+          "k": 1024,
+          "layout": "original_nk",
+          "m": 100,
+          "n": 2560,
+          "workspace_bytes": 0
+        }
+      },
+      "gate_up_packed": {
+        "selected_spec": {
+          "algorithm": {
+            "custom_option": 0,
+            "id": 21,
+            "numerical_impl_flags": 131586,
+            "reduction_scheme": 0,
+            "split_k": 1,
+            "stages": 12,
+            "swizzle": 0,
+            "tile": 18
+          },
+          "k": 1024,
+          "layout": "contiguous_kn",
+          "m": 100,
+          "n": 8192,
+          "workspace_bytes": 0
+        }
+      },
+      "attention_out": {
+        "selected_spec": {
+          "algorithm": {
+            "custom_option": 0,
+            "id": 21,
+            "numerical_impl_flags": 131586,
+            "reduction_scheme": 4,
+            "split_k": 9,
+            "stages": 16,
+            "swizzle": 0,
+            "tile": 18
+          },
+          "k": 2048,
+          "layout": "original_nk",
+          "m": 100,
+          "n": 1024,
+          "workspace_bytes": 1638400
+        }
+      },
+      "vision_fc2": {
+        "selected_spec": {
+          "algorithm": {
+            "custom_option": 0,
+            "id": 21,
+            "numerical_impl_flags": 131586,
+            "reduction_scheme": 1,
+            "split_k": 5,
+            "stages": 10,
+            "swizzle": 0,
+            "tile": 20
+          },
+          "k": 4304,
+          "layout": "original_nk",
+          "m": 1024,
+          "n": 1152,
+          "workspace_bytes": 288
+        }
+      }
+    },
+    "4": {
+      "qkv": {
+        "selected_spec": {
+          "algorithm": {
+            "custom_option": 0,
+            "id": 21,
+            "numerical_impl_flags": 131586,
+            "reduction_scheme": 0,
+            "split_k": 1,
+            "stages": 25,
+            "swizzle": 0,
+            "tile": 15
+          },
+          "k": 1024,
+          "layout": "original_nk",
+          "m": 200,
+          "n": 2560,
+          "workspace_bytes": 0
+        }
+      },
+      "gate_up_packed": {
+        "selected_spec": {
+          "algorithm": {
+            "custom_option": 0,
+            "id": 21,
+            "numerical_impl_flags": 131586,
+            "reduction_scheme": 0,
+            "split_k": 1,
+            "stages": 10,
+            "swizzle": 0,
+            "tile": 20
+          },
+          "k": 1024,
+          "layout": "contiguous_kn",
+          "m": 200,
+          "n": 8192,
+          "workspace_bytes": 0
+        }
+      },
+      "attention_out": {
+        "selected_spec": {
+          "algorithm": {
+            "custom_option": 0,
+            "id": 21,
+            "numerical_impl_flags": 131586,
+            "reduction_scheme": 0,
+            "split_k": 1,
+            "stages": 25,
+            "swizzle": 0,
+            "tile": 15
+          },
+          "k": 2048,
+          "layout": "original_nk",
+          "m": 200,
+          "n": 1024,
+          "workspace_bytes": 0
+        }
+      },
+      "vision_fc2": {
+        "selected_spec": {
+          "algorithm": {
+            "custom_option": 0,
+            "id": 21,
+            "numerical_impl_flags": 131586,
+            "reduction_scheme": 0,
+            "split_k": 1,
+            "stages": 10,
+            "swizzle": 0,
+            "tile": 20
+          },
+          "k": 4304,
+          "layout": "original_nk",
+          "m": 2048,
+          "n": 1152,
+          "workspace_bytes": 0
+        }
+      }
+    },
+    "8": {
+      "qkv": {
+        "selected_spec": {
+          "algorithm": {
+            "custom_option": 0,
+            "id": 21,
+            "numerical_impl_flags": 131586,
+            "reduction_scheme": 0,
+            "split_k": 1,
+            "stages": 16,
+            "swizzle": 0,
+            "tile": 18
+          },
+          "k": 1024,
+          "layout": "original_nk",
+          "m": 400,
+          "n": 2560,
+          "workspace_bytes": 0
+        }
+      },
+      "gate_up_packed": {
+        "selected_spec": {
+          "algorithm": {
+            "custom_option": 0,
+            "id": 21,
+            "numerical_impl_flags": 131586,
+            "reduction_scheme": 0,
+            "split_k": 1,
+            "stages": 9,
+            "swizzle": 0,
+            "tile": 24
+          },
+          "k": 1024,
+          "layout": "contiguous_kn",
+          "m": 400,
+          "n": 8192,
+          "workspace_bytes": 0
+        }
+      },
+      "attention_out": {
+        "selected_spec": {
+          "algorithm": {
+            "custom_option": 0,
+            "id": 21,
+            "numerical_impl_flags": 131586,
+            "reduction_scheme": 0,
+            "split_k": 1,
+            "stages": 12,
+            "swizzle": 0,
+            "tile": 15
+          },
+          "k": 2048,
+          "layout": "original_nk",
+          "m": 400,
+          "n": 1024,
+          "workspace_bytes": 0
+        }
+      },
+      "vision_fc2": {
+        "selected_spec": {
+          "algorithm": {
+            "custom_option": 0,
+            "id": 21,
+            "numerical_impl_flags": 131586,
+            "reduction_scheme": 0,
+            "split_k": 1,
+            "stages": 9,
+            "swizzle": 0,
+            "tile": 23
+          },
+          "k": 4304,
+          "layout": "original_nk",
+          "m": 4096,
+          "n": 1152,
+          "workspace_bytes": 0
+        }
+      }
+    },
+    "16": {
+      "qkv": {
+        "selected_spec": {
+          "algorithm": {
+            "custom_option": 0,
+            "id": 21,
+            "numerical_impl_flags": 131586,
+            "reduction_scheme": 0,
+            "split_k": 1,
+            "stages": 10,
+            "swizzle": 0,
+            "tile": 20
+          },
+          "k": 1024,
+          "layout": "original_nk",
+          "m": 800,
+          "n": 2560,
+          "workspace_bytes": 0
+        }
+      },
+      "gate_up_packed": {
+        "selected_spec": {
+          "algorithm": {
+            "custom_option": 0,
+            "id": 21,
+            "numerical_impl_flags": 131586,
+            "reduction_scheme": 0,
+            "split_k": 1,
+            "stages": 10,
+            "swizzle": 0,
+            "tile": 20
+          },
+          "k": 1024,
+          "layout": "contiguous_kn",
+          "m": 800,
+          "n": 8192,
+          "workspace_bytes": 0
+        }
+      },
+      "attention_out": {
+        "selected_spec": {
+          "algorithm": {
+            "custom_option": 0,
+            "id": 21,
+            "numerical_impl_flags": 131586,
+            "reduction_scheme": 0,
+            "split_k": 1,
+            "stages": 12,
+            "swizzle": 0,
+            "tile": 18
+          },
+          "k": 2048,
+          "layout": "original_nk",
+          "m": 800,
+          "n": 1024,
+          "workspace_bytes": 0
+        }
+      },
+      "vision_fc2": {
+        "selected_spec": {
+          "algorithm": {
+            "custom_option": 0,
+            "id": 21,
+            "numerical_impl_flags": 131586,
+            "reduction_scheme": 1,
+            "split_k": 3,
+            "stages": 9,
+            "swizzle": 0,
+            "tile": 23
+          },
+          "k": 4304,
+          "layout": "original_nk",
+          "m": 8192,
+          "n": 1152,
+          "workspace_bytes": 1152
+        }
+      }
+    },
+    "32": {
+      "qkv": {
+        "selected_spec": {
+          "algorithm": {
+            "custom_option": 0,
+            "id": 21,
+            "numerical_impl_flags": 131586,
+            "reduction_scheme": 0,
+            "split_k": 1,
+            "stages": 9,
+            "swizzle": 0,
+            "tile": 23
+          },
+          "k": 1024,
+          "layout": "original_nk",
+          "m": 1600,
+          "n": 2560,
+          "workspace_bytes": 0
+        }
+      },
+      "gate_up_packed": {
+        "selected_spec": {
+          "algorithm": {
+            "custom_option": 0,
+            "id": 21,
+            "numerical_impl_flags": 131586,
+            "reduction_scheme": 0,
+            "split_k": 1,
+            "stages": 10,
+            "swizzle": 0,
+            "tile": 20
+          },
+          "k": 1024,
+          "layout": "contiguous_kn",
+          "m": 1600,
+          "n": 8192,
+          "workspace_bytes": 0
+        }
+      },
+      "attention_out": {
+        "selected_spec": {
+          "algorithm": {
+            "custom_option": 0,
+            "id": 21,
+            "numerical_impl_flags": 131586,
+            "reduction_scheme": 0,
+            "split_k": 1,
+            "stages": 10,
+            "swizzle": 0,
+            "tile": 20
+          },
+          "k": 2048,
+          "layout": "original_nk",
+          "m": 1600,
+          "n": 1024,
+          "workspace_bytes": 0
+        }
+      },
+      "vision_fc2": {
+        "selected_spec": {
+          "algorithm": {
+            "custom_option": 0,
+            "id": 21,
+            "numerical_impl_flags": 131586,
+            "reduction_scheme": 0,
+            "split_k": 1,
+            "stages": 10,
+            "swizzle": 0,
+            "tile": 20
+          },
+          "k": 4304,
+          "layout": "original_nk",
+          "m": 16384,
+          "n": 1152,
+          "workspace_bytes": 0
+        }
+      }
+    }
+  },
+  "provenance": {
+    "original_report_sha256": "b8e01c689aa26a5edd62befba32614a4134bc4966590e7304f194bd4b64031d0",
+    "selection_origin": "fresh_target_gpu_probe",
+    "source_gpu_uuid": "GPU-9676218c-843e-61d5-1512-942af1644801",
+    "source_runtime": {
+      "admission": "checked ABI and exact semantic tactic validation; no autotuning",
+      "capability": [
+        12,
+        0
+      ],
+      "device_name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "gpu_uuid": "GPU-9676218c-843e-61d5-1512-942af1644801",
+      "header_sha256": {
+        "cublasLt.h": "8be43fbf48625b98b8562d7df394e6af0d7ee1c05beeb5333577d5e33182fa3e",
+        "cublas_api.h": "f6b443f43358de591584d38810d60fcf7c1080677a6ba1605a99e8b58b349890",
+        "library_types.h": "7ccccd9cf42214386170704865517bbbf83702d6bbb5e0c0cba3fc3a48cbd29d"
+      },
+      "library_sha256": "1489aeb75d55ee55782798343ac66f57771d561cc1fe1e0491568deefa0e6515",
+      "multiprocessor_count": 188,
+      "quality_qualified": false,
+      "runtime_version": 130101
+    },
+    "selection": "Unmodified supplied semantic specifications; exporter performs no tuning",
+    "qualification": "No quality or target-GPU qualification transferred"
+  }
+}

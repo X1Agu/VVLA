@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "byte_identical": true,
+  "variant": "combined",
+  "files": {
+    "__init__.py": {
+      "source_path": "lingbot-vla-integration/experiments/b1-followup-20261101/tuning/__init__.py",
+      "git_blob_sha1": "8cae4a87f81ad67b82aa33f2f5d8e14f5e7a4155",
+      "sha256": "340e415ab2916c41f30702f8a0edf42e2875903ae9d9bc4c2ecf8e49c801e4cf"
+    },
+    "engine.py": {
+      "source_path": "lingbot-vla-integration/experiments/b1-followup-20261101/tuning/engine.py",
+      "git_blob_sha1": "8459f4b606e5cb1cc3cc04a785462df3556da547",
+      "sha256": "828ecbeae878d5d9b58f194af75226e53481b2c8a05547593d4812e6e3e8f247"
+    },
+    "graph_diagnostics.py": {
+      "source_path": "lingbot-vla-integration/experiments/b1-followup-20261101/tuning/graph_diagnostics.py",
+      "git_blob_sha1": "2f2850e102f8b9bdd77eb8fee458f75e8c469676",
+      "sha256": "b50563b4f87a14605804ff1227d44a05772269ec6a39d5fd32193ea13a696cc5"
+    },
+    "moe.py": {
+      "source_path": "lingbot-vla-integration/experiments/b1-followup-20261101/tuning/moe.py",
+      "git_blob_sha1": "093e09eee6b493a9c2018f23d40ad0d8063a3722",
+      "sha256": "f2ffb6f58439ea8ccfcba72e4a32a8a5d3514927eaa8ae05e1048bab5ffa964a"
+    },
+    "rope.py": {
+      "source_path": "lingbot-vla-integration/experiments/b1-followup-20261101/tuning/rope.py",
+      "git_blob_sha1": "0fbb22c6ac810eab8f3d79e93fba4ecb098e1d36",
+      "sha256": "8875c4624ce8e2bab1c5a23877084e97fbe28f1a0007fcb4b52c6a562cb6c97e"
+    },
+    "router.py": {
+      "source_path": "lingbot-vla-integration/experiments/b1-followup-20261101/tuning/router.py",
+      "git_blob_sha1": "028ee227ce5dded53605db4b25a307723c3710ce",
+      "sha256": "8c335cf5c8f14947806156f13705a4c4dd36e70b2e1b577286d155cf5c6ec746"
+    },
+    "state_guard.py": {
+      "source_path": "lingbot-vla-integration/experiments/b1-followup-20261101/tuning/state_guard.py",
+      "git_blob_sha1": "bb2367fb074bab8fcb8e003f96821968a1577caf",
+      "sha256": "0d3591fa7f1fb005cbd01450838d2be6506486da33b4cc0250d2fcf0818186ce"
+    }
+  }
+}

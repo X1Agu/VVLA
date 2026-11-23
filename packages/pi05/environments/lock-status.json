@@ -1,0 +1,11 @@
+{
+  "backend": "pi05",
+  "python": "3.12.15",
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+  "packages": 63,
+  "artifact_hash_lock": false,
+  "input_lock_sha256": "0b732c112ffb059d87f4233a73eea739d9e3369134cd8b9a294f829024300b9f",
+  "fresh_dependency_resolution": "passed (resolver only)",
+  "resolver": "uv 0.13.6 (x86_64-unknown-linux-gnu)",
+  "scope": "Dependency versions from the measured Linux environment. Fresh installation of the packaged beta is verified separately."
+}

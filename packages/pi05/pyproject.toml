@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=80", "wheel"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "vvla-pi05"
+version = "0.1.0b2"
+description = "Pi0.5 backend for VVLA"
+requires-python = ">=3.12,<3.13"
+license = "Apache-2.0"
+license-files = ["LICENSE", "NOTICE", "licenses/*.txt"]
+dependencies = ["vvla==0.1.0b2", "vvla-runtime==0.1.0b2", "torch==2.13.0", "transformers==5.19.0", "numpy==2.3.5", "safetensors==0.8.0", "sentencepiece==0.2.2", "Pillow>=12,<14", "nvidia-nvvm==13.4.92"]
+[project.optional-dependencies]
+compile = [] # Compatibility extra; compilation dependencies are now core.
+omni = ["vllm==0.32.0", "vllm-omni==0.32.0.dev0+g98c204144", "msgpack-numpy==0.4.8"]
+[tool.setuptools.packages.find]
+where = ["src"]
+[tool.setuptools.package-data]
+vvla_pi05 = ["lite/csrc/*.cpp", "**/*.json"]
+

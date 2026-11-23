@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=80", "wheel"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "vvla-lingbot"
+version = "0.1.0b2"
+description = "Isolated LingBot-VLA backend for VVLA"
+requires-python = ">=3.12,<3.13"
+license = "Apache-2.0"
+license-files = ["LICENSE", "NOTICE", "licenses/*.txt"]
+dependencies = ["vvla==0.1.0b2", "vvla-runtime==0.1.0b2", "torch==2.13.0", "torchvision==0.28.0", "transformers==4.57.3", "numpy>=1.26,<2", "safetensors==0.8.0", "einops==0.8.1", "pydantic==2.14.2", "PyYAML==6.0.2", "Pillow==11.3.0", "tqdm==4.67.1", "packaging==25.0", "psutil==7.0.0", "qwen-vl-utils==0.0.11", "peft==0.15.2", "ninja==1.13.2", "flash-attn==2.8.3"]
+[project.scripts]
+vvla-lingbot-prepare-source = "vvla_lingbot.prepare_source:main"
+[tool.setuptools.packages.find]
+where = ["src"]
+[tool.setuptools.package-data]
+vvla_lingbot = ["**/*.json"]
+

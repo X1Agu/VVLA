@@ -1,0 +1,14 @@
+VVLA
+Source commit: 11854bf7d161a40b03ac5560c700888b266b43ac
+
+Apache-2.0 applies to the VVLA release code except where original file headers
+and third-party notices specify otherwise. Original copyright notices remain.
+The source lineage and local transformations are recorded in docs/SOURCE_LINEAGE.json.
+Inherited model/runtime implementations include vLLM / vLLM-Omni, LeRobot,
+OpenPI and Hugging Face Transformers under their original Apache-2.0 notices.
+LingBot-VLA upstream notice is reproduced in licenses/LingBot-VLA.txt.
+OpenVLA-OFT uses the MIT notice in licenses/OpenVLA-OFT.txt (Moo Jin Kim,
+Chelsea Finn and Percy Liang). Its separate Transformers fork is Apache-2.0.
+Weights, original model sources required as assets, and third-party binary
+dependencies are not redistributed in these wheels. Their licenses still apply.
+See the repository installation guide (docs/INSTALL.md) for the distribution/asset boundary.

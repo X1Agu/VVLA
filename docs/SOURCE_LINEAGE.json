@@ -1,0 +1,3563 @@
+{
+  "source_repository": "VVLA development repository (private)",
+  "source_commit": "11854bf7d161a40b03ac5560c700888b266b43ac",
+  "entries": [
+    {
+      "source": "benchmarks/p0-20261111/harness/dynamic_batching.py",
+      "target": "src/vvla/serve/batching.py",
+      "source_sha256": "3d81700fa6d225aefa26c9ebe27f3f286142309e3c8716086e4be5c1f13b2c58",
+      "migrated_sha256": "3d81700fa6d225aefa26c9ebe27f3f286142309e3c8716086e4be5c1f13b2c58",
+      "transformation": "verbatim",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "src/vvla/serve/batching.py",
+      "current_sha256": "6ec773f2a4ce61a0027249ac53905d963a644ff6a4b3be84da2b5e642b1065f2",
+      "changed_since_initial_migration": true,
+      "distribution_status": "release",
+      "regression_group": "serve",
+      "related_tests": [
+        "tests/migrated/p0/test_dynamic_batching.py",
+        "tests/contracts/test_batching.py",
+        "tests/gpu/test_pi05_tiny.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "benchmarks/p0-20261111"
+      ]
+    },
+    {
+      "source": "benchmarks/p2-20261112/candidates/routed_down_fp8_v1.py",
+      "target": "packages/lingbot/src/vvla_lingbot/experimental/routed_down_fp8_v1.py",
+      "source_sha256": "b3ccc4f130a1703947d0635f3bb607ce7d25997acb368d4545941c986f39c01a",
+      "migrated_sha256": "5c1a4145a31be39f91e17da72e1c4a3a9e679d0a4b597ece41d503d8c23cdc0d",
+      "transformation": "namespace imports",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/lingbot/src/vvla_lingbot/experimental/routed_down_fp8_v1.py",
+      "current_sha256": "fb89fe97a7992fd0407e3918205b7f2e0aa9d3d507ac9a6c932a496346d68a49",
+      "changed_since_initial_migration": true,
+      "distribution_status": "release",
+      "regression_group": "lingbot",
+      "related_tests": [
+        "tests/migrated/lingbot/test_graph_pool.py",
+        "tests/migrated/lingbot/test_private_lite.py",
+        "tests/contracts/test_lingbot_routing.py",
+        "tests/contracts/test_lingbot_true_batch.py",
+        "tests/contracts/test_lingbot_true_batch_lifecycle.py",
+        "tests/contracts/test_lingbot_inference_assets.py",
+        "tests/gpu/test_graph_budget.py",
+        "tools/check_lingbot_installed.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "benchmarks/lingbot-lite-20261105",
+        "benchmarks/p2-20261112",
+        "reports/p2-crosscard-20261112"
+      ]
+    },
+    {
+      "source": "benchmarks/p2-20261112/candidates/routed_fp8_v1.py",
+      "target": "packages/lingbot/src/vvla_lingbot/experimental/routed_fp8_v1.py",
+      "source_sha256": "93de7d170cc4d43f2d35f87da00b0babf91149c6530d0dae769c3d8df0d4b91a",
+      "migrated_sha256": "e27cc1b33f097e796b9bab552e997884fb12ebea7e496015d25b7c7277d95476",
+      "transformation": "namespace imports",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/lingbot/src/vvla_lingbot/experimental/routed_fp8_v1.py",
+      "current_sha256": "38bd0ff10f3e9098e68d13fbcd1fc37651750a7e00e87d4ac0a425dcce9246ae",
+      "changed_since_initial_migration": true,
+      "distribution_status": "release",
+      "regression_group": "lingbot",
+      "related_tests": [
+        "tests/migrated/lingbot/test_graph_pool.py",
+        "tests/migrated/lingbot/test_private_lite.py",
+        "tests/contracts/test_lingbot_routing.py",
+        "tests/contracts/test_lingbot_true_batch.py",
+        "tests/contracts/test_lingbot_true_batch_lifecycle.py",
+        "tests/contracts/test_lingbot_inference_assets.py",
+        "tests/gpu/test_graph_budget.py",
+        "tools/check_lingbot_installed.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "benchmarks/lingbot-lite-20261105",
+        "benchmarks/p2-20261112",
+        "reports/p2-crosscard-20261112"
+      ]
+    },
+    {
+      "source": "benchmarks/p2-20261112/candidates/routing_setup_v1.py",
+      "target": "packages/lingbot/src/vvla_lingbot/experimental/routing_setup_v1.py",
+      "source_sha256": "0bc945f58abe194f81cb732868827bcb0e1dcdb2fe04cc25fea314f421442680",
+      "migrated_sha256": "0bc945f58abe194f81cb732868827bcb0e1dcdb2fe04cc25fea314f421442680",
+      "transformation": "verbatim",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/lingbot/src/vvla_lingbot/experimental/routing_setup_v1.py",
+      "current_sha256": "33b4eedd03ca05cb3a8cc3f3ecae644dff223b098bf3e1015a899dc6ceca8c9a",
+      "changed_since_initial_migration": true,
+      "distribution_status": "release",
+      "regression_group": "lingbot",
+      "related_tests": [
+        "tests/migrated/lingbot/test_graph_pool.py",
+        "tests/migrated/lingbot/test_private_lite.py",
+        "tests/contracts/test_lingbot_routing.py",
+        "tests/contracts/test_lingbot_true_batch.py",
+        "tests/contracts/test_lingbot_true_batch_lifecycle.py",
+        "tests/contracts/test_lingbot_inference_assets.py",
+        "tests/gpu/test_graph_budget.py",
+        "tools/check_lingbot_installed.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "benchmarks/lingbot-lite-20261105",
+        "benchmarks/p2-20261112",
+        "reports/p2-crosscard-20261112"
+      ]
+    },
+    {
+      "source": "benchmarks/p2-20261112/candidates/true_batch_v1.py",
+      "target": "packages/lingbot/src/vvla_lingbot/experimental/true_batch_v1.py",
+      "source_sha256": "cfdee03f985e6a6e8a1e78c52c3824dbe9d3aad98cea33fda16ff63fcabd8261",
+      "migrated_sha256": "8b34d7bc664b7073e2ba8ae88ace2f8211bffd7dc240dfa4fa960e21275db997",
+      "transformation": "namespace imports",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/lingbot/src/vvla_lingbot/experimental/true_batch_v1.py",
+      "current_sha256": "abac7b6b7e58395a262bce002fa55f2697b8d45037d7dbf08f52fa5942acd8eb",
+      "changed_since_initial_migration": true,
+      "distribution_status": "release",
+      "regression_group": "lingbot",
+      "related_tests": [
+        "tests/migrated/lingbot/test_graph_pool.py",
+        "tests/migrated/lingbot/test_private_lite.py",
+        "tests/contracts/test_lingbot_routing.py",
+        "tests/contracts/test_lingbot_true_batch.py",
+        "tests/contracts/test_lingbot_true_batch_lifecycle.py",
+        "tests/contracts/test_lingbot_inference_assets.py",
+        "tests/gpu/test_graph_budget.py",
+        "tools/check_lingbot_installed.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "benchmarks/lingbot-lite-20261105",
+        "benchmarks/p2-20261112",
+        "reports/p2-crosscard-20261112"
+      ]
+    },
+    {
+      "source": "benchmarks/p2-20261112/candidates/true_batch_v2.py",
+      "target": "packages/lingbot/src/vvla_lingbot/experimental/true_batch_v2.py",
+      "source_sha256": "6a9de4d3067a5e7f87be1e0860084bde0dd98d77ff5598e3d871cfd4dcca71b3",
+      "migrated_sha256": "8272c6a123d3d0c325f002a040535330f91a7811e1e454bf2065ccabbb964fb1",
+      "transformation": "namespace imports",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/lingbot/src/vvla_lingbot/experimental/true_batch_v2.py",
+      "current_sha256": "8272c6a123d3d0c325f002a040535330f91a7811e1e454bf2065ccabbb964fb1",
+      "changed_since_initial_migration": false,
+      "distribution_status": "release",
+      "regression_group": "lingbot",
+      "related_tests": [
+        "tests/migrated/lingbot/test_graph_pool.py",
+        "tests/migrated/lingbot/test_private_lite.py",
+        "tests/contracts/test_lingbot_routing.py",
+        "tests/contracts/test_lingbot_true_batch.py",
+        "tests/contracts/test_lingbot_true_batch_lifecycle.py",
+        "tests/contracts/test_lingbot_inference_assets.py",
+        "tests/gpu/test_graph_budget.py",
+        "tools/check_lingbot_installed.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "benchmarks/lingbot-lite-20261105",
+        "benchmarks/p2-20261112",
+        "reports/p2-crosscard-20261112"
+      ]
+    },
+    {
+      "source": "lingbot-vla-integration/src/lingbot_vla_plugin/__init__.py",
+      "target": "packages/lingbot/src/vvla_lingbot/__init__.py",
+      "source_sha256": "ddd95d68e7b25cb87784777aa9d4cfda37a7505e853ffae04ddda5d1bf8ec612",
+      "migrated_sha256": "ddd95d68e7b25cb87784777aa9d4cfda37a7505e853ffae04ddda5d1bf8ec612",
+      "transformation": "verbatim",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/lingbot/src/vvla_lingbot/__init__.py",
+      "current_sha256": "ddd95d68e7b25cb87784777aa9d4cfda37a7505e853ffae04ddda5d1bf8ec612",
+      "changed_since_initial_migration": false,
+      "distribution_status": "release",
+      "regression_group": "lingbot",
+      "related_tests": [
+        "tests/migrated/lingbot/test_graph_pool.py",
+        "tests/migrated/lingbot/test_private_lite.py",
+        "tests/contracts/test_lingbot_routing.py",
+        "tests/contracts/test_lingbot_true_batch.py",
+        "tests/contracts/test_lingbot_true_batch_lifecycle.py",
+        "tests/contracts/test_lingbot_inference_assets.py",
+        "tests/gpu/test_graph_budget.py",
+        "tools/check_lingbot_installed.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "benchmarks/lingbot-lite-20261105",
+        "benchmarks/p2-20261112",
+        "reports/p2-crosscard-20261112"
+      ]
+    },
+    {
+      "source": "lingbot-vla-integration/src/lingbot_vla_plugin/batch_engine.py",
+      "target": "packages/lingbot/src/vvla_lingbot/batch_engine.py",
+      "source_sha256": "336de8256eedb9648734b15e2989072874936de95094dff3eae9fa69e231545f",
+      "migrated_sha256": "336de8256eedb9648734b15e2989072874936de95094dff3eae9fa69e231545f",
+      "transformation": "verbatim",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/lingbot/src/vvla_lingbot/batch_engine.py",
+      "current_sha256": "5d48dcbf5331b1e4bf856f9c9fe2ba4b3ac7d2056ae27fded321df485ed25021",
+      "changed_since_initial_migration": true,
+      "distribution_status": "release",
+      "regression_group": "lingbot",
+      "related_tests": [
+        "tests/migrated/lingbot/test_graph_pool.py",
+        "tests/migrated/lingbot/test_private_lite.py",
+        "tests/contracts/test_lingbot_routing.py",
+        "tests/contracts/test_lingbot_true_batch.py",
+        "tests/contracts/test_lingbot_true_batch_lifecycle.py",
+        "tests/contracts/test_lingbot_inference_assets.py",
+        "tests/gpu/test_graph_budget.py",
+        "tools/check_lingbot_installed.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "benchmarks/lingbot-lite-20261105",
+        "benchmarks/p2-20261112",
+        "reports/p2-crosscard-20261112"
+      ]
+    },
+    {
+      "source": "lingbot-vla-integration/src/lingbot_vla_plugin/engine.py",
+      "target": "packages/lingbot/src/vvla_lingbot/engine.py",
+      "source_sha256": "c29645adda9a221b1ab6eab8de89cb8a6e8730992f132e623b15184c4cf9774b",
+      "migrated_sha256": "056b1c7b7a45cbe185d7c6fa2c324435f4ef4195e2b5800a2b30fa13beb38c84",
+      "transformation": "namespace imports",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/lingbot/src/vvla_lingbot/engine.py",
+      "current_sha256": "670ba5dc6ec98fccc62434d08d350c6d2e2084d88f480ddde2bfba9e09d5ea31",
+      "changed_since_initial_migration": true,
+      "distribution_status": "release",
+      "regression_group": "lingbot",
+      "related_tests": [
+        "tests/migrated/lingbot/test_graph_pool.py",
+        "tests/migrated/lingbot/test_private_lite.py",
+        "tests/contracts/test_lingbot_routing.py",
+        "tests/contracts/test_lingbot_true_batch.py",
+        "tests/contracts/test_lingbot_true_batch_lifecycle.py",
+        "tests/contracts/test_lingbot_inference_assets.py",
+        "tests/gpu/test_graph_budget.py",
+        "tools/check_lingbot_installed.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "benchmarks/lingbot-lite-20261105",
+        "benchmarks/p2-20261112",
+        "reports/p2-crosscard-20261112"
+      ]
+    },
+    {
+      "source": "lingbot-vla-integration/src/lingbot_vla_plugin/lite.py",
+      "target": "packages/lingbot/src/vvla_lingbot/lite.py",
+      "source_sha256": "96afb063299eb60d329d36fed290fc983dd5d60052b6d475110b46ea3772313a",
+      "migrated_sha256": "96afb063299eb60d329d36fed290fc983dd5d60052b6d475110b46ea3772313a",
+      "transformation": "verbatim",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/lingbot/src/vvla_lingbot/lite.py",
+      "current_sha256": "9e86e46454db70672b219e869585d39e4d2455332e2ee37f8b5e9e6758a36c40",
+      "changed_since_initial_migration": true,
+      "distribution_status": "release",
+      "regression_group": "lingbot",
+      "related_tests": [
+        "tests/migrated/lingbot/test_graph_pool.py",
+        "tests/migrated/lingbot/test_private_lite.py",
+        "tests/contracts/test_lingbot_routing.py",
+        "tests/contracts/test_lingbot_true_batch.py",
+        "tests/contracts/test_lingbot_true_batch_lifecycle.py",
+        "tests/contracts/test_lingbot_inference_assets.py",
+        "tests/gpu/test_graph_budget.py",
+        "tools/check_lingbot_installed.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "benchmarks/lingbot-lite-20261105",
+        "benchmarks/p2-20261112",
+        "reports/p2-crosscard-20261112"
+      ]
+    },
+    {
+      "source": "lingbot-vla-integration/src/lingbot_vla_plugin/lite_tuning/SOURCE.json",
+      "target": "packages/lingbot/src/vvla_lingbot/lite_tuning/SOURCE.json",
+      "source_sha256": "df458f1d34aeff3b43b7e5abc80826c7f95a27404d7bfe2af8831f34df371ee6",
+      "migrated_sha256": "df458f1d34aeff3b43b7e5abc80826c7f95a27404d7bfe2af8831f34df371ee6",
+      "transformation": "verbatim",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/lingbot/src/vvla_lingbot/lite_tuning/SOURCE.json",
+      "current_sha256": "df458f1d34aeff3b43b7e5abc80826c7f95a27404d7bfe2af8831f34df371ee6",
+      "changed_since_initial_migration": false,
+      "distribution_status": "release",
+      "regression_group": "lingbot",
+      "related_tests": [
+        "tests/migrated/lingbot/test_graph_pool.py",
+        "tests/migrated/lingbot/test_private_lite.py",
+        "tests/contracts/test_lingbot_routing.py",
+        "tests/contracts/test_lingbot_true_batch.py",
+        "tests/contracts/test_lingbot_true_batch_lifecycle.py",
+        "tests/contracts/test_lingbot_inference_assets.py",
+        "tests/gpu/test_graph_budget.py",
+        "tools/check_lingbot_installed.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "benchmarks/lingbot-lite-20261105",
+        "benchmarks/p2-20261112",
+        "reports/p2-crosscard-20261112"
+      ]
+    },
+    {
+      "source": "lingbot-vla-integration/src/lingbot_vla_plugin/lite_tuning/__init__.py",
+      "target": "packages/lingbot/src/vvla_lingbot/lite_tuning/__init__.py",
+      "source_sha256": "340e415ab2916c41f30702f8a0edf42e2875903ae9d9bc4c2ecf8e49c801e4cf",
+      "migrated_sha256": "340e415ab2916c41f30702f8a0edf42e2875903ae9d9bc4c2ecf8e49c801e4cf",
+      "transformation": "verbatim",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/lingbot/src/vvla_lingbot/lite_tuning/__init__.py",
+      "current_sha256": "340e415ab2916c41f30702f8a0edf42e2875903ae9d9bc4c2ecf8e49c801e4cf",
+      "changed_since_initial_migration": false,
+      "distribution_status": "release",
+      "regression_group": "lingbot",
+      "related_tests": [
+        "tests/migrated/lingbot/test_graph_pool.py",
+        "tests/migrated/lingbot/test_private_lite.py",
+        "tests/contracts/test_lingbot_routing.py",
+        "tests/contracts/test_lingbot_true_batch.py",
+        "tests/contracts/test_lingbot_true_batch_lifecycle.py",
+        "tests/contracts/test_lingbot_inference_assets.py",
+        "tests/gpu/test_graph_budget.py",
+        "tools/check_lingbot_installed.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "benchmarks/lingbot-lite-20261105",
+        "benchmarks/p2-20261112",
+        "reports/p2-crosscard-20261112"
+      ]
+    },
+    {
+      "source": "lingbot-vla-integration/src/lingbot_vla_plugin/lite_tuning/engine.py",
+      "target": "packages/lingbot/src/vvla_lingbot/lite_tuning/engine.py",
+      "source_sha256": "828ecbeae878d5d9b58f194af75226e53481b2c8a05547593d4812e6e3e8f247",
+      "migrated_sha256": "249a2d3d182a5677c8ed336bde9a6fd7c5ee7bce0d14369aa281fc18f67e2f78",
+      "transformation": "namespace imports",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/lingbot/src/vvla_lingbot/lite_tuning/engine.py",
+      "current_sha256": "014d26c7c4b0c5c6e58fda8bb18eff13b2ef86cc3c96d54f736492bbef6c3995",
+      "changed_since_initial_migration": true,
+      "distribution_status": "release",
+      "regression_group": "lingbot",
+      "related_tests": [
+        "tests/migrated/lingbot/test_graph_pool.py",
+        "tests/migrated/lingbot/test_private_lite.py",
+        "tests/contracts/test_lingbot_routing.py",
+        "tests/contracts/test_lingbot_true_batch.py",
+        "tests/contracts/test_lingbot_true_batch_lifecycle.py",
+        "tests/contracts/test_lingbot_inference_assets.py",
+        "tests/gpu/test_graph_budget.py",
+        "tools/check_lingbot_installed.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "benchmarks/lingbot-lite-20261105",
+        "benchmarks/p2-20261112",
+        "reports/p2-crosscard-20261112"
+      ]
+    },
+    {
+      "source": "lingbot-vla-integration/src/lingbot_vla_plugin/lite_tuning/graph_diagnostics.py",
+      "target": "packages/lingbot/src/vvla_lingbot/lite_tuning/graph_diagnostics.py",
+      "source_sha256": "b50563b4f87a14605804ff1227d44a05772269ec6a39d5fd32193ea13a696cc5",
+      "migrated_sha256": "b50563b4f87a14605804ff1227d44a05772269ec6a39d5fd32193ea13a696cc5",
+      "transformation": "verbatim",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/lingbot/src/vvla_lingbot/lite_tuning/graph_diagnostics.py",
+      "current_sha256": "b50563b4f87a14605804ff1227d44a05772269ec6a39d5fd32193ea13a696cc5",
+      "changed_since_initial_migration": false,
+      "distribution_status": "release",
+      "regression_group": "lingbot",
+      "related_tests": [
+        "tests/migrated/lingbot/test_graph_pool.py",
+        "tests/migrated/lingbot/test_private_lite.py",
+        "tests/contracts/test_lingbot_routing.py",
+        "tests/contracts/test_lingbot_true_batch.py",
+        "tests/contracts/test_lingbot_true_batch_lifecycle.py",
+        "tests/contracts/test_lingbot_inference_assets.py",
+        "tests/gpu/test_graph_budget.py",
+        "tools/check_lingbot_installed.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "benchmarks/lingbot-lite-20261105",
+        "benchmarks/p2-20261112",
+        "reports/p2-crosscard-20261112"
+      ]
+    },
+    {
+      "source": "lingbot-vla-integration/src/lingbot_vla_plugin/lite_tuning/graph_pool.py",
+      "target": "packages/lingbot/src/vvla_lingbot/lite_tuning/graph_pool.py",
+      "source_sha256": "186c94df5123da5ada57a413c2f066c69a78b2fd2af179bf0764fb65cf72ee51",
+      "migrated_sha256": "186c94df5123da5ada57a413c2f066c69a78b2fd2af179bf0764fb65cf72ee51",
+      "transformation": "verbatim",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/lingbot/src/vvla_lingbot/lite_tuning/graph_pool.py",
+      "current_sha256": "70ba97fe5997b0b8e678439a599de2f83f3f7ac5b4508de3fa7b18f715fe0bae",
+      "changed_since_initial_migration": true,
+      "distribution_status": "release",
+      "regression_group": "lingbot",
+      "related_tests": [
+        "tests/migrated/lingbot/test_graph_pool.py",
+        "tests/migrated/lingbot/test_private_lite.py",
+        "tests/contracts/test_lingbot_routing.py",
+        "tests/contracts/test_lingbot_true_batch.py",
+        "tests/contracts/test_lingbot_true_batch_lifecycle.py",
+        "tests/contracts/test_lingbot_inference_assets.py",
+        "tests/gpu/test_graph_budget.py",
+        "tools/check_lingbot_installed.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "benchmarks/lingbot-lite-20261105",
+        "benchmarks/p2-20261112",
+        "reports/p2-crosscard-20261112"
+      ]
+    },
+    {
+      "source": "lingbot-vla-integration/src/lingbot_vla_plugin/lite_tuning/moe.py",
+      "target": "packages/lingbot/src/vvla_lingbot/lite_tuning/moe.py",
+      "source_sha256": "f2ffb6f58439ea8ccfcba72e4a32a8a5d3514927eaa8ae05e1048bab5ffa964a",
+      "migrated_sha256": "f2ffb6f58439ea8ccfcba72e4a32a8a5d3514927eaa8ae05e1048bab5ffa964a",
+      "transformation": "verbatim",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/lingbot/src/vvla_lingbot/lite_tuning/moe.py",
+      "current_sha256": "f2ffb6f58439ea8ccfcba72e4a32a8a5d3514927eaa8ae05e1048bab5ffa964a",
+      "changed_since_initial_migration": false,
+      "distribution_status": "release",
+      "regression_group": "lingbot",
+      "related_tests": [
+        "tests/migrated/lingbot/test_graph_pool.py",
+        "tests/migrated/lingbot/test_private_lite.py",
+        "tests/contracts/test_lingbot_routing.py",
+        "tests/contracts/test_lingbot_true_batch.py",
+        "tests/contracts/test_lingbot_true_batch_lifecycle.py",
+        "tests/contracts/test_lingbot_inference_assets.py",
+        "tests/gpu/test_graph_budget.py",
+        "tools/check_lingbot_installed.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "benchmarks/lingbot-lite-20261105",
+        "benchmarks/p2-20261112",
+        "reports/p2-crosscard-20261112"
+      ]
+    },
+    {
+      "source": "lingbot-vla-integration/src/lingbot_vla_plugin/lite_tuning/rope.py",
+      "target": "packages/lingbot/src/vvla_lingbot/lite_tuning/rope.py",
+      "source_sha256": "8875c4624ce8e2bab1c5a23877084e97fbe28f1a0007fcb4b52c6a562cb6c97e",
+      "migrated_sha256": "8875c4624ce8e2bab1c5a23877084e97fbe28f1a0007fcb4b52c6a562cb6c97e",
+      "transformation": "verbatim",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/lingbot/src/vvla_lingbot/lite_tuning/rope.py",
+      "current_sha256": "8875c4624ce8e2bab1c5a23877084e97fbe28f1a0007fcb4b52c6a562cb6c97e",
+      "changed_since_initial_migration": false,
+      "distribution_status": "release",
+      "regression_group": "lingbot",
+      "related_tests": [
+        "tests/migrated/lingbot/test_graph_pool.py",
+        "tests/migrated/lingbot/test_private_lite.py",
+        "tests/contracts/test_lingbot_routing.py",
+        "tests/contracts/test_lingbot_true_batch.py",
+        "tests/contracts/test_lingbot_true_batch_lifecycle.py",
+        "tests/contracts/test_lingbot_inference_assets.py",
+        "tests/gpu/test_graph_budget.py",
+        "tools/check_lingbot_installed.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "benchmarks/lingbot-lite-20261105",
+        "benchmarks/p2-20261112",
+        "reports/p2-crosscard-20261112"
+      ]
+    },
+    {
+      "source": "lingbot-vla-integration/src/lingbot_vla_plugin/lite_tuning/router.py",
+      "target": "packages/lingbot/src/vvla_lingbot/lite_tuning/router.py",
+      "source_sha256": "8c335cf5c8f14947806156f13705a4c4dd36e70b2e1b577286d155cf5c6ec746",
+      "migrated_sha256": "8c335cf5c8f14947806156f13705a4c4dd36e70b2e1b577286d155cf5c6ec746",
+      "transformation": "verbatim",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/lingbot/src/vvla_lingbot/lite_tuning/router.py",
+      "current_sha256": "8c335cf5c8f14947806156f13705a4c4dd36e70b2e1b577286d155cf5c6ec746",
+      "changed_since_initial_migration": false,
+      "distribution_status": "release",
+      "regression_group": "lingbot",
+      "related_tests": [
+        "tests/migrated/lingbot/test_graph_pool.py",
+        "tests/migrated/lingbot/test_private_lite.py",
+        "tests/contracts/test_lingbot_routing.py",
+        "tests/contracts/test_lingbot_true_batch.py",
+        "tests/contracts/test_lingbot_true_batch_lifecycle.py",
+        "tests/contracts/test_lingbot_inference_assets.py",
+        "tests/gpu/test_graph_budget.py",
+        "tools/check_lingbot_installed.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "benchmarks/lingbot-lite-20261105",
+        "benchmarks/p2-20261112",
+        "reports/p2-crosscard-20261112"
+      ]
+    },
+    {
+      "source": "lingbot-vla-integration/src/lingbot_vla_plugin/lite_tuning/state_guard.py",
+      "target": "packages/lingbot/src/vvla_lingbot/lite_tuning/state_guard.py",
+      "source_sha256": "0d3591fa7f1fb005cbd01450838d2be6506486da33b4cc0250d2fcf0818186ce",
+      "migrated_sha256": "0d3591fa7f1fb005cbd01450838d2be6506486da33b4cc0250d2fcf0818186ce",
+      "transformation": "verbatim",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/lingbot/src/vvla_lingbot/lite_tuning/state_guard.py",
+      "current_sha256": "0d3591fa7f1fb005cbd01450838d2be6506486da33b4cc0250d2fcf0818186ce",
+      "changed_since_initial_migration": false,
+      "distribution_status": "release",
+      "regression_group": "lingbot",
+      "related_tests": [
+        "tests/migrated/lingbot/test_graph_pool.py",
+        "tests/migrated/lingbot/test_private_lite.py",
+        "tests/contracts/test_lingbot_routing.py",
+        "tests/contracts/test_lingbot_true_batch.py",
+        "tests/contracts/test_lingbot_true_batch_lifecycle.py",
+        "tests/contracts/test_lingbot_inference_assets.py",
+        "tests/gpu/test_graph_budget.py",
+        "tools/check_lingbot_installed.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "benchmarks/lingbot-lite-20261105",
+        "benchmarks/p2-20261112",
+        "reports/p2-crosscard-20261112"
+      ]
+    },
+    {
+      "source": "lingbot-vla-integration/src/lingbot_vla_plugin/norm_kernel.py",
+      "target": "packages/lingbot/src/vvla_lingbot/norm_kernel.py",
+      "source_sha256": "72323c1339c7914cdf0f75917c3f54b19681196e7cd68cdd79aadda4ad0bb24f",
+      "migrated_sha256": "72323c1339c7914cdf0f75917c3f54b19681196e7cd68cdd79aadda4ad0bb24f",
+      "transformation": "verbatim",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/lingbot/src/vvla_lingbot/norm_kernel.py",
+      "current_sha256": "72323c1339c7914cdf0f75917c3f54b19681196e7cd68cdd79aadda4ad0bb24f",
+      "changed_since_initial_migration": false,
+      "distribution_status": "release",
+      "regression_group": "lingbot",
+      "related_tests": [
+        "tests/migrated/lingbot/test_graph_pool.py",
+        "tests/migrated/lingbot/test_private_lite.py",
+        "tests/contracts/test_lingbot_routing.py",
+        "tests/contracts/test_lingbot_true_batch.py",
+        "tests/contracts/test_lingbot_true_batch_lifecycle.py",
+        "tests/contracts/test_lingbot_inference_assets.py",
+        "tests/gpu/test_graph_budget.py",
+        "tools/check_lingbot_installed.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "benchmarks/lingbot-lite-20261105",
+        "benchmarks/p2-20261112",
+        "reports/p2-crosscard-20261112"
+      ]
+    },
+    {
+      "source": "lingbot-vla-integration/src/lingbot_vla_plugin/packed.py",
+      "target": "packages/lingbot/src/vvla_lingbot/packed.py",
+      "source_sha256": "3c78b2ace8dac709cb1aeefa7083138ff5f69715f910298e8c0a30a18153ccf8",
+      "migrated_sha256": "98a31dd743abeeaba8ad1f61154a8f161200a76deae8a6a44a8a97fdaadeafaa",
+      "transformation": "namespace imports",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/lingbot/src/vvla_lingbot/packed.py",
+      "current_sha256": "98a31dd743abeeaba8ad1f61154a8f161200a76deae8a6a44a8a97fdaadeafaa",
+      "changed_since_initial_migration": false,
+      "distribution_status": "release",
+      "regression_group": "lingbot",
+      "related_tests": [
+        "tests/migrated/lingbot/test_graph_pool.py",
+        "tests/migrated/lingbot/test_private_lite.py",
+        "tests/contracts/test_lingbot_routing.py",
+        "tests/contracts/test_lingbot_true_batch.py",
+        "tests/contracts/test_lingbot_true_batch_lifecycle.py",
+        "tests/contracts/test_lingbot_inference_assets.py",
+        "tests/gpu/test_graph_budget.py",
+        "tools/check_lingbot_installed.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "benchmarks/lingbot-lite-20261105",
+        "benchmarks/p2-20261112",
+        "reports/p2-crosscard-20261112"
+      ]
+    },
+    {
+      "source": "lingbot-vla-integration/src/lingbot_vla_plugin/private_lite.py",
+      "target": "packages/lingbot/src/vvla_lingbot/private_lite.py",
+      "source_sha256": "531d1c4b3574044bb7255ffc284c10ac9cd2dbb94f082c88c33b298a7d746d90",
+      "migrated_sha256": "531d1c4b3574044bb7255ffc284c10ac9cd2dbb94f082c88c33b298a7d746d90",
+      "transformation": "verbatim",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/lingbot/src/vvla_lingbot/private_lite.py",
+      "current_sha256": "531d1c4b3574044bb7255ffc284c10ac9cd2dbb94f082c88c33b298a7d746d90",
+      "changed_since_initial_migration": false,
+      "distribution_status": "release",
+      "regression_group": "lingbot",
+      "related_tests": [
+        "tests/migrated/lingbot/test_graph_pool.py",
+        "tests/migrated/lingbot/test_private_lite.py",
+        "tests/contracts/test_lingbot_routing.py",
+        "tests/contracts/test_lingbot_true_batch.py",
+        "tests/contracts/test_lingbot_true_batch_lifecycle.py",
+        "tests/contracts/test_lingbot_inference_assets.py",
+        "tests/gpu/test_graph_budget.py",
+        "tools/check_lingbot_installed.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "benchmarks/lingbot-lite-20261105",
+        "benchmarks/p2-20261112",
+        "reports/p2-crosscard-20261112"
+      ]
+    },
+    {
+      "source": "lingbot-vla-integration/src/lingbot_vla_plugin/runtime.py",
+      "target": "packages/lingbot/src/vvla_lingbot/runtime.py",
+      "source_sha256": "17045817322d9d65799c81fee9b9becdbe30259c8d1df323f2285ed877109a49",
+      "migrated_sha256": "2bd507a9b8f89c19076d59a63f09009fdd73074d65ccd837e21dd544213aaf22",
+      "transformation": "namespace imports",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/lingbot/src/vvla_lingbot/runtime.py",
+      "current_sha256": "6b73097424ac8b3e5300cd6c8b76c8e4339d5378bfd6d73a10d8c051faa5a534",
+      "changed_since_initial_migration": true,
+      "distribution_status": "release",
+      "regression_group": "lingbot",
+      "related_tests": [
+        "tests/migrated/lingbot/test_graph_pool.py",
+        "tests/migrated/lingbot/test_private_lite.py",
+        "tests/contracts/test_lingbot_routing.py",
+        "tests/contracts/test_lingbot_true_batch.py",
+        "tests/contracts/test_lingbot_true_batch_lifecycle.py",
+        "tests/contracts/test_lingbot_inference_assets.py",
+        "tests/gpu/test_graph_budget.py",
+        "tools/check_lingbot_installed.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "benchmarks/lingbot-lite-20261105",
+        "benchmarks/p2-20261112",
+        "reports/p2-crosscard-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/src/vllm_vla/__init__.py",
+      "target": "packages/pi05/src/vvla_pi05/__init__.py",
+      "source_sha256": "eea63270ee3816736351d2cd64e550db71789c683cdec8c15673bcce26dbcc2b",
+      "migrated_sha256": "eea63270ee3816736351d2cd64e550db71789c683cdec8c15673bcce26dbcc2b",
+      "transformation": "verbatim",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/pi05/src/vvla_pi05/__init__.py",
+      "current_sha256": "87d68997a2f5210ce4ea02b795967413fce897942fc42b41a8869152a22a1bc3",
+      "changed_since_initial_migration": true,
+      "distribution_status": "release",
+      "regression_group": "pi05",
+      "related_tests": [
+        "tests/contracts/test_pi05_lifecycle.py",
+        "tests/contracts/test_pi05_host_layout.py",
+        "tests/contracts/test_openpi.py",
+        "tests/contracts/test_compile_environment.py",
+        "tests/contracts/test_compiler_entry_ownership.py",
+        "tests/contracts/test_historical_recipes.py",
+        "tests/contracts/test_dynamic_tactics.py",
+        "tests/contracts/test_dynamic_lt_ownership.py",
+        "tests/contracts/test_prefix_recipe_promotion.py",
+        "tests/gpu/test_public_pi05_recipe.py",
+        "tests/gpu/test_historical_l4_lt.py",
+        "tests/gpu/test_prefix_quantizer.py",
+        "tests/gpu/test_pi05_tiny.py",
+        "tests/gpu/test_fp8_and_routing.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "reports/p2-20261112",
+        "benchmarks/p2-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/src/vllm_vla/cli.py",
+      "target": "packages/pi05/src/vvla_pi05/cli.py",
+      "source_sha256": "b9fca2b490f27f812f674e439901461f1d533a7844b06cd963d311c4b5ceac64",
+      "migrated_sha256": "e2892a59f3606d8063386efa9463da4a4ca053d772687e0cb5aa7b7f13bbeb00",
+      "transformation": "namespace imports",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/pi05/src/vvla_pi05/cli.py",
+      "current_sha256": "e2892a59f3606d8063386efa9463da4a4ca053d772687e0cb5aa7b7f13bbeb00",
+      "changed_since_initial_migration": false,
+      "distribution_status": "release",
+      "regression_group": "pi05",
+      "related_tests": [
+        "tests/contracts/test_pi05_lifecycle.py",
+        "tests/contracts/test_pi05_host_layout.py",
+        "tests/contracts/test_openpi.py",
+        "tests/contracts/test_compile_environment.py",
+        "tests/contracts/test_compiler_entry_ownership.py",
+        "tests/contracts/test_historical_recipes.py",
+        "tests/contracts/test_dynamic_tactics.py",
+        "tests/contracts/test_dynamic_lt_ownership.py",
+        "tests/contracts/test_prefix_recipe_promotion.py",
+        "tests/gpu/test_public_pi05_recipe.py",
+        "tests/gpu/test_historical_l4_lt.py",
+        "tests/gpu/test_prefix_quantizer.py",
+        "tests/gpu/test_pi05_tiny.py",
+        "tests/gpu/test_fp8_and_routing.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "reports/p2-20261112",
+        "benchmarks/p2-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/src/vllm_vla/lite/README.md",
+      "target": "packages/pi05/src/vvla_pi05/lite/README.md",
+      "source_sha256": "ebe31cfd9a599f292909d8ab5eb9166e6cb6e5f11b3891c1f2f4faca1676cbce",
+      "migrated_sha256": "ebe31cfd9a599f292909d8ab5eb9166e6cb6e5f11b3891c1f2f4faca1676cbce",
+      "transformation": "verbatim",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/pi05/src/vvla_pi05/lite/README.md",
+      "current_sha256": "2525f2782fcf63de9b0588f8b00d4d983e6430faf22773f15cafd069b11e8775",
+      "changed_since_initial_migration": true,
+      "distribution_status": "release",
+      "regression_group": "pi05",
+      "related_tests": [
+        "tests/contracts/test_pi05_lifecycle.py",
+        "tests/contracts/test_pi05_host_layout.py",
+        "tests/contracts/test_openpi.py",
+        "tests/contracts/test_compile_environment.py",
+        "tests/contracts/test_compiler_entry_ownership.py",
+        "tests/contracts/test_historical_recipes.py",
+        "tests/contracts/test_dynamic_tactics.py",
+        "tests/contracts/test_dynamic_lt_ownership.py",
+        "tests/contracts/test_prefix_recipe_promotion.py",
+        "tests/gpu/test_public_pi05_recipe.py",
+        "tests/gpu/test_historical_l4_lt.py",
+        "tests/gpu/test_prefix_quantizer.py",
+        "tests/gpu/test_pi05_tiny.py",
+        "tests/gpu/test_fp8_and_routing.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "reports/p2-20261112",
+        "benchmarks/p2-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/src/vllm_vla/lite/__init__.py",
+      "target": "packages/pi05/src/vvla_pi05/lite/__init__.py",
+      "source_sha256": "160754a7ec588d77ff421856a1eddfa5ecf76af334af5c7a9e5fa56a36d6ec68",
+      "migrated_sha256": "7cd9f0c698df50f6467856ad47568d8d6b43f991908ab35cda7424178c0b5492",
+      "transformation": "namespace imports",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/pi05/src/vvla_pi05/lite/__init__.py",
+      "current_sha256": "7cd9f0c698df50f6467856ad47568d8d6b43f991908ab35cda7424178c0b5492",
+      "changed_since_initial_migration": false,
+      "distribution_status": "release",
+      "regression_group": "pi05",
+      "related_tests": [
+        "tests/contracts/test_pi05_lifecycle.py",
+        "tests/contracts/test_pi05_host_layout.py",
+        "tests/contracts/test_openpi.py",
+        "tests/contracts/test_compile_environment.py",
+        "tests/contracts/test_compiler_entry_ownership.py",
+        "tests/contracts/test_historical_recipes.py",
+        "tests/contracts/test_dynamic_tactics.py",
+        "tests/contracts/test_dynamic_lt_ownership.py",
+        "tests/contracts/test_prefix_recipe_promotion.py",
+        "tests/gpu/test_public_pi05_recipe.py",
+        "tests/gpu/test_historical_l4_lt.py",
+        "tests/gpu/test_prefix_quantizer.py",
+        "tests/gpu/test_pi05_tiny.py",
+        "tests/gpu/test_fp8_and_routing.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "reports/p2-20261112",
+        "benchmarks/p2-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/src/vllm_vla/lite/action_norm_cache.py",
+      "target": "packages/pi05/src/vvla_pi05/lite/action_norm_cache.py",
+      "source_sha256": "92351094e1d69581d7007b2aca046319a1cf731a52b9387cd5a41a7a74c11913",
+      "migrated_sha256": "32e5e2fed068ef23507eecec3783d6ec45ef1079d4e6689a59885146a961797a",
+      "transformation": "namespace imports",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/pi05/src/vvla_pi05/lite/action_norm_cache.py",
+      "current_sha256": "32e5e2fed068ef23507eecec3783d6ec45ef1079d4e6689a59885146a961797a",
+      "changed_since_initial_migration": false,
+      "distribution_status": "release",
+      "regression_group": "pi05",
+      "related_tests": [
+        "tests/contracts/test_pi05_lifecycle.py",
+        "tests/contracts/test_pi05_host_layout.py",
+        "tests/contracts/test_openpi.py",
+        "tests/contracts/test_compile_environment.py",
+        "tests/contracts/test_compiler_entry_ownership.py",
+        "tests/contracts/test_historical_recipes.py",
+        "tests/contracts/test_dynamic_tactics.py",
+        "tests/contracts/test_dynamic_lt_ownership.py",
+        "tests/contracts/test_prefix_recipe_promotion.py",
+        "tests/gpu/test_public_pi05_recipe.py",
+        "tests/gpu/test_historical_l4_lt.py",
+        "tests/gpu/test_prefix_quantizer.py",
+        "tests/gpu/test_pi05_tiny.py",
+        "tests/gpu/test_fp8_and_routing.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "reports/p2-20261112",
+        "benchmarks/p2-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/src/vllm_vla/lite/attention.py",
+      "target": "packages/pi05/src/vvla_pi05/lite/attention.py",
+      "source_sha256": "adc1c5b8c5a44f05dc1fd2ef9af8cc1d171d07ffa7d4092c7ed609f40f25c60f",
+      "migrated_sha256": "d2dcbd3ffe6b5a5e5bc7173b135458069d3640e3ccf14ab628dd5501dbfbadc3",
+      "transformation": "namespace imports",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/pi05/src/vvla_pi05/lite/attention.py",
+      "current_sha256": "d2dcbd3ffe6b5a5e5bc7173b135458069d3640e3ccf14ab628dd5501dbfbadc3",
+      "changed_since_initial_migration": false,
+      "distribution_status": "release",
+      "regression_group": "pi05",
+      "related_tests": [
+        "tests/contracts/test_pi05_lifecycle.py",
+        "tests/contracts/test_pi05_host_layout.py",
+        "tests/contracts/test_openpi.py",
+        "tests/contracts/test_compile_environment.py",
+        "tests/contracts/test_compiler_entry_ownership.py",
+        "tests/contracts/test_historical_recipes.py",
+        "tests/contracts/test_dynamic_tactics.py",
+        "tests/contracts/test_dynamic_lt_ownership.py",
+        "tests/contracts/test_prefix_recipe_promotion.py",
+        "tests/gpu/test_public_pi05_recipe.py",
+        "tests/gpu/test_historical_l4_lt.py",
+        "tests/gpu/test_prefix_quantizer.py",
+        "tests/gpu/test_pi05_tiny.py",
+        "tests/gpu/test_fp8_and_routing.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "reports/p2-20261112",
+        "benchmarks/p2-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/src/vllm_vla/lite/batch_checkpoint_engine.py",
+      "target": "packages/pi05/src/vvla_pi05/lite/batch_checkpoint_engine.py",
+      "source_sha256": "daafeb5420d978ade83fceddff1db0e4090011454e47e1c66d2329d179e35e50",
+      "migrated_sha256": "daafeb5420d978ade83fceddff1db0e4090011454e47e1c66d2329d179e35e50",
+      "transformation": "verbatim",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/pi05/src/vvla_pi05/lite/batch_checkpoint_engine.py",
+      "current_sha256": "4502c8953f04d660e8a43c58a24d8a67f51b918b542f532f4c42a0c486ceb034",
+      "changed_since_initial_migration": true,
+      "distribution_status": "release",
+      "regression_group": "pi05",
+      "related_tests": [
+        "tests/contracts/test_pi05_lifecycle.py",
+        "tests/contracts/test_pi05_host_layout.py",
+        "tests/contracts/test_openpi.py",
+        "tests/contracts/test_compile_environment.py",
+        "tests/contracts/test_compiler_entry_ownership.py",
+        "tests/contracts/test_historical_recipes.py",
+        "tests/contracts/test_dynamic_tactics.py",
+        "tests/contracts/test_dynamic_lt_ownership.py",
+        "tests/contracts/test_prefix_recipe_promotion.py",
+        "tests/gpu/test_public_pi05_recipe.py",
+        "tests/gpu/test_historical_l4_lt.py",
+        "tests/gpu/test_prefix_quantizer.py",
+        "tests/gpu/test_pi05_tiny.py",
+        "tests/gpu/test_fp8_and_routing.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "reports/p2-20261112",
+        "benchmarks/p2-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/src/vllm_vla/lite/batch_layout.py",
+      "target": "packages/pi05/src/vvla_pi05/lite/batch_layout.py",
+      "source_sha256": "32e4f367c32424fd845d78c6e4855026728ba846f3b7cb8b810cba724932d918",
+      "migrated_sha256": "539e2056004b6acaa6e2f16e679e1a68b2e433493bd94ca1a2207b4c49354981",
+      "transformation": "namespace imports",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/pi05/src/vvla_pi05/lite/batch_layout.py",
+      "current_sha256": "539e2056004b6acaa6e2f16e679e1a68b2e433493bd94ca1a2207b4c49354981",
+      "changed_since_initial_migration": false,
+      "distribution_status": "release",
+      "regression_group": "pi05",
+      "related_tests": [
+        "tests/contracts/test_pi05_lifecycle.py",
+        "tests/contracts/test_pi05_host_layout.py",
+        "tests/contracts/test_openpi.py",
+        "tests/contracts/test_compile_environment.py",
+        "tests/contracts/test_compiler_entry_ownership.py",
+        "tests/contracts/test_historical_recipes.py",
+        "tests/contracts/test_dynamic_tactics.py",
+        "tests/contracts/test_dynamic_lt_ownership.py",
+        "tests/contracts/test_prefix_recipe_promotion.py",
+        "tests/gpu/test_public_pi05_recipe.py",
+        "tests/gpu/test_historical_l4_lt.py",
+        "tests/gpu/test_prefix_quantizer.py",
+        "tests/gpu/test_pi05_tiny.py",
+        "tests/gpu/test_fp8_and_routing.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "reports/p2-20261112",
+        "benchmarks/p2-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/src/vllm_vla/lite/batch_processor.py",
+      "target": "packages/pi05/src/vvla_pi05/lite/batch_processor.py",
+      "source_sha256": "fb71717f5f2568808f3816d2c0ed799856c7446d6b7a75884744cfe99cde1904",
+      "migrated_sha256": "fa913c88429a2b9f0ef73e0983b680bbc06104f04129032d39d6aaf4aec4b1c5",
+      "transformation": "namespace imports",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/pi05/src/vvla_pi05/lite/batch_processor.py",
+      "current_sha256": "fa913c88429a2b9f0ef73e0983b680bbc06104f04129032d39d6aaf4aec4b1c5",
+      "changed_since_initial_migration": false,
+      "distribution_status": "release",
+      "regression_group": "pi05",
+      "related_tests": [
+        "tests/contracts/test_pi05_lifecycle.py",
+        "tests/contracts/test_pi05_host_layout.py",
+        "tests/contracts/test_openpi.py",
+        "tests/contracts/test_compile_environment.py",
+        "tests/contracts/test_compiler_entry_ownership.py",
+        "tests/contracts/test_historical_recipes.py",
+        "tests/contracts/test_dynamic_tactics.py",
+        "tests/contracts/test_dynamic_lt_ownership.py",
+        "tests/contracts/test_prefix_recipe_promotion.py",
+        "tests/gpu/test_public_pi05_recipe.py",
+        "tests/gpu/test_historical_l4_lt.py",
+        "tests/gpu/test_prefix_quantizer.py",
+        "tests/gpu/test_pi05_tiny.py",
+        "tests/gpu/test_fp8_and_routing.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "reports/p2-20261112",
+        "benchmarks/p2-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/src/vllm_vla/lite/batched_vision.py",
+      "target": "packages/pi05/src/vvla_pi05/lite/batched_vision.py",
+      "source_sha256": "b4c5d5645390ec01ea099f1cd5bbaa2e450484fc7dfc61e91ba74e77c01d5173",
+      "migrated_sha256": "8a8f2d04add33d58a82702c8dae1a06ef3fa2cacbb637e1ddcfe20afdb0468f5",
+      "transformation": "namespace imports",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/pi05/src/vvla_pi05/lite/batched_vision.py",
+      "current_sha256": "8a8f2d04add33d58a82702c8dae1a06ef3fa2cacbb637e1ddcfe20afdb0468f5",
+      "changed_since_initial_migration": false,
+      "distribution_status": "release",
+      "regression_group": "pi05",
+      "related_tests": [
+        "tests/contracts/test_pi05_lifecycle.py",
+        "tests/contracts/test_pi05_host_layout.py",
+        "tests/contracts/test_openpi.py",
+        "tests/contracts/test_compile_environment.py",
+        "tests/contracts/test_compiler_entry_ownership.py",
+        "tests/contracts/test_historical_recipes.py",
+        "tests/contracts/test_dynamic_tactics.py",
+        "tests/contracts/test_dynamic_lt_ownership.py",
+        "tests/contracts/test_prefix_recipe_promotion.py",
+        "tests/gpu/test_public_pi05_recipe.py",
+        "tests/gpu/test_historical_l4_lt.py",
+        "tests/gpu/test_prefix_quantizer.py",
+        "tests/gpu/test_pi05_tiny.py",
+        "tests/gpu/test_fp8_and_routing.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "reports/p2-20261112",
+        "benchmarks/p2-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/src/vllm_vla/lite/compilation.py",
+      "target": "packages/pi05/src/vvla_pi05/lite/compilation.py",
+      "source_sha256": "4066f24920bd5ce7062c517a2a74e7abba8fe43a2b37adf1d63f84439e38c01c",
+      "migrated_sha256": "88954cd320bb86eefb2fe95061a20ba567af08ad75fa70275379ffa3a938f73c",
+      "transformation": "namespace imports",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/pi05/src/vvla_pi05/lite/compilation.py",
+      "current_sha256": "cdbb72bdb37c52f35b2c0b372fc28e51ac14b498bfd3a833d08983ad97755d86",
+      "changed_since_initial_migration": true,
+      "distribution_status": "release",
+      "regression_group": "pi05",
+      "related_tests": [
+        "tests/contracts/test_pi05_lifecycle.py",
+        "tests/contracts/test_pi05_host_layout.py",
+        "tests/contracts/test_openpi.py",
+        "tests/contracts/test_compile_environment.py",
+        "tests/contracts/test_compiler_entry_ownership.py",
+        "tests/contracts/test_historical_recipes.py",
+        "tests/contracts/test_dynamic_tactics.py",
+        "tests/contracts/test_dynamic_lt_ownership.py",
+        "tests/contracts/test_prefix_recipe_promotion.py",
+        "tests/gpu/test_public_pi05_recipe.py",
+        "tests/gpu/test_historical_l4_lt.py",
+        "tests/gpu/test_prefix_quantizer.py",
+        "tests/gpu/test_pi05_tiny.py",
+        "tests/gpu/test_fp8_and_routing.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "reports/p2-20261112",
+        "benchmarks/p2-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/src/vllm_vla/lite/csrc/fp8_tensor_epochs.cpp",
+      "target": "packages/pi05/src/vvla_pi05/lite/csrc/fp8_tensor_epochs.cpp",
+      "source_sha256": "0b1f1639bc4932a0b8c6bfc5f9075c3a57624abfec100534af6dc236ee25310f",
+      "migrated_sha256": "0b1f1639bc4932a0b8c6bfc5f9075c3a57624abfec100534af6dc236ee25310f",
+      "transformation": "verbatim",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/pi05/src/vvla_pi05/lite/csrc/fp8_tensor_epochs.cpp",
+      "current_sha256": "0b1f1639bc4932a0b8c6bfc5f9075c3a57624abfec100534af6dc236ee25310f",
+      "changed_since_initial_migration": false,
+      "distribution_status": "release",
+      "regression_group": "pi05",
+      "related_tests": [
+        "tests/contracts/test_pi05_lifecycle.py",
+        "tests/contracts/test_pi05_host_layout.py",
+        "tests/contracts/test_openpi.py",
+        "tests/contracts/test_compile_environment.py",
+        "tests/contracts/test_compiler_entry_ownership.py",
+        "tests/contracts/test_historical_recipes.py",
+        "tests/contracts/test_dynamic_tactics.py",
+        "tests/contracts/test_dynamic_lt_ownership.py",
+        "tests/contracts/test_prefix_recipe_promotion.py",
+        "tests/gpu/test_public_pi05_recipe.py",
+        "tests/gpu/test_historical_l4_lt.py",
+        "tests/gpu/test_prefix_quantizer.py",
+        "tests/gpu/test_pi05_tiny.py",
+        "tests/gpu/test_fp8_and_routing.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "reports/p2-20261112",
+        "benchmarks/p2-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/src/vllm_vla/lite/csrc/native_lifecycle.cpp",
+      "target": "packages/pi05/src/vvla_pi05/lite/csrc/native_lifecycle.cpp",
+      "source_sha256": "e99510bcaa4d6562ca6720c8e764f8f8ebc00ed850f03e1e37780a389ade0734",
+      "migrated_sha256": "e99510bcaa4d6562ca6720c8e764f8f8ebc00ed850f03e1e37780a389ade0734",
+      "transformation": "verbatim",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/pi05/src/vvla_pi05/lite/csrc/native_lifecycle.cpp",
+      "current_sha256": "e99510bcaa4d6562ca6720c8e764f8f8ebc00ed850f03e1e37780a389ade0734",
+      "changed_since_initial_migration": false,
+      "distribution_status": "release",
+      "regression_group": "pi05",
+      "related_tests": [
+        "tests/contracts/test_pi05_lifecycle.py",
+        "tests/contracts/test_pi05_host_layout.py",
+        "tests/contracts/test_openpi.py",
+        "tests/contracts/test_compile_environment.py",
+        "tests/contracts/test_compiler_entry_ownership.py",
+        "tests/contracts/test_historical_recipes.py",
+        "tests/contracts/test_dynamic_tactics.py",
+        "tests/contracts/test_dynamic_lt_ownership.py",
+        "tests/contracts/test_prefix_recipe_promotion.py",
+        "tests/gpu/test_public_pi05_recipe.py",
+        "tests/gpu/test_historical_l4_lt.py",
+        "tests/gpu/test_prefix_quantizer.py",
+        "tests/gpu/test_pi05_tiny.py",
+        "tests/gpu/test_fp8_and_routing.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "reports/p2-20261112",
+        "benchmarks/p2-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/src/vllm_vla/lite/csrc/native_lifecycle_v2.cpp",
+      "target": "packages/pi05/src/vvla_pi05/lite/csrc/native_lifecycle_v2.cpp",
+      "source_sha256": "657daa371c8dcfa10e9038c82a935cfc46bea6ff296988dbeee7397b96ca9018",
+      "migrated_sha256": "657daa371c8dcfa10e9038c82a935cfc46bea6ff296988dbeee7397b96ca9018",
+      "transformation": "verbatim",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/pi05/src/vvla_pi05/lite/csrc/native_lifecycle_v2.cpp",
+      "current_sha256": "657daa371c8dcfa10e9038c82a935cfc46bea6ff296988dbeee7397b96ca9018",
+      "changed_since_initial_migration": false,
+      "distribution_status": "release",
+      "regression_group": "pi05",
+      "related_tests": [
+        "tests/contracts/test_pi05_lifecycle.py",
+        "tests/contracts/test_pi05_host_layout.py",
+        "tests/contracts/test_openpi.py",
+        "tests/contracts/test_compile_environment.py",
+        "tests/contracts/test_compiler_entry_ownership.py",
+        "tests/contracts/test_historical_recipes.py",
+        "tests/contracts/test_dynamic_tactics.py",
+        "tests/contracts/test_dynamic_lt_ownership.py",
+        "tests/contracts/test_prefix_recipe_promotion.py",
+        "tests/gpu/test_public_pi05_recipe.py",
+        "tests/gpu/test_historical_l4_lt.py",
+        "tests/gpu/test_prefix_quantizer.py",
+        "tests/gpu/test_pi05_tiny.py",
+        "tests/gpu/test_fp8_and_routing.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "reports/p2-20261112",
+        "benchmarks/p2-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/src/vllm_vla/lite/csrc/native_lifecycle_v3.cpp",
+      "target": "packages/pi05/src/vvla_pi05/lite/csrc/native_lifecycle_v3.cpp",
+      "source_sha256": "86eb0297bc00dff8d17f698500a002667e07e7147cfd84c7988dceb92090618d",
+      "migrated_sha256": "86eb0297bc00dff8d17f698500a002667e07e7147cfd84c7988dceb92090618d",
+      "transformation": "verbatim",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/pi05/src/vvla_pi05/lite/csrc/native_lifecycle_v3.cpp",
+      "current_sha256": "86eb0297bc00dff8d17f698500a002667e07e7147cfd84c7988dceb92090618d",
+      "changed_since_initial_migration": false,
+      "distribution_status": "release",
+      "regression_group": "pi05",
+      "related_tests": [
+        "tests/contracts/test_pi05_lifecycle.py",
+        "tests/contracts/test_pi05_host_layout.py",
+        "tests/contracts/test_openpi.py",
+        "tests/contracts/test_compile_environment.py",
+        "tests/contracts/test_compiler_entry_ownership.py",
+        "tests/contracts/test_historical_recipes.py",
+        "tests/contracts/test_dynamic_tactics.py",
+        "tests/contracts/test_dynamic_lt_ownership.py",
+        "tests/contracts/test_prefix_recipe_promotion.py",
+        "tests/gpu/test_public_pi05_recipe.py",
+        "tests/gpu/test_historical_l4_lt.py",
+        "tests/gpu/test_prefix_quantizer.py",
+        "tests/gpu/test_pi05_tiny.py",
+        "tests/gpu/test_fp8_and_routing.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "reports/p2-20261112",
+        "benchmarks/p2-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/src/vllm_vla/lite/cublaslt_runtime.py",
+      "target": "packages/pi05/src/vvla_pi05/lite/cublaslt_runtime.py",
+      "source_sha256": "666f12b60b199546ab93a025ab479e8cc9ec5f76493b9f9a61247a5a605ece3c",
+      "migrated_sha256": "f51aa83843bed9d093620d82f15525a198129122bdd46fff40280eb125f50f9a",
+      "transformation": "namespace imports",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/pi05/src/vvla_pi05/lite/cublaslt_runtime.py",
+      "current_sha256": "939e6fa4344ed84b3e6dc8cc4802706a5a2b1174f48c8eabf7feca0ee363ff43",
+      "changed_since_initial_migration": true,
+      "distribution_status": "release",
+      "regression_group": "pi05",
+      "related_tests": [
+        "tests/contracts/test_pi05_lifecycle.py",
+        "tests/contracts/test_pi05_host_layout.py",
+        "tests/contracts/test_openpi.py",
+        "tests/contracts/test_compile_environment.py",
+        "tests/contracts/test_compiler_entry_ownership.py",
+        "tests/contracts/test_historical_recipes.py",
+        "tests/contracts/test_dynamic_tactics.py",
+        "tests/contracts/test_dynamic_lt_ownership.py",
+        "tests/contracts/test_prefix_recipe_promotion.py",
+        "tests/gpu/test_public_pi05_recipe.py",
+        "tests/gpu/test_historical_l4_lt.py",
+        "tests/gpu/test_prefix_quantizer.py",
+        "tests/gpu/test_pi05_tiny.py",
+        "tests/gpu/test_fp8_and_routing.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "reports/p2-20261112",
+        "benchmarks/p2-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/src/vllm_vla/lite/dtype.py",
+      "target": "packages/pi05/src/vvla_pi05/lite/dtype.py",
+      "source_sha256": "a391c9b51d1a15112a55cab8008e77fe73275ba2ab6b13abf790fa066c311150",
+      "migrated_sha256": "a391c9b51d1a15112a55cab8008e77fe73275ba2ab6b13abf790fa066c311150",
+      "transformation": "verbatim",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/pi05/src/vvla_pi05/lite/dtype.py",
+      "current_sha256": "a391c9b51d1a15112a55cab8008e77fe73275ba2ab6b13abf790fa066c311150",
+      "changed_since_initial_migration": false,
+      "distribution_status": "release",
+      "regression_group": "pi05",
+      "related_tests": [
+        "tests/contracts/test_pi05_lifecycle.py",
+        "tests/contracts/test_pi05_host_layout.py",
+        "tests/contracts/test_openpi.py",
+        "tests/contracts/test_compile_environment.py",
+        "tests/contracts/test_compiler_entry_ownership.py",
+        "tests/contracts/test_historical_recipes.py",
+        "tests/contracts/test_dynamic_tactics.py",
+        "tests/contracts/test_dynamic_lt_ownership.py",
+        "tests/contracts/test_prefix_recipe_promotion.py",
+        "tests/gpu/test_public_pi05_recipe.py",
+        "tests/gpu/test_historical_l4_lt.py",
+        "tests/gpu/test_prefix_quantizer.py",
+        "tests/gpu/test_pi05_tiny.py",
+        "tests/gpu/test_fp8_and_routing.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "reports/p2-20261112",
+        "benchmarks/p2-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/src/vllm_vla/lite/expert_cublaslt.py",
+      "target": "packages/pi05/src/vvla_pi05/lite/expert_cublaslt.py",
+      "source_sha256": "5158bbe8a1a4b1e063dd5b3ce89792dc838fd2a8502865b3c439a15a8bfea4ab",
+      "migrated_sha256": "a1d51bb9b4d49c80b1ec4f728a4fab5d3ca94243f62930db2f7eae4e0f653a08",
+      "transformation": "namespace imports",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/pi05/src/vvla_pi05/lite/expert_cublaslt.py",
+      "current_sha256": "e2b0fad13135ffc984994a220ea59514ad2335aa3626516979cb47680dbc1800",
+      "changed_since_initial_migration": true,
+      "distribution_status": "release",
+      "regression_group": "pi05",
+      "related_tests": [
+        "tests/contracts/test_pi05_lifecycle.py",
+        "tests/contracts/test_pi05_host_layout.py",
+        "tests/contracts/test_openpi.py",
+        "tests/contracts/test_compile_environment.py",
+        "tests/contracts/test_compiler_entry_ownership.py",
+        "tests/contracts/test_historical_recipes.py",
+        "tests/contracts/test_dynamic_tactics.py",
+        "tests/contracts/test_dynamic_lt_ownership.py",
+        "tests/contracts/test_prefix_recipe_promotion.py",
+        "tests/gpu/test_public_pi05_recipe.py",
+        "tests/gpu/test_historical_l4_lt.py",
+        "tests/gpu/test_prefix_quantizer.py",
+        "tests/gpu/test_pi05_tiny.py",
+        "tests/gpu/test_fp8_and_routing.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "reports/p2-20261112",
+        "benchmarks/p2-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/src/vllm_vla/lite/fp8_tensor_epochs.py",
+      "target": "packages/pi05/src/vvla_pi05/lite/fp8_tensor_epochs.py",
+      "source_sha256": "4693c522932f507f5f04762d0168d6c9fa4663a558f2ffe0147f2721f487a3cc",
+      "migrated_sha256": "4693c522932f507f5f04762d0168d6c9fa4663a558f2ffe0147f2721f487a3cc",
+      "transformation": "verbatim",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/pi05/src/vvla_pi05/lite/fp8_tensor_epochs.py",
+      "current_sha256": "4693c522932f507f5f04762d0168d6c9fa4663a558f2ffe0147f2721f487a3cc",
+      "changed_since_initial_migration": false,
+      "distribution_status": "release",
+      "regression_group": "pi05",
+      "related_tests": [
+        "tests/contracts/test_pi05_lifecycle.py",
+        "tests/contracts/test_pi05_host_layout.py",
+        "tests/contracts/test_openpi.py",
+        "tests/contracts/test_compile_environment.py",
+        "tests/contracts/test_compiler_entry_ownership.py",
+        "tests/contracts/test_historical_recipes.py",
+        "tests/contracts/test_dynamic_tactics.py",
+        "tests/contracts/test_dynamic_lt_ownership.py",
+        "tests/contracts/test_prefix_recipe_promotion.py",
+        "tests/gpu/test_public_pi05_recipe.py",
+        "tests/gpu/test_historical_l4_lt.py",
+        "tests/gpu/test_prefix_quantizer.py",
+        "tests/gpu/test_pi05_tiny.py",
+        "tests/gpu/test_fp8_and_routing.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "reports/p2-20261112",
+        "benchmarks/p2-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/src/vllm_vla/lite/fused_adarms.py",
+      "target": "packages/pi05/src/vvla_pi05/lite/fused_adarms.py",
+      "source_sha256": "f88c3219b1fd0a5d82d5ead9d3aa9af0876ac193dea6d4d411a6f783dd7ea93a",
+      "migrated_sha256": "ea72915e66099c51edc713c62255e622e6f280a17a587ba8565ab01b9a37e5f4",
+      "transformation": "namespace imports",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/pi05/src/vvla_pi05/lite/fused_adarms.py",
+      "current_sha256": "ea72915e66099c51edc713c62255e622e6f280a17a587ba8565ab01b9a37e5f4",
+      "changed_since_initial_migration": false,
+      "distribution_status": "release",
+      "regression_group": "pi05",
+      "related_tests": [
+        "tests/contracts/test_pi05_lifecycle.py",
+        "tests/contracts/test_pi05_host_layout.py",
+        "tests/contracts/test_openpi.py",
+        "tests/contracts/test_compile_environment.py",
+        "tests/contracts/test_compiler_entry_ownership.py",
+        "tests/contracts/test_historical_recipes.py",
+        "tests/contracts/test_dynamic_tactics.py",
+        "tests/contracts/test_dynamic_lt_ownership.py",
+        "tests/contracts/test_prefix_recipe_promotion.py",
+        "tests/gpu/test_public_pi05_recipe.py",
+        "tests/gpu/test_historical_l4_lt.py",
+        "tests/gpu/test_prefix_quantizer.py",
+        "tests/gpu/test_pi05_tiny.py",
+        "tests/gpu/test_fp8_and_routing.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "reports/p2-20261112",
+        "benchmarks/p2-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/src/vllm_vla/lite/fused_adarms_kernel.py",
+      "target": "packages/pi05/src/vvla_pi05/lite/fused_adarms_kernel.py",
+      "source_sha256": "3bda03535bf610d5dc85a6cf578d8a3ed68e3a032b3a62eef8351f0b7121f370",
+      "migrated_sha256": "3bda03535bf610d5dc85a6cf578d8a3ed68e3a032b3a62eef8351f0b7121f370",
+      "transformation": "verbatim",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/pi05/src/vvla_pi05/lite/fused_adarms_kernel.py",
+      "current_sha256": "3bda03535bf610d5dc85a6cf578d8a3ed68e3a032b3a62eef8351f0b7121f370",
+      "changed_since_initial_migration": false,
+      "distribution_status": "release",
+      "regression_group": "pi05",
+      "related_tests": [
+        "tests/contracts/test_pi05_lifecycle.py",
+        "tests/contracts/test_pi05_host_layout.py",
+        "tests/contracts/test_openpi.py",
+        "tests/contracts/test_compile_environment.py",
+        "tests/contracts/test_compiler_entry_ownership.py",
+        "tests/contracts/test_historical_recipes.py",
+        "tests/contracts/test_dynamic_tactics.py",
+        "tests/contracts/test_dynamic_lt_ownership.py",
+        "tests/contracts/test_prefix_recipe_promotion.py",
+        "tests/gpu/test_public_pi05_recipe.py",
+        "tests/gpu/test_historical_l4_lt.py",
+        "tests/gpu/test_prefix_quantizer.py",
+        "tests/gpu/test_pi05_tiny.py",
+        "tests/gpu/test_fp8_and_routing.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "reports/p2-20261112",
+        "benchmarks/p2-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/src/vllm_vla/lite/fused_expert_mlp.py",
+      "target": "packages/pi05/src/vvla_pi05/lite/fused_expert_mlp.py",
+      "source_sha256": "d29ee6edc11cd35bfe1d9b9b5b88b9287a5706439b546ae81f2bf40b8ccb5418",
+      "migrated_sha256": "48a4f228cd6a4ac549dbf3b79b265968c9d0b1c7c157ce7f7241a45dda352ea4",
+      "transformation": "namespace imports",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/pi05/src/vvla_pi05/lite/fused_expert_mlp.py",
+      "current_sha256": "4e1c90328b502dbd5e007ecf2901488618f5dacf1fa85d2a4fbba5b15d1a1474",
+      "changed_since_initial_migration": true,
+      "distribution_status": "release",
+      "regression_group": "pi05",
+      "related_tests": [
+        "tests/contracts/test_pi05_lifecycle.py",
+        "tests/contracts/test_pi05_host_layout.py",
+        "tests/contracts/test_openpi.py",
+        "tests/contracts/test_compile_environment.py",
+        "tests/contracts/test_compiler_entry_ownership.py",
+        "tests/contracts/test_historical_recipes.py",
+        "tests/contracts/test_dynamic_tactics.py",
+        "tests/contracts/test_dynamic_lt_ownership.py",
+        "tests/contracts/test_prefix_recipe_promotion.py",
+        "tests/gpu/test_public_pi05_recipe.py",
+        "tests/gpu/test_historical_l4_lt.py",
+        "tests/gpu/test_prefix_quantizer.py",
+        "tests/gpu/test_pi05_tiny.py",
+        "tests/gpu/test_fp8_and_routing.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "reports/p2-20261112",
+        "benchmarks/p2-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/src/vllm_vla/lite/fused_gated_residual.py",
+      "target": "packages/pi05/src/vvla_pi05/lite/fused_gated_residual.py",
+      "source_sha256": "4c8582d1dbd2162f209a861efacfdbe24b8ab131ef8d51157aee5a0892a3fb44",
+      "migrated_sha256": "e371223b9582cf86691019cb41e1d83e16769151350cfeb547e9be44a6dc2412",
+      "transformation": "namespace imports",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/pi05/src/vvla_pi05/lite/fused_gated_residual.py",
+      "current_sha256": "e371223b9582cf86691019cb41e1d83e16769151350cfeb547e9be44a6dc2412",
+      "changed_since_initial_migration": false,
+      "distribution_status": "release",
+      "regression_group": "pi05",
+      "related_tests": [
+        "tests/contracts/test_pi05_lifecycle.py",
+        "tests/contracts/test_pi05_host_layout.py",
+        "tests/contracts/test_openpi.py",
+        "tests/contracts/test_compile_environment.py",
+        "tests/contracts/test_compiler_entry_ownership.py",
+        "tests/contracts/test_historical_recipes.py",
+        "tests/contracts/test_dynamic_tactics.py",
+        "tests/contracts/test_dynamic_lt_ownership.py",
+        "tests/contracts/test_prefix_recipe_promotion.py",
+        "tests/gpu/test_public_pi05_recipe.py",
+        "tests/gpu/test_historical_l4_lt.py",
+        "tests/gpu/test_prefix_quantizer.py",
+        "tests/gpu/test_pi05_tiny.py",
+        "tests/gpu/test_fp8_and_routing.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "reports/p2-20261112",
+        "benchmarks/p2-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/src/vllm_vla/lite/fused_gated_residual_kernel.py",
+      "target": "packages/pi05/src/vvla_pi05/lite/fused_gated_residual_kernel.py",
+      "source_sha256": "e3d30afd9aeeb8c2ec8acb4d2e1db65373e37109135b9f9f4c9f4dc6f10dfbe5",
+      "migrated_sha256": "e3d30afd9aeeb8c2ec8acb4d2e1db65373e37109135b9f9f4c9f4dc6f10dfbe5",
+      "transformation": "verbatim",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/pi05/src/vvla_pi05/lite/fused_gated_residual_kernel.py",
+      "current_sha256": "e3d30afd9aeeb8c2ec8acb4d2e1db65373e37109135b9f9f4c9f4dc6f10dfbe5",
+      "changed_since_initial_migration": false,
+      "distribution_status": "release",
+      "regression_group": "pi05",
+      "related_tests": [
+        "tests/contracts/test_pi05_lifecycle.py",
+        "tests/contracts/test_pi05_host_layout.py",
+        "tests/contracts/test_openpi.py",
+        "tests/contracts/test_compile_environment.py",
+        "tests/contracts/test_compiler_entry_ownership.py",
+        "tests/contracts/test_historical_recipes.py",
+        "tests/contracts/test_dynamic_tactics.py",
+        "tests/contracts/test_dynamic_lt_ownership.py",
+        "tests/contracts/test_prefix_recipe_promotion.py",
+        "tests/gpu/test_public_pi05_recipe.py",
+        "tests/gpu/test_historical_l4_lt.py",
+        "tests/gpu/test_prefix_quantizer.py",
+        "tests/gpu/test_pi05_tiny.py",
+        "tests/gpu/test_fp8_and_routing.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "reports/p2-20261112",
+        "benchmarks/p2-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/src/vllm_vla/lite/fused_qkv.py",
+      "target": "packages/pi05/src/vvla_pi05/lite/fused_qkv.py",
+      "source_sha256": "b3462414ef1adc339fc173c1cb11e59ad5e136bf3f9018f14a372466f33dc120",
+      "migrated_sha256": "f0ba42a2f3b3a484bcad7c0f008aab386f47ec7145161f80bb897c0f32725c36",
+      "transformation": "namespace imports",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/pi05/src/vvla_pi05/lite/fused_qkv.py",
+      "current_sha256": "a11d977c85fa9861ec5fd2eaacd623c6cc6f864aae5faf2c6d5645dce782fd09",
+      "changed_since_initial_migration": true,
+      "distribution_status": "release",
+      "regression_group": "pi05",
+      "related_tests": [
+        "tests/contracts/test_pi05_lifecycle.py",
+        "tests/contracts/test_pi05_host_layout.py",
+        "tests/contracts/test_openpi.py",
+        "tests/contracts/test_compile_environment.py",
+        "tests/contracts/test_compiler_entry_ownership.py",
+        "tests/contracts/test_historical_recipes.py",
+        "tests/contracts/test_dynamic_tactics.py",
+        "tests/contracts/test_dynamic_lt_ownership.py",
+        "tests/contracts/test_prefix_recipe_promotion.py",
+        "tests/gpu/test_public_pi05_recipe.py",
+        "tests/gpu/test_historical_l4_lt.py",
+        "tests/gpu/test_prefix_quantizer.py",
+        "tests/gpu/test_pi05_tiny.py",
+        "tests/gpu/test_fp8_and_routing.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "reports/p2-20261112",
+        "benchmarks/p2-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/src/vllm_vla/lite/fused_residual_adarms.py",
+      "target": "packages/pi05/src/vvla_pi05/lite/fused_residual_adarms.py",
+      "source_sha256": "6c136a90ff1c05ab6ab5cfbf107127a8ece3fcedcb3e798cc9e62b93e168e9d5",
+      "migrated_sha256": "e7ad4f2300662c8f0c444c7da93d2729386137ac6b34f42207a41981676004ba",
+      "transformation": "namespace imports",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/pi05/src/vvla_pi05/lite/fused_residual_adarms.py",
+      "current_sha256": "e7ad4f2300662c8f0c444c7da93d2729386137ac6b34f42207a41981676004ba",
+      "changed_since_initial_migration": false,
+      "distribution_status": "release",
+      "regression_group": "pi05",
+      "related_tests": [
+        "tests/contracts/test_pi05_lifecycle.py",
+        "tests/contracts/test_pi05_host_layout.py",
+        "tests/contracts/test_openpi.py",
+        "tests/contracts/test_compile_environment.py",
+        "tests/contracts/test_compiler_entry_ownership.py",
+        "tests/contracts/test_historical_recipes.py",
+        "tests/contracts/test_dynamic_tactics.py",
+        "tests/contracts/test_dynamic_lt_ownership.py",
+        "tests/contracts/test_prefix_recipe_promotion.py",
+        "tests/gpu/test_public_pi05_recipe.py",
+        "tests/gpu/test_historical_l4_lt.py",
+        "tests/gpu/test_prefix_quantizer.py",
+        "tests/gpu/test_pi05_tiny.py",
+        "tests/gpu/test_fp8_and_routing.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "reports/p2-20261112",
+        "benchmarks/p2-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/src/vllm_vla/lite/fused_residual_adarms_kernel.py",
+      "target": "packages/pi05/src/vvla_pi05/lite/fused_residual_adarms_kernel.py",
+      "source_sha256": "53b47e3aed0c434218facea5e32bfceac79af994d4ffa6e66664e476221a18b0",
+      "migrated_sha256": "53b47e3aed0c434218facea5e32bfceac79af994d4ffa6e66664e476221a18b0",
+      "transformation": "verbatim",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/pi05/src/vvla_pi05/lite/fused_residual_adarms_kernel.py",
+      "current_sha256": "53b47e3aed0c434218facea5e32bfceac79af994d4ffa6e66664e476221a18b0",
+      "changed_since_initial_migration": false,
+      "distribution_status": "release",
+      "regression_group": "pi05",
+      "related_tests": [
+        "tests/contracts/test_pi05_lifecycle.py",
+        "tests/contracts/test_pi05_host_layout.py",
+        "tests/contracts/test_openpi.py",
+        "tests/contracts/test_compile_environment.py",
+        "tests/contracts/test_compiler_entry_ownership.py",
+        "tests/contracts/test_historical_recipes.py",
+        "tests/contracts/test_dynamic_tactics.py",
+        "tests/contracts/test_dynamic_lt_ownership.py",
+        "tests/contracts/test_prefix_recipe_promotion.py",
+        "tests/gpu/test_public_pi05_recipe.py",
+        "tests/gpu/test_historical_l4_lt.py",
+        "tests/gpu/test_prefix_quantizer.py",
+        "tests/gpu/test_pi05_tiny.py",
+        "tests/gpu/test_fp8_and_routing.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "reports/p2-20261112",
+        "benchmarks/p2-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/src/vllm_vla/lite/fused_vision_qkv.py",
+      "target": "packages/pi05/src/vvla_pi05/lite/fused_vision_qkv.py",
+      "source_sha256": "5cbb837a17fea0f102b91fa2752694bc2df1e7e0aa43e2325837bbaa7ecfc01f",
+      "migrated_sha256": "4b8876e8a95a8ef337ff3bc39ae00a593484b187145fbc98c668784fc643ec3d",
+      "transformation": "namespace imports",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/pi05/src/vvla_pi05/lite/fused_vision_qkv.py",
+      "current_sha256": "4b8876e8a95a8ef337ff3bc39ae00a593484b187145fbc98c668784fc643ec3d",
+      "changed_since_initial_migration": false,
+      "distribution_status": "release",
+      "regression_group": "pi05",
+      "related_tests": [
+        "tests/contracts/test_pi05_lifecycle.py",
+        "tests/contracts/test_pi05_host_layout.py",
+        "tests/contracts/test_openpi.py",
+        "tests/contracts/test_compile_environment.py",
+        "tests/contracts/test_compiler_entry_ownership.py",
+        "tests/contracts/test_historical_recipes.py",
+        "tests/contracts/test_dynamic_tactics.py",
+        "tests/contracts/test_dynamic_lt_ownership.py",
+        "tests/contracts/test_prefix_recipe_promotion.py",
+        "tests/gpu/test_public_pi05_recipe.py",
+        "tests/gpu/test_historical_l4_lt.py",
+        "tests/gpu/test_prefix_quantizer.py",
+        "tests/gpu/test_pi05_tiny.py",
+        "tests/gpu/test_fp8_and_routing.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "reports/p2-20261112",
+        "benchmarks/p2-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/src/vllm_vla/lite/gpu_image_prepare.py",
+      "target": "packages/pi05/src/vvla_pi05/lite/gpu_image_prepare.py",
+      "source_sha256": "8564971b28af09a081453792e1f62e9efcdd1e9c4d1c2b37a888559ef058a555",
+      "migrated_sha256": "755216c9847c77869ab77582d4b26e82598a13520fc2c9b0551a0f819073221b",
+      "transformation": "namespace imports",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/pi05/src/vvla_pi05/lite/gpu_image_prepare.py",
+      "current_sha256": "755216c9847c77869ab77582d4b26e82598a13520fc2c9b0551a0f819073221b",
+      "changed_since_initial_migration": false,
+      "distribution_status": "release",
+      "regression_group": "pi05",
+      "related_tests": [
+        "tests/contracts/test_pi05_lifecycle.py",
+        "tests/contracts/test_pi05_host_layout.py",
+        "tests/contracts/test_openpi.py",
+        "tests/contracts/test_compile_environment.py",
+        "tests/contracts/test_compiler_entry_ownership.py",
+        "tests/contracts/test_historical_recipes.py",
+        "tests/contracts/test_dynamic_tactics.py",
+        "tests/contracts/test_dynamic_lt_ownership.py",
+        "tests/contracts/test_prefix_recipe_promotion.py",
+        "tests/gpu/test_public_pi05_recipe.py",
+        "tests/gpu/test_historical_l4_lt.py",
+        "tests/gpu/test_prefix_quantizer.py",
+        "tests/gpu/test_pi05_tiny.py",
+        "tests/gpu/test_fp8_and_routing.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "reports/p2-20261112",
+        "benchmarks/p2-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/src/vllm_vla/lite/gpu_image_prepare_kernel.py",
+      "target": "packages/pi05/src/vvla_pi05/lite/gpu_image_prepare_kernel.py",
+      "source_sha256": "dfd1510a18079f9698fa57e7e17c1dc57967b6a968700a39bf42c3bd49b97f27",
+      "migrated_sha256": "dfd1510a18079f9698fa57e7e17c1dc57967b6a968700a39bf42c3bd49b97f27",
+      "transformation": "verbatim",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/pi05/src/vvla_pi05/lite/gpu_image_prepare_kernel.py",
+      "current_sha256": "dfd1510a18079f9698fa57e7e17c1dc57967b6a968700a39bf42c3bd49b97f27",
+      "changed_since_initial_migration": false,
+      "distribution_status": "release",
+      "regression_group": "pi05",
+      "related_tests": [
+        "tests/contracts/test_pi05_lifecycle.py",
+        "tests/contracts/test_pi05_host_layout.py",
+        "tests/contracts/test_openpi.py",
+        "tests/contracts/test_compile_environment.py",
+        "tests/contracts/test_compiler_entry_ownership.py",
+        "tests/contracts/test_historical_recipes.py",
+        "tests/contracts/test_dynamic_tactics.py",
+        "tests/contracts/test_dynamic_lt_ownership.py",
+        "tests/contracts/test_prefix_recipe_promotion.py",
+        "tests/gpu/test_public_pi05_recipe.py",
+        "tests/gpu/test_historical_l4_lt.py",
+        "tests/gpu/test_prefix_quantizer.py",
+        "tests/gpu/test_pi05_tiny.py",
+        "tests/gpu/test_fp8_and_routing.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "reports/p2-20261112",
+        "benchmarks/p2-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/src/vllm_vla/lite/graph.py",
+      "target": "packages/pi05/src/vvla_pi05/lite/graph.py",
+      "source_sha256": "1b9fb828a9acaaef835219100c40d7191aa7a0fa1652eb9d610e7a53e96a908d",
+      "migrated_sha256": "7c338d1149e33cc24c5befee82f310e865fc355ffd1c28ca92c39fe3d734ed3f",
+      "transformation": "namespace imports",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/pi05/src/vvla_pi05/lite/graph.py",
+      "current_sha256": "e11243a7b578e391b6ab2b40ea8341a2756b878ff0fe2c09b72f5711e091800e",
+      "changed_since_initial_migration": true,
+      "distribution_status": "release",
+      "regression_group": "pi05",
+      "related_tests": [
+        "tests/contracts/test_pi05_lifecycle.py",
+        "tests/contracts/test_pi05_host_layout.py",
+        "tests/contracts/test_openpi.py",
+        "tests/contracts/test_compile_environment.py",
+        "tests/contracts/test_compiler_entry_ownership.py",
+        "tests/contracts/test_historical_recipes.py",
+        "tests/contracts/test_dynamic_tactics.py",
+        "tests/contracts/test_dynamic_lt_ownership.py",
+        "tests/contracts/test_prefix_recipe_promotion.py",
+        "tests/gpu/test_public_pi05_recipe.py",
+        "tests/gpu/test_historical_l4_lt.py",
+        "tests/gpu/test_prefix_quantizer.py",
+        "tests/gpu/test_pi05_tiny.py",
+        "tests/gpu/test_fp8_and_routing.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "reports/p2-20261112",
+        "benchmarks/p2-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/src/vllm_vla/lite/layout.py",
+      "target": "packages/pi05/src/vvla_pi05/lite/layout.py",
+      "source_sha256": "0f8af62414dfb7737ff37a0bca837e0d4112f22a9c62d36b410dac1615f824fe",
+      "migrated_sha256": "c0cb37be7cbfd11492ae866ff742672651a605cbf7af82d0f51b81e1d4ded4c5",
+      "transformation": "namespace imports",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/pi05/src/vvla_pi05/lite/layout.py",
+      "current_sha256": "c0cb37be7cbfd11492ae866ff742672651a605cbf7af82d0f51b81e1d4ded4c5",
+      "changed_since_initial_migration": false,
+      "distribution_status": "release",
+      "regression_group": "pi05",
+      "related_tests": [
+        "tests/contracts/test_pi05_lifecycle.py",
+        "tests/contracts/test_pi05_host_layout.py",
+        "tests/contracts/test_openpi.py",
+        "tests/contracts/test_compile_environment.py",
+        "tests/contracts/test_compiler_entry_ownership.py",
+        "tests/contracts/test_historical_recipes.py",
+        "tests/contracts/test_dynamic_tactics.py",
+        "tests/contracts/test_dynamic_lt_ownership.py",
+        "tests/contracts/test_prefix_recipe_promotion.py",
+        "tests/gpu/test_public_pi05_recipe.py",
+        "tests/gpu/test_historical_l4_lt.py",
+        "tests/gpu/test_prefix_quantizer.py",
+        "tests/gpu/test_pi05_tiny.py",
+        "tests/gpu/test_fp8_and_routing.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "reports/p2-20261112",
+        "benchmarks/p2-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/src/vllm_vla/lite/lifecycle.py",
+      "target": "packages/pi05/src/vvla_pi05/lite/lifecycle.py",
+      "source_sha256": "04ef0501d00679b59d6eab494e4c72b499b609344c0b24ee5926e58ca52b76d9",
+      "migrated_sha256": "ca368617c1b814b89f1505983ce4004a9efeb55b1f8d32f5199cd0fc0d226669",
+      "transformation": "namespace imports",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/pi05/src/vvla_pi05/lite/lifecycle.py",
+      "current_sha256": "ca368617c1b814b89f1505983ce4004a9efeb55b1f8d32f5199cd0fc0d226669",
+      "changed_since_initial_migration": false,
+      "distribution_status": "release",
+      "regression_group": "pi05",
+      "related_tests": [
+        "tests/contracts/test_pi05_lifecycle.py",
+        "tests/contracts/test_pi05_host_layout.py",
+        "tests/contracts/test_openpi.py",
+        "tests/contracts/test_compile_environment.py",
+        "tests/contracts/test_compiler_entry_ownership.py",
+        "tests/contracts/test_historical_recipes.py",
+        "tests/contracts/test_dynamic_tactics.py",
+        "tests/contracts/test_dynamic_lt_ownership.py",
+        "tests/contracts/test_prefix_recipe_promotion.py",
+        "tests/gpu/test_public_pi05_recipe.py",
+        "tests/gpu/test_historical_l4_lt.py",
+        "tests/gpu/test_prefix_quantizer.py",
+        "tests/gpu/test_pi05_tiny.py",
+        "tests/gpu/test_fp8_and_routing.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "reports/p2-20261112",
+        "benchmarks/p2-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/src/vllm_vla/lite/native_lifecycle.py",
+      "target": "packages/pi05/src/vvla_pi05/lite/native_lifecycle.py",
+      "source_sha256": "5fa6947a37a4a4d8e3ecc00a9d5ba243b125fb19bc4c2aabd631ef9be12ba803",
+      "migrated_sha256": "5fa6947a37a4a4d8e3ecc00a9d5ba243b125fb19bc4c2aabd631ef9be12ba803",
+      "transformation": "verbatim",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/pi05/src/vvla_pi05/lite/native_lifecycle.py",
+      "current_sha256": "5fa6947a37a4a4d8e3ecc00a9d5ba243b125fb19bc4c2aabd631ef9be12ba803",
+      "changed_since_initial_migration": false,
+      "distribution_status": "release",
+      "regression_group": "pi05",
+      "related_tests": [
+        "tests/contracts/test_pi05_lifecycle.py",
+        "tests/contracts/test_pi05_host_layout.py",
+        "tests/contracts/test_openpi.py",
+        "tests/contracts/test_compile_environment.py",
+        "tests/contracts/test_compiler_entry_ownership.py",
+        "tests/contracts/test_historical_recipes.py",
+        "tests/contracts/test_dynamic_tactics.py",
+        "tests/contracts/test_dynamic_lt_ownership.py",
+        "tests/contracts/test_prefix_recipe_promotion.py",
+        "tests/gpu/test_public_pi05_recipe.py",
+        "tests/gpu/test_historical_l4_lt.py",
+        "tests/gpu/test_prefix_quantizer.py",
+        "tests/gpu/test_pi05_tiny.py",
+        "tests/gpu/test_fp8_and_routing.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "reports/p2-20261112",
+        "benchmarks/p2-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/src/vllm_vla/lite/packed_input_metadata.py",
+      "target": "packages/pi05/src/vvla_pi05/lite/packed_input_metadata.py",
+      "source_sha256": "8ead1178cc3f214074adf0f15de3e72668d84610e7b2c12b7eabc3d27aa20a39",
+      "migrated_sha256": "8ead1178cc3f214074adf0f15de3e72668d84610e7b2c12b7eabc3d27aa20a39",
+      "transformation": "verbatim",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/pi05/src/vvla_pi05/lite/packed_input_metadata.py",
+      "current_sha256": "8ead1178cc3f214074adf0f15de3e72668d84610e7b2c12b7eabc3d27aa20a39",
+      "changed_since_initial_migration": false,
+      "distribution_status": "release",
+      "regression_group": "pi05",
+      "related_tests": [
+        "tests/contracts/test_pi05_lifecycle.py",
+        "tests/contracts/test_pi05_host_layout.py",
+        "tests/contracts/test_openpi.py",
+        "tests/contracts/test_compile_environment.py",
+        "tests/contracts/test_compiler_entry_ownership.py",
+        "tests/contracts/test_historical_recipes.py",
+        "tests/contracts/test_dynamic_tactics.py",
+        "tests/contracts/test_dynamic_lt_ownership.py",
+        "tests/contracts/test_prefix_recipe_promotion.py",
+        "tests/gpu/test_public_pi05_recipe.py",
+        "tests/gpu/test_historical_l4_lt.py",
+        "tests/gpu/test_prefix_quantizer.py",
+        "tests/gpu/test_pi05_tiny.py",
+        "tests/gpu/test_fp8_and_routing.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "reports/p2-20261112",
+        "benchmarks/p2-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/src/vllm_vla/lite/pi05.py",
+      "target": "packages/pi05/src/vvla_pi05/lite/pi05.py",
+      "source_sha256": "a5e4729f33291fed58f87ce50474099a93a964fe4c5758064354e369997eb531",
+      "migrated_sha256": "71d6e28b3e20eef0037d6d1a48039021f71f8183e2f911334f3ed02cd41ebf02",
+      "transformation": "namespace imports",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/pi05/src/vvla_pi05/lite/pi05.py",
+      "current_sha256": "409665e551da1c0314a86f90bdb39465df332414201733309ac7895915b49d1d",
+      "changed_since_initial_migration": true,
+      "distribution_status": "release",
+      "regression_group": "pi05",
+      "related_tests": [
+        "tests/contracts/test_pi05_lifecycle.py",
+        "tests/contracts/test_pi05_host_layout.py",
+        "tests/contracts/test_openpi.py",
+        "tests/contracts/test_compile_environment.py",
+        "tests/contracts/test_compiler_entry_ownership.py",
+        "tests/contracts/test_historical_recipes.py",
+        "tests/contracts/test_dynamic_tactics.py",
+        "tests/contracts/test_dynamic_lt_ownership.py",
+        "tests/contracts/test_prefix_recipe_promotion.py",
+        "tests/gpu/test_public_pi05_recipe.py",
+        "tests/gpu/test_historical_l4_lt.py",
+        "tests/gpu/test_prefix_quantizer.py",
+        "tests/gpu/test_pi05_tiny.py",
+        "tests/gpu/test_fp8_and_routing.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "reports/p2-20261112",
+        "benchmarks/p2-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/src/vllm_vla/lite/processor.py",
+      "target": "packages/pi05/src/vvla_pi05/lite/processor.py",
+      "source_sha256": "28dfdf0e0c2bee57113b686fd68fc290a15e3a088cb10a4c96aeaa61ffc86efb",
+      "migrated_sha256": "a891c955585ef96173aa82fec0165912f942ba825440eb6052c69b251fbe3820",
+      "transformation": "namespace imports",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/pi05/src/vvla_pi05/lite/processor.py",
+      "current_sha256": "a891c955585ef96173aa82fec0165912f942ba825440eb6052c69b251fbe3820",
+      "changed_since_initial_migration": false,
+      "distribution_status": "release",
+      "regression_group": "pi05",
+      "related_tests": [
+        "tests/contracts/test_pi05_lifecycle.py",
+        "tests/contracts/test_pi05_host_layout.py",
+        "tests/contracts/test_openpi.py",
+        "tests/contracts/test_compile_environment.py",
+        "tests/contracts/test_compiler_entry_ownership.py",
+        "tests/contracts/test_historical_recipes.py",
+        "tests/contracts/test_dynamic_tactics.py",
+        "tests/contracts/test_dynamic_lt_ownership.py",
+        "tests/contracts/test_prefix_recipe_promotion.py",
+        "tests/gpu/test_public_pi05_recipe.py",
+        "tests/gpu/test_historical_l4_lt.py",
+        "tests/gpu/test_prefix_quantizer.py",
+        "tests/gpu/test_pi05_tiny.py",
+        "tests/gpu/test_fp8_and_routing.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "reports/p2-20261112",
+        "benchmarks/p2-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/src/vllm_vla/lite/request_identity.py",
+      "target": "packages/pi05/src/vvla_pi05/lite/request_identity.py",
+      "source_sha256": "773b53712b3e31d2e6063ce8dd9e28b589d02318de5974f59410e39ccbab9b53",
+      "migrated_sha256": "18f1943e85f3aab0cb0cbcb9d2cc1729842c28b3ed40cddea0db8f768e6e319e",
+      "transformation": "namespace imports",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/pi05/src/vvla_pi05/lite/request_identity.py",
+      "current_sha256": "18f1943e85f3aab0cb0cbcb9d2cc1729842c28b3ed40cddea0db8f768e6e319e",
+      "changed_since_initial_migration": false,
+      "distribution_status": "release",
+      "regression_group": "pi05",
+      "related_tests": [
+        "tests/contracts/test_pi05_lifecycle.py",
+        "tests/contracts/test_pi05_host_layout.py",
+        "tests/contracts/test_openpi.py",
+        "tests/contracts/test_compile_environment.py",
+        "tests/contracts/test_compiler_entry_ownership.py",
+        "tests/contracts/test_historical_recipes.py",
+        "tests/contracts/test_dynamic_tactics.py",
+        "tests/contracts/test_dynamic_lt_ownership.py",
+        "tests/contracts/test_prefix_recipe_promotion.py",
+        "tests/gpu/test_public_pi05_recipe.py",
+        "tests/gpu/test_historical_l4_lt.py",
+        "tests/gpu/test_prefix_quantizer.py",
+        "tests/gpu/test_pi05_tiny.py",
+        "tests/gpu/test_fp8_and_routing.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "reports/p2-20261112",
+        "benchmarks/p2-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/src/vllm_vla/lite/suffix_attention.py",
+      "target": "packages/pi05/src/vvla_pi05/lite/suffix_attention.py",
+      "source_sha256": "c9f8206d4d00a79f3d705d7e216ab0e2fd5b350c66639b26cf6dc05484f600f1",
+      "migrated_sha256": "de6984e1a24533d2e8acc733d101704a13b50b56cae1538165fe8a6b87587911",
+      "transformation": "namespace imports",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/pi05/src/vvla_pi05/lite/suffix_attention.py",
+      "current_sha256": "de6984e1a24533d2e8acc733d101704a13b50b56cae1538165fe8a6b87587911",
+      "changed_since_initial_migration": false,
+      "distribution_status": "release",
+      "regression_group": "pi05",
+      "related_tests": [
+        "tests/contracts/test_pi05_lifecycle.py",
+        "tests/contracts/test_pi05_host_layout.py",
+        "tests/contracts/test_openpi.py",
+        "tests/contracts/test_compile_environment.py",
+        "tests/contracts/test_compiler_entry_ownership.py",
+        "tests/contracts/test_historical_recipes.py",
+        "tests/contracts/test_dynamic_tactics.py",
+        "tests/contracts/test_dynamic_lt_ownership.py",
+        "tests/contracts/test_prefix_recipe_promotion.py",
+        "tests/gpu/test_public_pi05_recipe.py",
+        "tests/gpu/test_historical_l4_lt.py",
+        "tests/gpu/test_prefix_quantizer.py",
+        "tests/gpu/test_pi05_tiny.py",
+        "tests/gpu/test_fp8_and_routing.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "reports/p2-20261112",
+        "benchmarks/p2-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/src/vllm_vla/lite/suffix_attention_kernel.py",
+      "target": "packages/pi05/src/vvla_pi05/lite/suffix_attention_kernel.py",
+      "source_sha256": "ac7b2ee654d510d3b439563eaae5e74638ae2b2da0a0ad671e126a6dac777529",
+      "migrated_sha256": "ac7b2ee654d510d3b439563eaae5e74638ae2b2da0a0ad671e126a6dac777529",
+      "transformation": "verbatim",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/pi05/src/vvla_pi05/lite/suffix_attention_kernel.py",
+      "current_sha256": "ac7b2ee654d510d3b439563eaae5e74638ae2b2da0a0ad671e126a6dac777529",
+      "changed_since_initial_migration": false,
+      "distribution_status": "release",
+      "regression_group": "pi05",
+      "related_tests": [
+        "tests/contracts/test_pi05_lifecycle.py",
+        "tests/contracts/test_pi05_host_layout.py",
+        "tests/contracts/test_openpi.py",
+        "tests/contracts/test_compile_environment.py",
+        "tests/contracts/test_compiler_entry_ownership.py",
+        "tests/contracts/test_historical_recipes.py",
+        "tests/contracts/test_dynamic_tactics.py",
+        "tests/contracts/test_dynamic_lt_ownership.py",
+        "tests/contracts/test_prefix_recipe_promotion.py",
+        "tests/gpu/test_public_pi05_recipe.py",
+        "tests/gpu/test_historical_l4_lt.py",
+        "tests/gpu/test_prefix_quantizer.py",
+        "tests/gpu/test_pi05_tiny.py",
+        "tests/gpu/test_fp8_and_routing.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "reports/p2-20261112",
+        "benchmarks/p2-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/src/vllm_vla/lite/suffix_fa2.py",
+      "target": "packages/pi05/src/vvla_pi05/lite/suffix_fa2.py",
+      "source_sha256": "05f197cfe8455bb07c2c71d3e9a493b8fcef4b03c1bb2727a5df4462a0b88334",
+      "migrated_sha256": "0e6326312fcb704ebeedbc1aa3ca87b245ac82792e249e993e530fe3e45b643f",
+      "transformation": "namespace imports",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/pi05/src/vvla_pi05/lite/suffix_fa2.py",
+      "current_sha256": "0e6326312fcb704ebeedbc1aa3ca87b245ac82792e249e993e530fe3e45b643f",
+      "changed_since_initial_migration": false,
+      "distribution_status": "release",
+      "regression_group": "pi05",
+      "related_tests": [
+        "tests/contracts/test_pi05_lifecycle.py",
+        "tests/contracts/test_pi05_host_layout.py",
+        "tests/contracts/test_openpi.py",
+        "tests/contracts/test_compile_environment.py",
+        "tests/contracts/test_compiler_entry_ownership.py",
+        "tests/contracts/test_historical_recipes.py",
+        "tests/contracts/test_dynamic_tactics.py",
+        "tests/contracts/test_dynamic_lt_ownership.py",
+        "tests/contracts/test_prefix_recipe_promotion.py",
+        "tests/gpu/test_public_pi05_recipe.py",
+        "tests/gpu/test_historical_l4_lt.py",
+        "tests/gpu/test_prefix_quantizer.py",
+        "tests/gpu/test_pi05_tiny.py",
+        "tests/gpu/test_fp8_and_routing.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "reports/p2-20261112",
+        "benchmarks/p2-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/src/vllm_vla/lite/vision_fc2_cublaslt.py",
+      "target": "packages/pi05/src/vvla_pi05/lite/vision_fc2_cublaslt.py",
+      "source_sha256": "4445a7f94ca820418b35c43606f6785df4c587e2e6872d8a542e9eeef68cc874",
+      "migrated_sha256": "250b1e15681bda5f0820964214a3431c011210ecb10868420b2896d25759f7b1",
+      "transformation": "namespace imports",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/pi05/src/vvla_pi05/lite/vision_fc2_cublaslt.py",
+      "current_sha256": "e6aacb9e3c229f3b75858451c16484030eecb045fb94b625a767fc3daca95a2e",
+      "changed_since_initial_migration": true,
+      "distribution_status": "release",
+      "regression_group": "pi05",
+      "related_tests": [
+        "tests/contracts/test_pi05_lifecycle.py",
+        "tests/contracts/test_pi05_host_layout.py",
+        "tests/contracts/test_openpi.py",
+        "tests/contracts/test_compile_environment.py",
+        "tests/contracts/test_compiler_entry_ownership.py",
+        "tests/contracts/test_historical_recipes.py",
+        "tests/contracts/test_dynamic_tactics.py",
+        "tests/contracts/test_dynamic_lt_ownership.py",
+        "tests/contracts/test_prefix_recipe_promotion.py",
+        "tests/gpu/test_public_pi05_recipe.py",
+        "tests/gpu/test_historical_l4_lt.py",
+        "tests/gpu/test_prefix_quantizer.py",
+        "tests/gpu/test_pi05_tiny.py",
+        "tests/gpu/test_fp8_and_routing.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "reports/p2-20261112",
+        "benchmarks/p2-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/src/vllm_vla/lite/vision_fc2_cublaslt_runtime.py",
+      "target": "packages/pi05/src/vvla_pi05/lite/vision_fc2_cublaslt_runtime.py",
+      "source_sha256": "c5b2a734eabf1f938505db4cc89e567c4c48b95e562ddbc69cf194be231dca86",
+      "migrated_sha256": "ddfe5c7f642dbb9146fedc16a07f56c5d9f84bede64ed26bc58ad9a1b73a4da8",
+      "transformation": "namespace imports",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/pi05/src/vvla_pi05/lite/vision_fc2_cublaslt_runtime.py",
+      "current_sha256": "4451b287b0e95688e6ec1be2e9ad34c5bbebc5505a78fec7800e84bb1fb39b81",
+      "changed_since_initial_migration": true,
+      "distribution_status": "release",
+      "regression_group": "pi05",
+      "related_tests": [
+        "tests/contracts/test_pi05_lifecycle.py",
+        "tests/contracts/test_pi05_host_layout.py",
+        "tests/contracts/test_openpi.py",
+        "tests/contracts/test_compile_environment.py",
+        "tests/contracts/test_compiler_entry_ownership.py",
+        "tests/contracts/test_historical_recipes.py",
+        "tests/contracts/test_dynamic_tactics.py",
+        "tests/contracts/test_dynamic_lt_ownership.py",
+        "tests/contracts/test_prefix_recipe_promotion.py",
+        "tests/gpu/test_public_pi05_recipe.py",
+        "tests/gpu/test_historical_l4_lt.py",
+        "tests/gpu/test_prefix_quantizer.py",
+        "tests/gpu/test_pi05_tiny.py",
+        "tests/gpu/test_fp8_and_routing.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "reports/p2-20261112",
+        "benchmarks/p2-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/src/vllm_vla/models/__init__.py",
+      "target": "packages/pi05/src/vvla_pi05/models/__init__.py",
+      "source_sha256": "1a16f6c7ea100813ac3edabc025948f004ef7903c864f30426a0959c6fdb822f",
+      "migrated_sha256": "1a16f6c7ea100813ac3edabc025948f004ef7903c864f30426a0959c6fdb822f",
+      "transformation": "verbatim",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/pi05/src/vvla_pi05/models/__init__.py",
+      "current_sha256": "1a16f6c7ea100813ac3edabc025948f004ef7903c864f30426a0959c6fdb822f",
+      "changed_since_initial_migration": false,
+      "distribution_status": "release",
+      "regression_group": "pi05",
+      "related_tests": [
+        "tests/contracts/test_pi05_lifecycle.py",
+        "tests/contracts/test_pi05_host_layout.py",
+        "tests/contracts/test_openpi.py",
+        "tests/contracts/test_compile_environment.py",
+        "tests/contracts/test_compiler_entry_ownership.py",
+        "tests/contracts/test_historical_recipes.py",
+        "tests/contracts/test_dynamic_tactics.py",
+        "tests/contracts/test_dynamic_lt_ownership.py",
+        "tests/contracts/test_prefix_recipe_promotion.py",
+        "tests/gpu/test_public_pi05_recipe.py",
+        "tests/gpu/test_historical_l4_lt.py",
+        "tests/gpu/test_prefix_quantizer.py",
+        "tests/gpu/test_pi05_tiny.py",
+        "tests/gpu/test_fp8_and_routing.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "reports/p2-20261112",
+        "benchmarks/p2-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/src/vllm_vla/models/pi05/__init__.py",
+      "target": "packages/pi05/src/vvla_pi05/models/pi05/__init__.py",
+      "source_sha256": "4e95c9529990596eb59a600ffcddb99d933a0631cfdfb9d6434cb1d48e7e3567",
+      "migrated_sha256": "c68b30447be5060708be3949f4b2e393144c7ba1a122d3ce2803c9097a2f922c",
+      "transformation": "namespace imports",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/pi05/src/vvla_pi05/models/pi05/__init__.py",
+      "current_sha256": "c68b30447be5060708be3949f4b2e393144c7ba1a122d3ce2803c9097a2f922c",
+      "changed_since_initial_migration": false,
+      "distribution_status": "release",
+      "regression_group": "pi05",
+      "related_tests": [
+        "tests/contracts/test_pi05_lifecycle.py",
+        "tests/contracts/test_pi05_host_layout.py",
+        "tests/contracts/test_openpi.py",
+        "tests/contracts/test_compile_environment.py",
+        "tests/contracts/test_compiler_entry_ownership.py",
+        "tests/contracts/test_historical_recipes.py",
+        "tests/contracts/test_dynamic_tactics.py",
+        "tests/contracts/test_dynamic_lt_ownership.py",
+        "tests/contracts/test_prefix_recipe_promotion.py",
+        "tests/gpu/test_public_pi05_recipe.py",
+        "tests/gpu/test_historical_l4_lt.py",
+        "tests/gpu/test_prefix_quantizer.py",
+        "tests/gpu/test_pi05_tiny.py",
+        "tests/gpu/test_fp8_and_routing.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "reports/p2-20261112",
+        "benchmarks/p2-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/src/vllm_vla/models/pi05/attention_pi05.py",
+      "target": "packages/pi05/src/vvla_pi05/models/pi05/attention_pi05.py",
+      "source_sha256": "6bf0056126090625519578c4fc39c4dc71b7778cbd09f755168f830d009dabde",
+      "migrated_sha256": "a6cb9cffd5c55b368bbe419dbf98b26114b57845eb05f839280439dbcbbb31d6",
+      "transformation": "namespace imports",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/pi05/src/vvla_pi05/models/pi05/attention_pi05.py",
+      "current_sha256": "a6cb9cffd5c55b368bbe419dbf98b26114b57845eb05f839280439dbcbbb31d6",
+      "changed_since_initial_migration": false,
+      "distribution_status": "release",
+      "regression_group": "pi05",
+      "related_tests": [
+        "tests/contracts/test_pi05_lifecycle.py",
+        "tests/contracts/test_pi05_host_layout.py",
+        "tests/contracts/test_openpi.py",
+        "tests/contracts/test_compile_environment.py",
+        "tests/contracts/test_compiler_entry_ownership.py",
+        "tests/contracts/test_historical_recipes.py",
+        "tests/contracts/test_dynamic_tactics.py",
+        "tests/contracts/test_dynamic_lt_ownership.py",
+        "tests/contracts/test_prefix_recipe_promotion.py",
+        "tests/gpu/test_public_pi05_recipe.py",
+        "tests/gpu/test_historical_l4_lt.py",
+        "tests/gpu/test_prefix_quantizer.py",
+        "tests/gpu/test_pi05_tiny.py",
+        "tests/gpu/test_fp8_and_routing.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "reports/p2-20261112",
+        "benchmarks/p2-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/src/vllm_vla/models/pi05/config.py",
+      "target": "packages/pi05/src/vvla_pi05/models/pi05/config.py",
+      "source_sha256": "49d2ab742300d00c8ec4671394694c6cf9427705cbc4de4ad2e552511a72c720",
+      "migrated_sha256": "49d2ab742300d00c8ec4671394694c6cf9427705cbc4de4ad2e552511a72c720",
+      "transformation": "verbatim",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/pi05/src/vvla_pi05/models/pi05/config.py",
+      "current_sha256": "f49b617784a29061603256570f72336d2fe4c1abf48e64c7e213b6be89e405b3",
+      "changed_since_initial_migration": true,
+      "distribution_status": "release",
+      "regression_group": "pi05",
+      "related_tests": [
+        "tests/contracts/test_pi05_lifecycle.py",
+        "tests/contracts/test_pi05_host_layout.py",
+        "tests/contracts/test_openpi.py",
+        "tests/contracts/test_compile_environment.py",
+        "tests/contracts/test_compiler_entry_ownership.py",
+        "tests/contracts/test_historical_recipes.py",
+        "tests/contracts/test_dynamic_tactics.py",
+        "tests/contracts/test_dynamic_lt_ownership.py",
+        "tests/contracts/test_prefix_recipe_promotion.py",
+        "tests/gpu/test_public_pi05_recipe.py",
+        "tests/gpu/test_historical_l4_lt.py",
+        "tests/gpu/test_prefix_quantizer.py",
+        "tests/gpu/test_pi05_tiny.py",
+        "tests/gpu/test_fp8_and_routing.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "reports/p2-20261112",
+        "benchmarks/p2-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/src/vllm_vla/models/pi05/deployment_pi05.py",
+      "target": "packages/pi05/src/vvla_pi05/models/pi05/deployment_pi05.py",
+      "source_sha256": "879905240c4e07a774f2444b55e70f44cdd5105ef79c46012e43141e67860f0c",
+      "migrated_sha256": "fed24fc33ab82309e958af55fb7c9ff6fccd0cee38cfcf8fe55914caf32a7da4",
+      "transformation": "namespace imports",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/pi05/src/vvla_pi05/models/pi05/deployment_pi05.py",
+      "current_sha256": "fed24fc33ab82309e958af55fb7c9ff6fccd0cee38cfcf8fe55914caf32a7da4",
+      "changed_since_initial_migration": false,
+      "distribution_status": "release",
+      "regression_group": "pi05",
+      "related_tests": [
+        "tests/contracts/test_pi05_lifecycle.py",
+        "tests/contracts/test_pi05_host_layout.py",
+        "tests/contracts/test_openpi.py",
+        "tests/contracts/test_compile_environment.py",
+        "tests/contracts/test_compiler_entry_ownership.py",
+        "tests/contracts/test_historical_recipes.py",
+        "tests/contracts/test_dynamic_tactics.py",
+        "tests/contracts/test_dynamic_lt_ownership.py",
+        "tests/contracts/test_prefix_recipe_promotion.py",
+        "tests/gpu/test_public_pi05_recipe.py",
+        "tests/gpu/test_historical_l4_lt.py",
+        "tests/gpu/test_prefix_quantizer.py",
+        "tests/gpu/test_pi05_tiny.py",
+        "tests/gpu/test_fp8_and_routing.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "reports/p2-20261112",
+        "benchmarks/p2-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/src/vllm_vla/models/pi05/fused_gelu_nvfp4_pi05.py",
+      "target": "packages/pi05/src/vvla_pi05/models/pi05/fused_gelu_nvfp4_pi05.py",
+      "source_sha256": "bb7f92e8886b0a52192162420ca30b1dd01c2911e2a9be50d0c522429a2ac480",
+      "migrated_sha256": "bb7f92e8886b0a52192162420ca30b1dd01c2911e2a9be50d0c522429a2ac480",
+      "transformation": "verbatim",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/pi05/src/vvla_pi05/models/pi05/fused_gelu_nvfp4_pi05.py",
+      "current_sha256": "bb7f92e8886b0a52192162420ca30b1dd01c2911e2a9be50d0c522429a2ac480",
+      "changed_since_initial_migration": false,
+      "distribution_status": "release",
+      "regression_group": "pi05",
+      "related_tests": [
+        "tests/contracts/test_pi05_lifecycle.py",
+        "tests/contracts/test_pi05_host_layout.py",
+        "tests/contracts/test_openpi.py",
+        "tests/contracts/test_compile_environment.py",
+        "tests/contracts/test_compiler_entry_ownership.py",
+        "tests/contracts/test_historical_recipes.py",
+        "tests/contracts/test_dynamic_tactics.py",
+        "tests/contracts/test_dynamic_lt_ownership.py",
+        "tests/contracts/test_prefix_recipe_promotion.py",
+        "tests/gpu/test_public_pi05_recipe.py",
+        "tests/gpu/test_historical_l4_lt.py",
+        "tests/gpu/test_prefix_quantizer.py",
+        "tests/gpu/test_pi05_tiny.py",
+        "tests/gpu/test_fp8_and_routing.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "reports/p2-20261112",
+        "benchmarks/p2-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/src/vllm_vla/models/pi05/fused_mlp_pi05.py",
+      "target": "packages/pi05/src/vvla_pi05/models/pi05/fused_mlp_pi05.py",
+      "source_sha256": "f0e196dc299af3c02f28ee58970d0ceeff8109f4e78498bd708b22b66536d3e0",
+      "migrated_sha256": "f0e196dc299af3c02f28ee58970d0ceeff8109f4e78498bd708b22b66536d3e0",
+      "transformation": "verbatim",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/pi05/src/vvla_pi05/models/pi05/fused_mlp_pi05.py",
+      "current_sha256": "f0e196dc299af3c02f28ee58970d0ceeff8109f4e78498bd708b22b66536d3e0",
+      "changed_since_initial_migration": false,
+      "distribution_status": "release",
+      "regression_group": "pi05",
+      "related_tests": [
+        "tests/contracts/test_pi05_lifecycle.py",
+        "tests/contracts/test_pi05_host_layout.py",
+        "tests/contracts/test_openpi.py",
+        "tests/contracts/test_compile_environment.py",
+        "tests/contracts/test_compiler_entry_ownership.py",
+        "tests/contracts/test_historical_recipes.py",
+        "tests/contracts/test_dynamic_tactics.py",
+        "tests/contracts/test_dynamic_lt_ownership.py",
+        "tests/contracts/test_prefix_recipe_promotion.py",
+        "tests/gpu/test_public_pi05_recipe.py",
+        "tests/gpu/test_historical_l4_lt.py",
+        "tests/gpu/test_prefix_quantizer.py",
+        "tests/gpu/test_pi05_tiny.py",
+        "tests/gpu/test_fp8_and_routing.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "reports/p2-20261112",
+        "benchmarks/p2-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/src/vllm_vla/models/pi05/fused_rmsnorm_pi05.py",
+      "target": "packages/pi05/src/vvla_pi05/models/pi05/fused_rmsnorm_pi05.py",
+      "source_sha256": "51e253e0218fd43720b6058fec6967b9427a111e55e23f63b924498799823ac0",
+      "migrated_sha256": "51e253e0218fd43720b6058fec6967b9427a111e55e23f63b924498799823ac0",
+      "transformation": "verbatim",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/pi05/src/vvla_pi05/models/pi05/fused_rmsnorm_pi05.py",
+      "current_sha256": "51e253e0218fd43720b6058fec6967b9427a111e55e23f63b924498799823ac0",
+      "changed_since_initial_migration": false,
+      "distribution_status": "release",
+      "regression_group": "pi05",
+      "related_tests": [
+        "tests/contracts/test_pi05_lifecycle.py",
+        "tests/contracts/test_pi05_host_layout.py",
+        "tests/contracts/test_openpi.py",
+        "tests/contracts/test_compile_environment.py",
+        "tests/contracts/test_compiler_entry_ownership.py",
+        "tests/contracts/test_historical_recipes.py",
+        "tests/contracts/test_dynamic_tactics.py",
+        "tests/contracts/test_dynamic_lt_ownership.py",
+        "tests/contracts/test_prefix_recipe_promotion.py",
+        "tests/gpu/test_public_pi05_recipe.py",
+        "tests/gpu/test_historical_l4_lt.py",
+        "tests/gpu/test_prefix_quantizer.py",
+        "tests/gpu/test_pi05_tiny.py",
+        "tests/gpu/test_fp8_and_routing.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "reports/p2-20261112",
+        "benchmarks/p2-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/src/vllm_vla/models/pi05/fused_vision_pi05.py",
+      "target": "packages/pi05/src/vvla_pi05/models/pi05/fused_vision_pi05.py",
+      "source_sha256": "e4ad01360ceb30170208f387e4df55dbf2488329f0526f911c0560965aee0701",
+      "migrated_sha256": "41546faf8e079e163065ec92e9e8f6c0451d3d8baa5aba1379c548bc22c04d92",
+      "transformation": "namespace imports",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/pi05/src/vvla_pi05/models/pi05/fused_vision_pi05.py",
+      "current_sha256": "41546faf8e079e163065ec92e9e8f6c0451d3d8baa5aba1379c548bc22c04d92",
+      "changed_since_initial_migration": false,
+      "distribution_status": "release",
+      "regression_group": "pi05",
+      "related_tests": [
+        "tests/contracts/test_pi05_lifecycle.py",
+        "tests/contracts/test_pi05_host_layout.py",
+        "tests/contracts/test_openpi.py",
+        "tests/contracts/test_compile_environment.py",
+        "tests/contracts/test_compiler_entry_ownership.py",
+        "tests/contracts/test_historical_recipes.py",
+        "tests/contracts/test_dynamic_tactics.py",
+        "tests/contracts/test_dynamic_lt_ownership.py",
+        "tests/contracts/test_prefix_recipe_promotion.py",
+        "tests/gpu/test_public_pi05_recipe.py",
+        "tests/gpu/test_historical_l4_lt.py",
+        "tests/gpu/test_prefix_quantizer.py",
+        "tests/gpu/test_pi05_tiny.py",
+        "tests/gpu/test_fp8_and_routing.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "reports/p2-20261112",
+        "benchmarks/p2-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/src/vllm_vla/models/pi05/graph_pi05.py",
+      "target": "packages/pi05/src/vvla_pi05/models/pi05/graph_pi05.py",
+      "source_sha256": "c3922112b0860b76271ff87a2da83d1c37d9e145e533007173516b072517ca5f",
+      "migrated_sha256": "70e151e760fa928b11cd31d1ab6ef18c36ec2ec6ab183fa6e13fa0b659c3d742",
+      "transformation": "namespace imports",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/pi05/src/vvla_pi05/models/pi05/graph_pi05.py",
+      "current_sha256": "70e151e760fa928b11cd31d1ab6ef18c36ec2ec6ab183fa6e13fa0b659c3d742",
+      "changed_since_initial_migration": false,
+      "distribution_status": "release",
+      "regression_group": "pi05",
+      "related_tests": [
+        "tests/contracts/test_pi05_lifecycle.py",
+        "tests/contracts/test_pi05_host_layout.py",
+        "tests/contracts/test_openpi.py",
+        "tests/contracts/test_compile_environment.py",
+        "tests/contracts/test_compiler_entry_ownership.py",
+        "tests/contracts/test_historical_recipes.py",
+        "tests/contracts/test_dynamic_tactics.py",
+        "tests/contracts/test_dynamic_lt_ownership.py",
+        "tests/contracts/test_prefix_recipe_promotion.py",
+        "tests/gpu/test_public_pi05_recipe.py",
+        "tests/gpu/test_historical_l4_lt.py",
+        "tests/gpu/test_prefix_quantizer.py",
+        "tests/gpu/test_pi05_tiny.py",
+        "tests/gpu/test_fp8_and_routing.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "reports/p2-20261112",
+        "benchmarks/p2-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/src/vllm_vla/models/pi05/inference_cache_pi05.py",
+      "target": "packages/pi05/src/vvla_pi05/models/pi05/inference_cache_pi05.py",
+      "source_sha256": "988a1283eb50be9d2293b2a74853949042fadf71a527645268450aa3b86ffe2d",
+      "migrated_sha256": "988a1283eb50be9d2293b2a74853949042fadf71a527645268450aa3b86ffe2d",
+      "transformation": "verbatim",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/pi05/src/vvla_pi05/models/pi05/inference_cache_pi05.py",
+      "current_sha256": "988a1283eb50be9d2293b2a74853949042fadf71a527645268450aa3b86ffe2d",
+      "changed_since_initial_migration": false,
+      "distribution_status": "release",
+      "regression_group": "pi05",
+      "related_tests": [
+        "tests/contracts/test_pi05_lifecycle.py",
+        "tests/contracts/test_pi05_host_layout.py",
+        "tests/contracts/test_openpi.py",
+        "tests/contracts/test_compile_environment.py",
+        "tests/contracts/test_compiler_entry_ownership.py",
+        "tests/contracts/test_historical_recipes.py",
+        "tests/contracts/test_dynamic_tactics.py",
+        "tests/contracts/test_dynamic_lt_ownership.py",
+        "tests/contracts/test_prefix_recipe_promotion.py",
+        "tests/gpu/test_public_pi05_recipe.py",
+        "tests/gpu/test_historical_l4_lt.py",
+        "tests/gpu/test_prefix_quantizer.py",
+        "tests/gpu/test_pi05_tiny.py",
+        "tests/gpu/test_fp8_and_routing.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "reports/p2-20261112",
+        "benchmarks/p2-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/src/vllm_vla/models/pi05/modeling_pi05.py",
+      "target": "packages/pi05/src/vvla_pi05/models/pi05/modeling_pi05.py",
+      "source_sha256": "fc53f4e4272e0e441b56fbc08949c80dbf213eea7459bbba535e5addacdcf443",
+      "migrated_sha256": "3947f21e53dc9b977737fbf559ea6d1287f18691b701cdd01823b474b04c74ae",
+      "transformation": "namespace imports",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/pi05/src/vvla_pi05/models/pi05/modeling_pi05.py",
+      "current_sha256": "1b97c77c3fe227027f29dabd46e90abe06939df00531cf995ac1530ff8af17b1",
+      "changed_since_initial_migration": true,
+      "distribution_status": "release",
+      "regression_group": "pi05",
+      "related_tests": [
+        "tests/contracts/test_pi05_lifecycle.py",
+        "tests/contracts/test_pi05_host_layout.py",
+        "tests/contracts/test_openpi.py",
+        "tests/contracts/test_compile_environment.py",
+        "tests/contracts/test_compiler_entry_ownership.py",
+        "tests/contracts/test_historical_recipes.py",
+        "tests/contracts/test_dynamic_tactics.py",
+        "tests/contracts/test_dynamic_lt_ownership.py",
+        "tests/contracts/test_prefix_recipe_promotion.py",
+        "tests/gpu/test_public_pi05_recipe.py",
+        "tests/gpu/test_historical_l4_lt.py",
+        "tests/gpu/test_prefix_quantizer.py",
+        "tests/gpu/test_pi05_tiny.py",
+        "tests/gpu/test_fp8_and_routing.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "reports/p2-20261112",
+        "benchmarks/p2-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/src/vllm_vla/models/pi05/paged_pi05.py",
+      "target": "packages/pi05/src/vvla_pi05/models/pi05/paged_pi05.py",
+      "source_sha256": "a18cbe61ce0db40087eb79ad04ce88b5599ab5f509139c3cffadd65b9ee0842a",
+      "migrated_sha256": "a18cbe61ce0db40087eb79ad04ce88b5599ab5f509139c3cffadd65b9ee0842a",
+      "transformation": "verbatim",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/pi05/src/vvla_pi05/models/pi05/paged_pi05.py",
+      "current_sha256": "a18cbe61ce0db40087eb79ad04ce88b5599ab5f509139c3cffadd65b9ee0842a",
+      "changed_since_initial_migration": false,
+      "distribution_status": "release",
+      "regression_group": "pi05",
+      "related_tests": [
+        "tests/contracts/test_pi05_lifecycle.py",
+        "tests/contracts/test_pi05_host_layout.py",
+        "tests/contracts/test_openpi.py",
+        "tests/contracts/test_compile_environment.py",
+        "tests/contracts/test_compiler_entry_ownership.py",
+        "tests/contracts/test_historical_recipes.py",
+        "tests/contracts/test_dynamic_tactics.py",
+        "tests/contracts/test_dynamic_lt_ownership.py",
+        "tests/contracts/test_prefix_recipe_promotion.py",
+        "tests/gpu/test_public_pi05_recipe.py",
+        "tests/gpu/test_historical_l4_lt.py",
+        "tests/gpu/test_prefix_quantizer.py",
+        "tests/gpu/test_pi05_tiny.py",
+        "tests/gpu/test_fp8_and_routing.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "reports/p2-20261112",
+        "benchmarks/p2-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/src/vllm_vla/models/pi05/pipeline_pi05.py",
+      "target": "packages/pi05/src/vvla_pi05/models/pi05/pipeline_pi05.py",
+      "source_sha256": "8b352460ab131387769af7fd4365fa3fa8081c2d408b1be967e544ce11a28ce3",
+      "migrated_sha256": "fe6a3c4744ccc2aaa3cd61d71675b7beb34ce3dba14194854caae91b229adf61",
+      "transformation": "namespace imports",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/pi05/src/vvla_pi05/models/pi05/pipeline_pi05.py",
+      "current_sha256": "fe6a3c4744ccc2aaa3cd61d71675b7beb34ce3dba14194854caae91b229adf61",
+      "changed_since_initial_migration": false,
+      "distribution_status": "release",
+      "regression_group": "pi05",
+      "related_tests": [
+        "tests/contracts/test_pi05_lifecycle.py",
+        "tests/contracts/test_pi05_host_layout.py",
+        "tests/contracts/test_openpi.py",
+        "tests/contracts/test_compile_environment.py",
+        "tests/contracts/test_compiler_entry_ownership.py",
+        "tests/contracts/test_historical_recipes.py",
+        "tests/contracts/test_dynamic_tactics.py",
+        "tests/contracts/test_dynamic_lt_ownership.py",
+        "tests/contracts/test_prefix_recipe_promotion.py",
+        "tests/gpu/test_public_pi05_recipe.py",
+        "tests/gpu/test_historical_l4_lt.py",
+        "tests/gpu/test_prefix_quantizer.py",
+        "tests/gpu/test_pi05_tiny.py",
+        "tests/gpu/test_fp8_and_routing.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "reports/p2-20261112",
+        "benchmarks/p2-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/src/vllm_vla/models/pi05/pointwise_kernels_pi05.py",
+      "target": "packages/runtime/src/vvla_runtime/pointwise_kernels.py",
+      "source_sha256": "618e84592f767bcecf87ee09a8508cfe59db6d9a2b377c619e976448c3a93233",
+      "migrated_sha256": "618e84592f767bcecf87ee09a8508cfe59db6d9a2b377c619e976448c3a93233",
+      "transformation": "verbatim",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/pi05/src/vvla_pi05/models/pi05/pointwise_kernels_pi05.py",
+      "current_sha256": "618e84592f767bcecf87ee09a8508cfe59db6d9a2b377c619e976448c3a93233",
+      "changed_since_initial_migration": false,
+      "distribution_status": "release",
+      "regression_group": "runtime",
+      "related_tests": [
+        "tests/contracts/test_memory.py",
+        "tests/gpu/test_fused_dynamic_quantizer.py",
+        "tools/check_release.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "benchmarks/p2-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/src/vllm_vla/models/pi05/pointwise_pi05.py",
+      "target": "packages/runtime/src/vvla_runtime/pointwise.py",
+      "source_sha256": "db66ecb3d521782f2ab6506baa4748603ca19809c1200ec9d63be31fac96ea38",
+      "migrated_sha256": "1c0948de31b83a9bb730d17266a2d247ef33bf29f94b085d8100173db1235a6d",
+      "transformation": "namespace imports",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/runtime/src/vvla_runtime/pointwise.py",
+      "current_sha256": "070bfb15154c64298e369bb4812eb9f2f74b5b41d9afb3c9450bef7ed582cff6",
+      "changed_since_initial_migration": true,
+      "distribution_status": "release",
+      "regression_group": "runtime",
+      "related_tests": [
+        "tests/contracts/test_memory.py",
+        "tests/gpu/test_fused_dynamic_quantizer.py",
+        "tools/check_release.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "benchmarks/p2-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/src/vllm_vla/models/pi05/precision_pi05.py",
+      "target": "packages/pi05/src/vvla_pi05/models/pi05/precision_pi05.py",
+      "source_sha256": "22bde8375aea3cd8c34e81544047c5c00017e3fa7594ebade87fef5725994f44",
+      "migrated_sha256": "e5103f111bdae6517809b76c6f1b0beaaa06df01ac25a1d393bc21335073e089",
+      "transformation": "namespace imports",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/pi05/src/vvla_pi05/models/pi05/precision_pi05.py",
+      "current_sha256": "e5103f111bdae6517809b76c6f1b0beaaa06df01ac25a1d393bc21335073e089",
+      "changed_since_initial_migration": false,
+      "distribution_status": "release",
+      "regression_group": "pi05",
+      "related_tests": [
+        "tests/contracts/test_pi05_lifecycle.py",
+        "tests/contracts/test_pi05_host_layout.py",
+        "tests/contracts/test_openpi.py",
+        "tests/contracts/test_compile_environment.py",
+        "tests/contracts/test_compiler_entry_ownership.py",
+        "tests/contracts/test_historical_recipes.py",
+        "tests/contracts/test_dynamic_tactics.py",
+        "tests/contracts/test_dynamic_lt_ownership.py",
+        "tests/contracts/test_prefix_recipe_promotion.py",
+        "tests/gpu/test_public_pi05_recipe.py",
+        "tests/gpu/test_historical_l4_lt.py",
+        "tests/gpu/test_prefix_quantizer.py",
+        "tests/gpu/test_pi05_tiny.py",
+        "tests/gpu/test_fp8_and_routing.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "reports/p2-20261112",
+        "benchmarks/p2-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/src/vllm_vla/models/pi05/prefix_packing_pi05.py",
+      "target": "packages/pi05/src/vvla_pi05/models/pi05/prefix_packing_pi05.py",
+      "source_sha256": "55b9c0bec56e059b1a9e4a7e8f4cd82cf6161bcdcfa0ec9fcba0c99f388e7223",
+      "migrated_sha256": "55b9c0bec56e059b1a9e4a7e8f4cd82cf6161bcdcfa0ec9fcba0c99f388e7223",
+      "transformation": "verbatim",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/pi05/src/vvla_pi05/models/pi05/prefix_packing_pi05.py",
+      "current_sha256": "55b9c0bec56e059b1a9e4a7e8f4cd82cf6161bcdcfa0ec9fcba0c99f388e7223",
+      "changed_since_initial_migration": false,
+      "distribution_status": "release",
+      "regression_group": "pi05",
+      "related_tests": [
+        "tests/contracts/test_pi05_lifecycle.py",
+        "tests/contracts/test_pi05_host_layout.py",
+        "tests/contracts/test_openpi.py",
+        "tests/contracts/test_compile_environment.py",
+        "tests/contracts/test_compiler_entry_ownership.py",
+        "tests/contracts/test_historical_recipes.py",
+        "tests/contracts/test_dynamic_tactics.py",
+        "tests/contracts/test_dynamic_lt_ownership.py",
+        "tests/contracts/test_prefix_recipe_promotion.py",
+        "tests/gpu/test_public_pi05_recipe.py",
+        "tests/gpu/test_historical_l4_lt.py",
+        "tests/gpu/test_prefix_quantizer.py",
+        "tests/gpu/test_pi05_tiny.py",
+        "tests/gpu/test_fp8_and_routing.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "reports/p2-20261112",
+        "benchmarks/p2-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/src/vllm_vla/models/pi05/processor_pi05.py",
+      "target": "packages/pi05/src/vvla_pi05/models/pi05/processor_pi05.py",
+      "source_sha256": "7be01c5eaa3897ee23a8fea977f51ee332597655215900ef7c93d449f824643d",
+      "migrated_sha256": "45148681ca1e38db2d086859a3604c2ffdef8dd432f77b082e3470eb37c6915c",
+      "transformation": "namespace imports",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/pi05/src/vvla_pi05/models/pi05/processor_pi05.py",
+      "current_sha256": "45148681ca1e38db2d086859a3604c2ffdef8dd432f77b082e3470eb37c6915c",
+      "changed_since_initial_migration": false,
+      "distribution_status": "release",
+      "regression_group": "pi05",
+      "related_tests": [
+        "tests/contracts/test_pi05_lifecycle.py",
+        "tests/contracts/test_pi05_host_layout.py",
+        "tests/contracts/test_openpi.py",
+        "tests/contracts/test_compile_environment.py",
+        "tests/contracts/test_compiler_entry_ownership.py",
+        "tests/contracts/test_historical_recipes.py",
+        "tests/contracts/test_dynamic_tactics.py",
+        "tests/contracts/test_dynamic_lt_ownership.py",
+        "tests/contracts/test_prefix_recipe_promotion.py",
+        "tests/gpu/test_public_pi05_recipe.py",
+        "tests/gpu/test_historical_l4_lt.py",
+        "tests/gpu/test_prefix_quantizer.py",
+        "tests/gpu/test_pi05_tiny.py",
+        "tests/gpu/test_fp8_and_routing.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "reports/p2-20261112",
+        "benchmarks/p2-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/src/vllm_vla/models/pi05/vision_kernels_pi05.py",
+      "target": "packages/pi05/src/vvla_pi05/models/pi05/vision_kernels_pi05.py",
+      "source_sha256": "7a177d198e516019b22cb73fe7cd2a8f29111de831c782de83fa665087053440",
+      "migrated_sha256": "7a177d198e516019b22cb73fe7cd2a8f29111de831c782de83fa665087053440",
+      "transformation": "verbatim",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/pi05/src/vvla_pi05/models/pi05/vision_kernels_pi05.py",
+      "current_sha256": "7a177d198e516019b22cb73fe7cd2a8f29111de831c782de83fa665087053440",
+      "changed_since_initial_migration": false,
+      "distribution_status": "release",
+      "regression_group": "pi05",
+      "related_tests": [
+        "tests/contracts/test_pi05_lifecycle.py",
+        "tests/contracts/test_pi05_host_layout.py",
+        "tests/contracts/test_openpi.py",
+        "tests/contracts/test_compile_environment.py",
+        "tests/contracts/test_compiler_entry_ownership.py",
+        "tests/contracts/test_historical_recipes.py",
+        "tests/contracts/test_dynamic_tactics.py",
+        "tests/contracts/test_dynamic_lt_ownership.py",
+        "tests/contracts/test_prefix_recipe_promotion.py",
+        "tests/gpu/test_public_pi05_recipe.py",
+        "tests/gpu/test_historical_l4_lt.py",
+        "tests/gpu/test_prefix_quantizer.py",
+        "tests/gpu/test_pi05_tiny.py",
+        "tests/gpu/test_fp8_and_routing.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "reports/p2-20261112",
+        "benchmarks/p2-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/src/vllm_vla/oft_bridge.py",
+      "target": "packages/pi05/src/vvla_pi05/oft_bridge.py",
+      "source_sha256": "24d7eb753d4278a6106a9bd61f96ddeb5be80a7d0311276fa385695d3644d701",
+      "migrated_sha256": "ffe10bcbe3ffde13b52c6e4333a3da5df4ccb2f133b0e2ce7ab3829c8049a011",
+      "transformation": "namespace imports",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/pi05/src/vvla_pi05/oft_bridge.py",
+      "current_sha256": "ffe10bcbe3ffde13b52c6e4333a3da5df4ccb2f133b0e2ce7ab3829c8049a011",
+      "changed_since_initial_migration": false,
+      "distribution_status": "release",
+      "regression_group": "oft",
+      "related_tests": [
+        "tests/migrated/pi05/test_oft_lite.py",
+        "tests/migrated/pi05/test_oft_lite_prepared.py",
+        "tests/contracts/test_oft_prompt_cache.py",
+        "tools/check_oft_installed.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "reports/p2-20261112",
+        "benchmarks/p2-crosscard-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/src/vllm_vla/oft_config.py",
+      "target": "packages/pi05/src/vvla_pi05/oft_config.py",
+      "source_sha256": "dc48ea9f4e45a66fbb81c9f574cfac9fb3f4f5451cbe7a1a92e21f9ae284340f",
+      "migrated_sha256": "dc48ea9f4e45a66fbb81c9f574cfac9fb3f4f5451cbe7a1a92e21f9ae284340f",
+      "transformation": "verbatim",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/pi05/src/vvla_pi05/oft_config.py",
+      "current_sha256": "dc48ea9f4e45a66fbb81c9f574cfac9fb3f4f5451cbe7a1a92e21f9ae284340f",
+      "changed_since_initial_migration": false,
+      "distribution_status": "release",
+      "regression_group": "oft",
+      "related_tests": [
+        "tests/migrated/pi05/test_oft_lite.py",
+        "tests/migrated/pi05/test_oft_lite_prepared.py",
+        "tests/contracts/test_oft_prompt_cache.py",
+        "tools/check_oft_installed.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "reports/p2-20261112",
+        "benchmarks/p2-crosscard-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/src/vllm_vla/oft_pipeline.py",
+      "target": "packages/pi05/src/vvla_pi05/oft_pipeline.py",
+      "source_sha256": "2ad966482e321d2c8737a465331ca4b230792b754ebf757fe0e5a678ec3b254a",
+      "migrated_sha256": "2ad966482e321d2c8737a465331ca4b230792b754ebf757fe0e5a678ec3b254a",
+      "transformation": "verbatim",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/pi05/src/vvla_pi05/oft_pipeline.py",
+      "current_sha256": "2ad966482e321d2c8737a465331ca4b230792b754ebf757fe0e5a678ec3b254a",
+      "changed_since_initial_migration": false,
+      "distribution_status": "release",
+      "regression_group": "oft",
+      "related_tests": [
+        "tests/migrated/pi05/test_oft_lite.py",
+        "tests/migrated/pi05/test_oft_lite_prepared.py",
+        "tests/contracts/test_oft_prompt_cache.py",
+        "tools/check_oft_installed.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "reports/p2-20261112",
+        "benchmarks/p2-crosscard-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/src/vllm_vla/pi05_pipeline.py",
+      "target": "packages/pi05/src/vvla_pi05/pi05_pipeline.py",
+      "source_sha256": "2bd74e148c8ac0863b952326b3064c787454f422e0403d3c4a3e2220dd3efdd0",
+      "migrated_sha256": "7737332e7a0c855b6ca3cf43d7b889a4caaab06e84d0bddc0c8477f0f0e03b09",
+      "transformation": "namespace imports",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/pi05/src/vvla_pi05/pi05_pipeline.py",
+      "current_sha256": "7737332e7a0c855b6ca3cf43d7b889a4caaab06e84d0bddc0c8477f0f0e03b09",
+      "changed_since_initial_migration": false,
+      "distribution_status": "release",
+      "regression_group": "pi05",
+      "related_tests": [
+        "tests/contracts/test_pi05_lifecycle.py",
+        "tests/contracts/test_pi05_host_layout.py",
+        "tests/contracts/test_openpi.py",
+        "tests/contracts/test_compile_environment.py",
+        "tests/contracts/test_compiler_entry_ownership.py",
+        "tests/contracts/test_historical_recipes.py",
+        "tests/contracts/test_dynamic_tactics.py",
+        "tests/contracts/test_dynamic_lt_ownership.py",
+        "tests/contracts/test_prefix_recipe_promotion.py",
+        "tests/gpu/test_public_pi05_recipe.py",
+        "tests/gpu/test_historical_l4_lt.py",
+        "tests/gpu/test_prefix_quantizer.py",
+        "tests/gpu/test_pi05_tiny.py",
+        "tests/gpu/test_fp8_and_routing.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "reports/p2-20261112",
+        "benchmarks/p2-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/src/vllm_vla/plugin.py",
+      "target": "packages/pi05/src/vvla_pi05/plugin.py",
+      "source_sha256": "849a843ee284340442a16492ea2559034e20265905fa08d4849a00b682a45e87",
+      "migrated_sha256": "8ecd57f173f633f0393ed1f4852c3533f07b037d1b063aa39d312bc5d023ebcd",
+      "transformation": "namespace imports",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/pi05/src/vvla_pi05/plugin.py",
+      "current_sha256": "8ecd57f173f633f0393ed1f4852c3533f07b037d1b063aa39d312bc5d023ebcd",
+      "changed_since_initial_migration": false,
+      "distribution_status": "release",
+      "regression_group": "pi05",
+      "related_tests": [
+        "tests/contracts/test_pi05_lifecycle.py",
+        "tests/contracts/test_pi05_host_layout.py",
+        "tests/contracts/test_openpi.py",
+        "tests/contracts/test_compile_environment.py",
+        "tests/contracts/test_compiler_entry_ownership.py",
+        "tests/contracts/test_historical_recipes.py",
+        "tests/contracts/test_dynamic_tactics.py",
+        "tests/contracts/test_dynamic_lt_ownership.py",
+        "tests/contracts/test_prefix_recipe_promotion.py",
+        "tests/gpu/test_public_pi05_recipe.py",
+        "tests/gpu/test_historical_l4_lt.py",
+        "tests/gpu/test_prefix_quantizer.py",
+        "tests/gpu/test_pi05_tiny.py",
+        "tests/gpu/test_fp8_and_routing.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "reports/p2-20261112",
+        "benchmarks/p2-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/src/vllm_vla/profiles.py",
+      "target": "packages/pi05/src/vvla_pi05/profiles.py",
+      "source_sha256": "bd8d8be7c8e3d51760f4d2a08c026d9f3f5fce71aee872a7454a590e229f3d1f",
+      "migrated_sha256": "bd8d8be7c8e3d51760f4d2a08c026d9f3f5fce71aee872a7454a590e229f3d1f",
+      "transformation": "verbatim",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/pi05/src/vvla_pi05/profiles.py",
+      "current_sha256": "bd8d8be7c8e3d51760f4d2a08c026d9f3f5fce71aee872a7454a590e229f3d1f",
+      "changed_since_initial_migration": false,
+      "distribution_status": "release",
+      "regression_group": "pi05",
+      "related_tests": [
+        "tests/contracts/test_pi05_lifecycle.py",
+        "tests/contracts/test_pi05_host_layout.py",
+        "tests/contracts/test_openpi.py",
+        "tests/contracts/test_compile_environment.py",
+        "tests/contracts/test_compiler_entry_ownership.py",
+        "tests/contracts/test_historical_recipes.py",
+        "tests/contracts/test_dynamic_tactics.py",
+        "tests/contracts/test_dynamic_lt_ownership.py",
+        "tests/contracts/test_prefix_recipe_promotion.py",
+        "tests/gpu/test_public_pi05_recipe.py",
+        "tests/gpu/test_historical_l4_lt.py",
+        "tests/gpu/test_prefix_quantizer.py",
+        "tests/gpu/test_pi05_tiny.py",
+        "tests/gpu/test_fp8_and_routing.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "reports/p2-20261112",
+        "benchmarks/p2-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/src/vllm_vla/runtime.py",
+      "target": "packages/pi05/src/vvla_pi05/runtime.py",
+      "source_sha256": "8f277038d0d7195d837fbe7cfed2bc3c86344281640076a207038dc9d17a6ce2",
+      "migrated_sha256": "8f277038d0d7195d837fbe7cfed2bc3c86344281640076a207038dc9d17a6ce2",
+      "transformation": "verbatim",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/pi05/src/vvla_pi05/runtime.py",
+      "current_sha256": "8f277038d0d7195d837fbe7cfed2bc3c86344281640076a207038dc9d17a6ce2",
+      "changed_since_initial_migration": false,
+      "distribution_status": "release",
+      "regression_group": "pi05",
+      "related_tests": [
+        "tests/contracts/test_pi05_lifecycle.py",
+        "tests/contracts/test_pi05_host_layout.py",
+        "tests/contracts/test_openpi.py",
+        "tests/contracts/test_compile_environment.py",
+        "tests/contracts/test_compiler_entry_ownership.py",
+        "tests/contracts/test_historical_recipes.py",
+        "tests/contracts/test_dynamic_tactics.py",
+        "tests/contracts/test_dynamic_lt_ownership.py",
+        "tests/contracts/test_prefix_recipe_promotion.py",
+        "tests/gpu/test_public_pi05_recipe.py",
+        "tests/gpu/test_historical_l4_lt.py",
+        "tests/gpu/test_prefix_quantizer.py",
+        "tests/gpu/test_pi05_tiny.py",
+        "tests/gpu/test_fp8_and_routing.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "reports/p2-20261112",
+        "benchmarks/p2-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/src/vllm_vla/topology.py",
+      "target": "packages/pi05/src/vvla_pi05/topology.py",
+      "source_sha256": "6e990163cffaaa4f4b17923a797559df2a083c6ae8e7946703b50ce37ccbd82d",
+      "migrated_sha256": "6e990163cffaaa4f4b17923a797559df2a083c6ae8e7946703b50ce37ccbd82d",
+      "transformation": "verbatim",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/pi05/src/vvla_pi05/topology.py",
+      "current_sha256": "6e990163cffaaa4f4b17923a797559df2a083c6ae8e7946703b50ce37ccbd82d",
+      "changed_since_initial_migration": false,
+      "distribution_status": "release",
+      "regression_group": "pi05",
+      "related_tests": [
+        "tests/contracts/test_pi05_lifecycle.py",
+        "tests/contracts/test_pi05_host_layout.py",
+        "tests/contracts/test_openpi.py",
+        "tests/contracts/test_compile_environment.py",
+        "tests/contracts/test_compiler_entry_ownership.py",
+        "tests/contracts/test_historical_recipes.py",
+        "tests/contracts/test_dynamic_tactics.py",
+        "tests/contracts/test_dynamic_lt_ownership.py",
+        "tests/contracts/test_prefix_recipe_promotion.py",
+        "tests/gpu/test_public_pi05_recipe.py",
+        "tests/gpu/test_historical_l4_lt.py",
+        "tests/gpu/test_prefix_quantizer.py",
+        "tests/gpu/test_pi05_tiny.py",
+        "tests/gpu/test_fp8_and_routing.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "reports/p2-20261112",
+        "benchmarks/p2-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/workers/oft/src/vllm_vla_oft/__init__.py",
+      "target": "packages/oft/src/vvla_oft/__init__.py",
+      "source_sha256": "03a4ce1477baca1098d4db8d9ac57d37df960c555fb4c57b77a21046fcae1d63",
+      "migrated_sha256": "03a4ce1477baca1098d4db8d9ac57d37df960c555fb4c57b77a21046fcae1d63",
+      "transformation": "verbatim",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/oft/src/vvla_oft/__init__.py",
+      "current_sha256": "03a4ce1477baca1098d4db8d9ac57d37df960c555fb4c57b77a21046fcae1d63",
+      "changed_since_initial_migration": false,
+      "distribution_status": "release",
+      "regression_group": "oft",
+      "related_tests": [
+        "tests/migrated/pi05/test_oft_lite.py",
+        "tests/migrated/pi05/test_oft_lite_prepared.py",
+        "tests/contracts/test_oft_prompt_cache.py",
+        "tools/check_oft_installed.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "reports/p2-20261112",
+        "benchmarks/p2-crosscard-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/workers/oft/src/vllm_vla_oft/adapter.py",
+      "target": "packages/oft/src/vvla_oft/adapter.py",
+      "source_sha256": "8d6f0492bb5fd5b77735cfbbb06dadd042a273cfa45b42005ada525a71284f5c",
+      "migrated_sha256": "8d6f0492bb5fd5b77735cfbbb06dadd042a273cfa45b42005ada525a71284f5c",
+      "transformation": "verbatim",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/oft/src/vvla_oft/adapter.py",
+      "current_sha256": "b8cf9fa50bb7978099a5f0111700e814bcc296a52f95ba2022d65033a369a174",
+      "changed_since_initial_migration": true,
+      "distribution_status": "release",
+      "regression_group": "oft",
+      "related_tests": [
+        "tests/migrated/pi05/test_oft_lite.py",
+        "tests/migrated/pi05/test_oft_lite_prepared.py",
+        "tests/contracts/test_oft_prompt_cache.py",
+        "tools/check_oft_installed.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "reports/p2-20261112",
+        "benchmarks/p2-crosscard-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/workers/oft/src/vllm_vla_oft/calibration.py",
+      "target": "packages/oft/src/vvla_oft/calibration.py",
+      "source_sha256": "843eab6060f5ac822625e0dcc4b19ea3a6cce68dc6865a97036137116efc4511",
+      "migrated_sha256": "843eab6060f5ac822625e0dcc4b19ea3a6cce68dc6865a97036137116efc4511",
+      "transformation": "verbatim",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/oft/src/vvla_oft/calibration.py",
+      "current_sha256": "843eab6060f5ac822625e0dcc4b19ea3a6cce68dc6865a97036137116efc4511",
+      "changed_since_initial_migration": false,
+      "distribution_status": "release",
+      "regression_group": "oft",
+      "related_tests": [
+        "tests/migrated/pi05/test_oft_lite.py",
+        "tests/migrated/pi05/test_oft_lite_prepared.py",
+        "tests/contracts/test_oft_prompt_cache.py",
+        "tools/check_oft_installed.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "reports/p2-20261112",
+        "benchmarks/p2-crosscard-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/workers/oft/src/vllm_vla_oft/execution/__init__.py",
+      "target": "packages/runtime/src/vvla_runtime/execution/__init__.py",
+      "source_sha256": "4263a56e83f92b3d10a22511719bf692b428e0b8ca798d5acbd5b97a25368e33",
+      "migrated_sha256": "4263a56e83f92b3d10a22511719bf692b428e0b8ca798d5acbd5b97a25368e33",
+      "transformation": "verbatim",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/runtime/src/vvla_runtime/execution/__init__.py",
+      "current_sha256": "4263a56e83f92b3d10a22511719bf692b428e0b8ca798d5acbd5b97a25368e33",
+      "changed_since_initial_migration": false,
+      "distribution_status": "release",
+      "regression_group": "runtime",
+      "related_tests": [
+        "tests/contracts/test_memory.py",
+        "tests/gpu/test_fused_dynamic_quantizer.py",
+        "tools/check_release.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "benchmarks/p2-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/workers/oft/src/vllm_vla_oft/execution/bf16_gemm_kernels.py",
+      "target": "packages/runtime/src/vvla_runtime/execution/bf16_gemm_kernels.py",
+      "source_sha256": "e6de7efa00c2483fac491311b558cc7daaa7a5171847455f86f8dc89763a9479",
+      "migrated_sha256": "e6de7efa00c2483fac491311b558cc7daaa7a5171847455f86f8dc89763a9479",
+      "transformation": "verbatim",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/runtime/src/vvla_runtime/execution/bf16_gemm_kernels.py",
+      "current_sha256": "e6de7efa00c2483fac491311b558cc7daaa7a5171847455f86f8dc89763a9479",
+      "changed_since_initial_migration": false,
+      "distribution_status": "release",
+      "regression_group": "runtime",
+      "related_tests": [
+        "tests/contracts/test_memory.py",
+        "tests/gpu/test_fused_dynamic_quantizer.py",
+        "tools/check_release.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "benchmarks/p2-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/workers/oft/src/vllm_vla_oft/execution/csrc/native_state.cpp",
+      "target": "packages/runtime/src/vvla_runtime/execution/csrc/native_state.cpp",
+      "source_sha256": "fda8ca565c70b000e3cdaac4c8ca4b256fc0d289f6e3e971af4384da33046b29",
+      "migrated_sha256": "fda8ca565c70b000e3cdaac4c8ca4b256fc0d289f6e3e971af4384da33046b29",
+      "transformation": "verbatim",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/runtime/src/vvla_runtime/execution/csrc/native_state.cpp",
+      "current_sha256": "fda8ca565c70b000e3cdaac4c8ca4b256fc0d289f6e3e971af4384da33046b29",
+      "changed_since_initial_migration": false,
+      "distribution_status": "release",
+      "regression_group": "runtime",
+      "related_tests": [
+        "tests/contracts/test_memory.py",
+        "tests/gpu/test_fused_dynamic_quantizer.py",
+        "tools/check_release.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "benchmarks/p2-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/workers/oft/src/vllm_vla_oft/execution/graph.py",
+      "target": "packages/runtime/src/vvla_runtime/execution/graph.py",
+      "source_sha256": "d0349560e98d78e96ff019b305106aa3db5a41ea0d2c1037a32897c59c8c4822",
+      "migrated_sha256": "d0349560e98d78e96ff019b305106aa3db5a41ea0d2c1037a32897c59c8c4822",
+      "transformation": "verbatim",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/runtime/src/vvla_runtime/execution/graph.py",
+      "current_sha256": "d0349560e98d78e96ff019b305106aa3db5a41ea0d2c1037a32897c59c8c4822",
+      "changed_since_initial_migration": false,
+      "distribution_status": "release",
+      "regression_group": "runtime",
+      "related_tests": [
+        "tests/contracts/test_memory.py",
+        "tests/gpu/test_fused_dynamic_quantizer.py",
+        "tools/check_release.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "benchmarks/p2-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/workers/oft/src/vllm_vla_oft/execution/graph_diagnostics.py",
+      "target": "packages/runtime/src/vvla_runtime/execution/graph_diagnostics.py",
+      "source_sha256": "b50563b4f87a14605804ff1227d44a05772269ec6a39d5fd32193ea13a696cc5",
+      "migrated_sha256": "b50563b4f87a14605804ff1227d44a05772269ec6a39d5fd32193ea13a696cc5",
+      "transformation": "verbatim",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/runtime/src/vvla_runtime/execution/graph_diagnostics.py",
+      "current_sha256": "b50563b4f87a14605804ff1227d44a05772269ec6a39d5fd32193ea13a696cc5",
+      "changed_since_initial_migration": false,
+      "distribution_status": "release",
+      "regression_group": "runtime",
+      "related_tests": [
+        "tests/contracts/test_memory.py",
+        "tests/gpu/test_fused_dynamic_quantizer.py",
+        "tools/check_release.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "benchmarks/p2-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/workers/oft/src/vllm_vla_oft/execution/lifecycle.py",
+      "target": "packages/runtime/src/vvla_runtime/execution/lifecycle.py",
+      "source_sha256": "231b47f5ce8390e03ce2a66799256465e728dc18d071ac65153888c53b23360f",
+      "migrated_sha256": "231b47f5ce8390e03ce2a66799256465e728dc18d071ac65153888c53b23360f",
+      "transformation": "verbatim",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/runtime/src/vvla_runtime/execution/lifecycle.py",
+      "current_sha256": "231b47f5ce8390e03ce2a66799256465e728dc18d071ac65153888c53b23360f",
+      "changed_since_initial_migration": false,
+      "distribution_status": "release",
+      "regression_group": "runtime",
+      "related_tests": [
+        "tests/contracts/test_memory.py",
+        "tests/gpu/test_fused_dynamic_quantizer.py",
+        "tools/check_release.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "benchmarks/p2-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/workers/oft/src/vllm_vla_oft/execution/llama_norm.py",
+      "target": "packages/runtime/src/vvla_runtime/execution/llama_norm.py",
+      "source_sha256": "31bf4f510072f3e68e85b23e83d88dabb69160db4efc299556aa381dc9de6a76",
+      "migrated_sha256": "31bf4f510072f3e68e85b23e83d88dabb69160db4efc299556aa381dc9de6a76",
+      "transformation": "verbatim",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/runtime/src/vvla_runtime/execution/llama_norm.py",
+      "current_sha256": "31bf4f510072f3e68e85b23e83d88dabb69160db4efc299556aa381dc9de6a76",
+      "changed_since_initial_migration": false,
+      "distribution_status": "release",
+      "regression_group": "runtime",
+      "related_tests": [
+        "tests/contracts/test_memory.py",
+        "tests/gpu/test_fused_dynamic_quantizer.py",
+        "tools/check_release.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "benchmarks/p2-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/workers/oft/src/vllm_vla_oft/execution/llama_norm_kernels.py",
+      "target": "packages/runtime/src/vvla_runtime/execution/llama_norm_kernels.py",
+      "source_sha256": "89f1e8998758263fb6dab8b0dd120a9c116563c8db8dd137f10de6d811188ce8",
+      "migrated_sha256": "89f1e8998758263fb6dab8b0dd120a9c116563c8db8dd137f10de6d811188ce8",
+      "transformation": "verbatim",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/runtime/src/vvla_runtime/execution/llama_norm_kernels.py",
+      "current_sha256": "89f1e8998758263fb6dab8b0dd120a9c116563c8db8dd137f10de6d811188ce8",
+      "changed_since_initial_migration": false,
+      "distribution_status": "release",
+      "regression_group": "runtime",
+      "related_tests": [
+        "tests/contracts/test_memory.py",
+        "tests/gpu/test_fused_dynamic_quantizer.py",
+        "tools/check_release.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "benchmarks/p2-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/workers/oft/src/vllm_vla_oft/execution/native.py",
+      "target": "packages/runtime/src/vvla_runtime/execution/native.py",
+      "source_sha256": "8b76de32a186795c21a3acbca57d1271438d22ec503735888e040a48d2d78bcc",
+      "migrated_sha256": "8b76de32a186795c21a3acbca57d1271438d22ec503735888e040a48d2d78bcc",
+      "transformation": "verbatim",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/runtime/src/vvla_runtime/execution/native.py",
+      "current_sha256": "f77ec63151a17aff1c03ea16a289683f6f9acae0be05d9c6627f447275af27c9",
+      "changed_since_initial_migration": true,
+      "distribution_status": "release",
+      "regression_group": "runtime",
+      "related_tests": [
+        "tests/contracts/test_memory.py",
+        "tests/gpu/test_fused_dynamic_quantizer.py",
+        "tools/check_release.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "benchmarks/p2-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/workers/oft/src/vllm_vla_oft/execution/native_state.py",
+      "target": "packages/runtime/src/vvla_runtime/execution/native_state.py",
+      "source_sha256": "8bc3f6baf5ae7646798ce01a1f180e432032f7d3f4fa3e951a26de0e0fb2be88",
+      "migrated_sha256": "8bc3f6baf5ae7646798ce01a1f180e432032f7d3f4fa3e951a26de0e0fb2be88",
+      "transformation": "verbatim",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/runtime/src/vvla_runtime/execution/native_state.py",
+      "current_sha256": "8bc3f6baf5ae7646798ce01a1f180e432032f7d3f4fa3e951a26de0e0fb2be88",
+      "changed_since_initial_migration": false,
+      "distribution_status": "release",
+      "regression_group": "runtime",
+      "related_tests": [
+        "tests/contracts/test_memory.py",
+        "tests/gpu/test_fused_dynamic_quantizer.py",
+        "tools/check_release.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "benchmarks/p2-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/workers/oft/src/vllm_vla_oft/execution/requests.py",
+      "target": "packages/runtime/src/vvla_runtime/execution/requests.py",
+      "source_sha256": "99ed516ab7a1ae32d0ac8c7117322b9a5ddd2f3a1bcf00d15ccedda34506d05b",
+      "migrated_sha256": "99ed516ab7a1ae32d0ac8c7117322b9a5ddd2f3a1bcf00d15ccedda34506d05b",
+      "transformation": "verbatim",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/runtime/src/vvla_runtime/execution/requests.py",
+      "current_sha256": "99ed516ab7a1ae32d0ac8c7117322b9a5ddd2f3a1bcf00d15ccedda34506d05b",
+      "changed_since_initial_migration": false,
+      "distribution_status": "release",
+      "regression_group": "runtime",
+      "related_tests": [
+        "tests/contracts/test_memory.py",
+        "tests/gpu/test_fused_dynamic_quantizer.py",
+        "tools/check_release.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "benchmarks/p2-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/workers/oft/src/vllm_vla_oft/execution/rotary.py",
+      "target": "packages/runtime/src/vvla_runtime/execution/rotary.py",
+      "source_sha256": "85c640923d3fa432be99936364a568395c40f3d7168d705b567b29b2ccb88ed5",
+      "migrated_sha256": "8b37231c2e4250e0ae4036eab2835ca952c3c3dfd40da36775292d6135ad78f0",
+      "transformation": "namespace imports",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/runtime/src/vvla_runtime/execution/rotary.py",
+      "current_sha256": "8b37231c2e4250e0ae4036eab2835ca952c3c3dfd40da36775292d6135ad78f0",
+      "changed_since_initial_migration": false,
+      "distribution_status": "release",
+      "regression_group": "runtime",
+      "related_tests": [
+        "tests/contracts/test_memory.py",
+        "tests/gpu/test_fused_dynamic_quantizer.py",
+        "tools/check_release.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "benchmarks/p2-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/workers/oft/src/vllm_vla_oft/execution/rotary_kernels.py",
+      "target": "packages/runtime/src/vvla_runtime/execution/rotary_kernels.py",
+      "source_sha256": "4c09c2479e2d7b43fc676df8695b7c79b4ec30be1a56ec02c76c7f282cf98405",
+      "migrated_sha256": "4c09c2479e2d7b43fc676df8695b7c79b4ec30be1a56ec02c76c7f282cf98405",
+      "transformation": "verbatim",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/runtime/src/vvla_runtime/execution/rotary_kernels.py",
+      "current_sha256": "4c09c2479e2d7b43fc676df8695b7c79b4ec30be1a56ec02c76c7f282cf98405",
+      "changed_since_initial_migration": false,
+      "distribution_status": "release",
+      "regression_group": "runtime",
+      "related_tests": [
+        "tests/contracts/test_memory.py",
+        "tests/gpu/test_fused_dynamic_quantizer.py",
+        "tools/check_release.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "benchmarks/p2-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/workers/oft/src/vllm_vla_oft/execution/silu.py",
+      "target": "packages/runtime/src/vvla_runtime/execution/silu.py",
+      "source_sha256": "57cb76ec878645b8c781b4f21137c1d4c358dc2d56d4a2de017f6d3d4bd68608",
+      "migrated_sha256": "57cb76ec878645b8c781b4f21137c1d4c358dc2d56d4a2de017f6d3d4bd68608",
+      "transformation": "verbatim",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/runtime/src/vvla_runtime/execution/silu.py",
+      "current_sha256": "57cb76ec878645b8c781b4f21137c1d4c358dc2d56d4a2de017f6d3d4bd68608",
+      "changed_since_initial_migration": false,
+      "distribution_status": "release",
+      "regression_group": "runtime",
+      "related_tests": [
+        "tests/contracts/test_memory.py",
+        "tests/gpu/test_fused_dynamic_quantizer.py",
+        "tools/check_release.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "benchmarks/p2-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/workers/oft/src/vllm_vla_oft/execution/silu_nvfp4.py",
+      "target": "packages/runtime/src/vvla_runtime/execution/silu_nvfp4.py",
+      "source_sha256": "26cbede2f48e3004dc75e13a9afdfdf0691ac0d27557d79ff33ab00f28a3b221",
+      "migrated_sha256": "26cbede2f48e3004dc75e13a9afdfdf0691ac0d27557d79ff33ab00f28a3b221",
+      "transformation": "verbatim",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/runtime/src/vvla_runtime/execution/silu_nvfp4.py",
+      "current_sha256": "26cbede2f48e3004dc75e13a9afdfdf0691ac0d27557d79ff33ab00f28a3b221",
+      "changed_since_initial_migration": false,
+      "distribution_status": "release",
+      "regression_group": "runtime",
+      "related_tests": [
+        "tests/contracts/test_memory.py",
+        "tests/gpu/test_fused_dynamic_quantizer.py",
+        "tools/check_release.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "benchmarks/p2-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/workers/oft/src/vllm_vla_oft/execution/state.py",
+      "target": "packages/runtime/src/vvla_runtime/execution/state.py",
+      "source_sha256": "dd8378b7c5f09abb1e408b2a742c21280b7ffd13b61df7705bc4f854a05348cb",
+      "migrated_sha256": "dd8378b7c5f09abb1e408b2a742c21280b7ffd13b61df7705bc4f854a05348cb",
+      "transformation": "verbatim",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/runtime/src/vvla_runtime/execution/state.py",
+      "current_sha256": "dd8378b7c5f09abb1e408b2a742c21280b7ffd13b61df7705bc4f854a05348cb",
+      "changed_since_initial_migration": false,
+      "distribution_status": "release",
+      "regression_group": "runtime",
+      "related_tests": [
+        "tests/contracts/test_memory.py",
+        "tests/gpu/test_fused_dynamic_quantizer.py",
+        "tools/check_release.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "benchmarks/p2-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/workers/oft/src/vllm_vla_oft/gemm.py",
+      "target": "packages/runtime/src/vvla_runtime/gemm.py",
+      "source_sha256": "8a8ea943bdb2ec8ea55c49fb61b08dd3eb4cf15ba47a7c56e393b9a883848b03",
+      "migrated_sha256": "298bbb190ef00d10268f4451bbc86347d5fea65bd75000d72ee338efb608f33d",
+      "transformation": "namespace imports",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/runtime/src/vvla_runtime/gemm.py",
+      "current_sha256": "298bbb190ef00d10268f4451bbc86347d5fea65bd75000d72ee338efb608f33d",
+      "changed_since_initial_migration": false,
+      "distribution_status": "release",
+      "regression_group": "runtime",
+      "related_tests": [
+        "tests/contracts/test_memory.py",
+        "tests/gpu/test_fused_dynamic_quantizer.py",
+        "tools/check_release.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "benchmarks/p2-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/workers/oft/src/vllm_vla_oft/lite.py",
+      "target": "packages/oft/src/vvla_oft/lite.py",
+      "source_sha256": "73ed59f79a25500a51526ac9e81dc6d9d58ff8b9d136042e4c14c0e3fcf04497",
+      "migrated_sha256": "226596221d2aad0e6b30e4bda09e64fc09d9ff516c7fd11f66395407e0c136a8",
+      "transformation": "namespace imports",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/oft/src/vvla_oft/lite.py",
+      "current_sha256": "a2634d3027fbbe517f30ddc2a4bb3f883469be886caa0e22070e318e4c27331e",
+      "changed_since_initial_migration": true,
+      "distribution_status": "release",
+      "regression_group": "oft",
+      "related_tests": [
+        "tests/migrated/pi05/test_oft_lite.py",
+        "tests/migrated/pi05/test_oft_lite_prepared.py",
+        "tests/contracts/test_oft_prompt_cache.py",
+        "tools/check_oft_installed.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "reports/p2-20261112",
+        "benchmarks/p2-crosscard-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/workers/oft/src/vllm_vla_oft/lite_prepared.py",
+      "target": "packages/oft/src/vvla_oft/lite_prepared.py",
+      "source_sha256": "022eca9d2b50a85a37b11b54fe5dc1cb5edbefbd32db5b5ab37e793ed2ff507c",
+      "migrated_sha256": "022eca9d2b50a85a37b11b54fe5dc1cb5edbefbd32db5b5ab37e793ed2ff507c",
+      "transformation": "verbatim",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/oft/src/vvla_oft/lite_prepared.py",
+      "current_sha256": "022eca9d2b50a85a37b11b54fe5dc1cb5edbefbd32db5b5ab37e793ed2ff507c",
+      "changed_since_initial_migration": false,
+      "distribution_status": "release",
+      "regression_group": "oft",
+      "related_tests": [
+        "tests/migrated/pi05/test_oft_lite.py",
+        "tests/migrated/pi05/test_oft_lite_prepared.py",
+        "tests/contracts/test_oft_prompt_cache.py",
+        "tools/check_oft_installed.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "reports/p2-20261112",
+        "benchmarks/p2-crosscard-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/workers/oft/src/vllm_vla_oft/native_adapter.py",
+      "target": "packages/oft/src/vvla_oft/native_adapter.py",
+      "source_sha256": "4f519d77a76758db7d44e0aa03d5987f815c41c15831f6cb89358d5fb9204177",
+      "migrated_sha256": "7090d071adc74f1a9a95f25b2de93a501e482436c0c0e7d38fac091c02449eda",
+      "transformation": "namespace imports",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/oft/src/vvla_oft/native_adapter.py",
+      "current_sha256": "1761fa3a7390f3afc0ac01e442196e802c578ff9b9eec62ab7281987c60eb415",
+      "changed_since_initial_migration": true,
+      "distribution_status": "release",
+      "regression_group": "oft",
+      "related_tests": [
+        "tests/migrated/pi05/test_oft_lite.py",
+        "tests/migrated/pi05/test_oft_lite_prepared.py",
+        "tests/contracts/test_oft_prompt_cache.py",
+        "tools/check_oft_installed.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "reports/p2-20261112",
+        "benchmarks/p2-crosscard-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/workers/oft/src/vllm_vla_oft/precision.py",
+      "target": "packages/runtime/src/vvla_runtime/precision.py",
+      "source_sha256": "d011909fd0f7c9723563948f0ddf579803e1e86cf679f86a8be29a01c381b05e",
+      "migrated_sha256": "b251631a37aa7fbd5e3ee90f069a5141b9ae30e9d88315056e9d98130be33aa8",
+      "transformation": "namespace imports",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/runtime/src/vvla_runtime/precision.py",
+      "current_sha256": "b251631a37aa7fbd5e3ee90f069a5141b9ae30e9d88315056e9d98130be33aa8",
+      "changed_since_initial_migration": false,
+      "distribution_status": "release",
+      "regression_group": "runtime",
+      "related_tests": [
+        "tests/contracts/test_memory.py",
+        "tests/gpu/test_fused_dynamic_quantizer.py",
+        "tools/check_release.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "benchmarks/p2-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/workers/oft/src/vllm_vla_oft/profiles.py",
+      "target": "packages/oft/src/vvla_oft/profiles.py",
+      "source_sha256": "b30334fae475552c4c0a8c29befe15b16191128f6b37a8a474eb93cbc2e41ca9",
+      "migrated_sha256": "b30334fae475552c4c0a8c29befe15b16191128f6b37a8a474eb93cbc2e41ca9",
+      "transformation": "verbatim",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/oft/src/vvla_oft/profiles.py",
+      "current_sha256": "b30334fae475552c4c0a8c29befe15b16191128f6b37a8a474eb93cbc2e41ca9",
+      "changed_since_initial_migration": false,
+      "distribution_status": "release",
+      "regression_group": "oft",
+      "related_tests": [
+        "tests/migrated/pi05/test_oft_lite.py",
+        "tests/migrated/pi05/test_oft_lite_prepared.py",
+        "tests/contracts/test_oft_prompt_cache.py",
+        "tools/check_oft_installed.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "reports/p2-20261112",
+        "benchmarks/p2-crosscard-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/workers/oft/src/vllm_vla_oft/recipe.py",
+      "target": "packages/oft/src/vvla_oft/recipe.py",
+      "source_sha256": "202d26b0c4acbd7c8422f8f1bfafd4b7c8b8fb3172ac1a33f8ff3742ce7caab6",
+      "migrated_sha256": "202d26b0c4acbd7c8422f8f1bfafd4b7c8b8fb3172ac1a33f8ff3742ce7caab6",
+      "transformation": "verbatim",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/oft/src/vvla_oft/recipe.py",
+      "current_sha256": "202d26b0c4acbd7c8422f8f1bfafd4b7c8b8fb3172ac1a33f8ff3742ce7caab6",
+      "changed_since_initial_migration": false,
+      "distribution_status": "release",
+      "regression_group": "oft",
+      "related_tests": [
+        "tests/migrated/pi05/test_oft_lite.py",
+        "tests/migrated/pi05/test_oft_lite_prepared.py",
+        "tests/contracts/test_oft_prompt_cache.py",
+        "tools/check_oft_installed.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "reports/p2-20261112",
+        "benchmarks/p2-crosscard-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/workers/oft/src/vllm_vla_oft/reference.py",
+      "target": "packages/oft/src/vvla_oft/reference.py",
+      "source_sha256": "423662190ffc321feb5a59df0ec3c8687477a9f662ff1446e943657b9790493b",
+      "migrated_sha256": "423662190ffc321feb5a59df0ec3c8687477a9f662ff1446e943657b9790493b",
+      "transformation": "verbatim",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/oft/src/vvla_oft/reference.py",
+      "current_sha256": "631ff0ebe143c920276474f8915ad3b0a443fb9907ff121eedbc22c232e1aae6",
+      "changed_since_initial_migration": true,
+      "distribution_status": "release",
+      "regression_group": "oft",
+      "related_tests": [
+        "tests/migrated/pi05/test_oft_lite.py",
+        "tests/migrated/pi05/test_oft_lite_prepared.py",
+        "tests/contracts/test_oft_prompt_cache.py",
+        "tools/check_oft_installed.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "reports/p2-20261112",
+        "benchmarks/p2-crosscard-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/workers/oft/src/vllm_vla_oft/service.py",
+      "target": "packages/oft/src/vvla_oft/service.py",
+      "source_sha256": "ab0b165ae3d1e53874f8d0b1ddded78c658125b6325428b3a00bf5c9dfc9c776",
+      "migrated_sha256": "e1d0d6eebd2af506c36e60884560105afef160757fdecd7762a8a1667f944c23",
+      "transformation": "namespace imports",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/oft/src/vvla_oft/service.py",
+      "current_sha256": "03cd5ff62e30f65dee5a57186718559fdfbb53c8399c23924fe4e458311907ad",
+      "changed_since_initial_migration": true,
+      "distribution_status": "release",
+      "regression_group": "oft",
+      "related_tests": [
+        "tests/migrated/pi05/test_oft_lite.py",
+        "tests/migrated/pi05/test_oft_lite_prepared.py",
+        "tests/contracts/test_oft_prompt_cache.py",
+        "tools/check_oft_installed.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "reports/p2-20261112",
+        "benchmarks/p2-crosscard-20261112"
+      ]
+    },
+    {
+      "source": "vllm-vla-plugin/workers/oft/src/vllm_vla_oft/worker.py",
+      "target": "packages/oft/src/vvla_oft/worker.py",
+      "source_sha256": "f858eba58645d33c17fc301bca65b98c50474e28410ef97ef849a3a11267f09c",
+      "migrated_sha256": "f858eba58645d33c17fc301bca65b98c50474e28410ef97ef849a3a11267f09c",
+      "transformation": "verbatim",
+      "verification": "Related group evidence only; see REGRESSION_INDEX.json. No full-model qualification transfer.",
+      "initial_target": "packages/oft/src/vvla_oft/worker.py",
+      "current_sha256": "835cb32f64c6c478fa9a68808e64115c3cd86815861bac130dfc765c9cd739c7",
+      "changed_since_initial_migration": true,
+      "distribution_status": "release",
+      "regression_group": "oft",
+      "related_tests": [
+        "tests/migrated/pi05/test_oft_lite.py",
+        "tests/migrated/pi05/test_oft_lite_prepared.py",
+        "tests/contracts/test_oft_prompt_cache.py",
+        "tools/check_oft_installed.py"
+      ],
+      "historical_evidence_directories_in_source_repository": [
+        "reports/p2-20261112",
+        "benchmarks/p2-crosscard-20261112"
+      ]
+    }
+  ]
+}

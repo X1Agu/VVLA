@@ -1,0 +1,10 @@
+{
+  "backend": "lingbot",
+  "packages": 58,
+  "source_commit": "11854bf7d161a40b03ac5560c700888b266b43ac",
+  "artifact_hash_lock": false,
+  "input_lock_sha256": "2da70d1088f2825478031d6d9c7b3bf3e443d4aca5dc7035311e81dd2f0b3a3b",
+  "fresh_dependency_resolution": "passed (resolver only)",
+  "resolver": "uv 0.13.6 (x86_64-unknown-linux-gnu)",
+  "scope": "Dependency versions from the measured Linux environment. Fresh installation of the packaged beta is verified separately."
+}

@@ -1,0 +1,197 @@
+{
+  "pi05-bf16-sm89": {
+    "source": "benchmarks/pi05-b32-20261110/l4-preparation-20261110/L4_FORMAL_V4_IDENTITY.json",
+    "source_sha256": "aedddeb6f3683b00048740356270de164e00285c0816e2923798f3d1b866eb71",
+    "config": {
+      "attention_backend": "torch_fa2",
+      "config_overrides": {
+        "lite_action_norm_cache": true,
+        "lite_batched_vision": true,
+        "lite_compile_preserve_action_linears": true,
+        "lite_compile_sample_actions": true,
+        "lite_elide_identity_gathers": true,
+        "lite_expert_cublaslt": {
+          "include_down": true,
+          "profile": "l4_exact_three"
+        },
+        "lite_fused_adarms": true,
+        "lite_fused_adarms_reduction": true,
+        "lite_fused_expert_gelu": true,
+        "lite_fused_expert_qkv": true,
+        "lite_fused_gated_residual": true,
+        "lite_fused_residual_adarms": false,
+        "lite_gpu_uint8_prepare": true,
+        "lite_host_layout_cache": true,
+        "lite_native_lifecycle": true,
+        "lite_native_lifecycle_variant": "v2",
+        "lite_single_pass_lifecycle": false,
+        "lite_skip_weight_init": true,
+        "lite_suffix_fa2": {
+          "splits": 8
+        }
+      },
+      "cuda_graph": true,
+      "profile": "full-bf16"
+    },
+    "recipe_sha256": "c4aa50f2a0e914456c4edb916afb547fc320d880685fde4700465ec74e185ca9",
+    "math_state": null,
+    "source_commit": "11854bf7d161a40b03ac5560c700888b266b43ac"
+  },
+  "pi05-bf16-sm120": {
+    "source": "benchmarks/pi05-lite-bf16-20261105/results/g4/ours/formal-v11/IDENTITY.json",
+    "source_sha256": "d4f4397d54a5ab96fed2c3a2529c331f2b65ea21dfae19d592a6f8624cf9e17d",
+    "config": {
+      "attention_backend": "torch_fa2",
+      "config_overrides": {
+        "lite_action_norm_cache": true,
+        "lite_batched_vision": true,
+        "lite_compile_preserve_action_linears": true,
+        "lite_compile_sample_actions": true,
+        "lite_elide_identity_gathers": true,
+        "lite_expert_cublaslt": {
+          "include_down": false,
+          "profile": "g4_best_three"
+        },
+        "lite_fused_adarms": true,
+        "lite_fused_adarms_reduction": true,
+        "lite_fused_expert_gate_up": true,
+        "lite_fused_expert_gelu": true,
+        "lite_fused_expert_qkv": true,
+        "lite_fused_gated_residual": true,
+        "lite_fused_residual_adarms": true,
+        "lite_gpu_uint8_prepare": true,
+        "lite_host_layout_cache": true,
+        "lite_native_lifecycle": true,
+        "lite_native_lifecycle_variant": "v3",
+        "lite_packed_input_metadata": true,
+        "lite_request_identity_lookup": false,
+        "lite_single_pass_lifecycle": false,
+        "lite_skip_weight_init": true,
+        "lite_suffix_fa2": {
+          "splits": 8
+        },
+        "lite_vision_fc2_cublaslt": true
+      },
+      "cuda_graph": true,
+      "profile": "full-bf16"
+    },
+    "recipe_sha256": "1837f987f34b45d28930eb8f03d25b2d029e539e89375ff4c0aa3ff5086737d6",
+    "math_state": null,
+    "source_commit": "11854bf7d161a40b03ac5560c700888b266b43ac"
+  },
+  "oft-bf16-sm89": {
+    "source": "benchmarks/oft-lite-20261105/audit/native-rope-formal-l4-v1/formal/IDENTITY.json",
+    "source_sha256": "c617ee4983a3f0f4cbe86851a1f14a723267c6797a4d4b812522d6557b0a87f5",
+    "config": {
+      "batch_size": 1,
+      "cuda_graph": true,
+      "execution": "native",
+      "native_options": {
+        "backend": "vllm_fa2",
+        "fuse_qkv": false,
+        "fuse_residual_square": false,
+        "fuse_rmsnorm": false,
+        "fuse_rope": true,
+        "fuse_silu_mul": false,
+        "qkvo_layout": "original",
+        "reference_compatible": false
+      }
+    },
+    "recipe_sha256": "fcec8ffb31728e7f653670fd2315ee03788122cdbd05a5111a1ec91d1b2f98f3",
+    "math_state": {
+      "bf16_reduced_precision_reduction": true,
+      "blas_library": "_BlasBackend.Cublas",
+      "cuda_matmul_allow_tf32": false,
+      "cudnn_allow_tf32": false,
+      "cudnn_benchmark": false,
+      "cudnn_deterministic": false,
+      "cudnn_enabled": true,
+      "default_dtype": "torch.float32",
+      "deterministic_algorithms": false,
+      "deterministic_warn_only": false,
+      "float32_matmul_precision": "highest",
+      "fp16_reduced_precision_reduction": true,
+      "sdpa_cudnn": true,
+      "sdpa_flash": true,
+      "sdpa_math": true,
+      "sdpa_mem_efficient": true
+    },
+    "source_commit": "11854bf7d161a40b03ac5560c700888b266b43ac"
+  },
+  "oft-bf16-sm120": {
+    "source": "benchmarks/oft-lite-20261105/audit/native-pointwise-formal-g4-v1/formal/IDENTITY.json",
+    "source_sha256": "b68bf75109eb9623c2d1433df3c8fbb494994d6f2b7dc180b82bc5d8a9624ceb",
+    "config": {
+      "batch_size": 1,
+      "cuda_graph": true,
+      "execution": "native",
+      "native_options": {
+        "backend": "vllm_fa2",
+        "fuse_qkv": false,
+        "fuse_residual_square": true,
+        "fuse_rmsnorm": true,
+        "fuse_rope": true,
+        "fuse_silu_mul": true,
+        "qkvo_layout": "original",
+        "reference_compatible": false
+      }
+    },
+    "recipe_sha256": "10d2e9a1fd107b0975bf4e8846715f8c55e7d3c7593d22e65fdf6db0ff52e021",
+    "math_state": {
+      "bf16_reduced_precision_reduction": true,
+      "blas_library": "_BlasBackend.Cublas",
+      "cuda_matmul_allow_tf32": false,
+      "cudnn_allow_tf32": false,
+      "cudnn_benchmark": false,
+      "cudnn_deterministic": false,
+      "cudnn_enabled": true,
+      "default_dtype": "torch.float32",
+      "deterministic_algorithms": false,
+      "deterministic_warn_only": false,
+      "float32_matmul_precision": "highest",
+      "fp16_reduced_precision_reduction": true,
+      "sdpa_cudnn": true,
+      "sdpa_flash": true,
+      "sdpa_math": true,
+      "sdpa_mem_efficient": true
+    },
+    "source_commit": "11854bf7d161a40b03ac5560c700888b266b43ac"
+  },
+  "oft-mlp-fp8-sm120": {
+    "source": "benchmarks/oft-g4-20261110/LATEST_LINEAGE.json",
+    "source_sha256": "b73a54cab8f7d0f93cc2d61684fe81e52ff6afedc1c85d6984b47897998e6441",
+    "config": {
+      "batch_size": 1,
+      "cuda_graph": true,
+      "execution": "native",
+      "native_options": {
+        "backend": "vllm_fa2",
+        "fuse_residual_square": true,
+        "fuse_rmsnorm": true,
+        "fuse_rope": true,
+        "fuse_silu_mul": true,
+        "mlp_precision": "fp8"
+      }
+    },
+    "recipe_sha256": "e404fd1f70c25a8c6b7d023f479e8817287bda00b6676091a16cdd6f02681b50",
+    "math_state": {
+      "bf16_reduced_precision_reduction": true,
+      "blas_library": "_BlasBackend.Cublaslt",
+      "cuda_matmul_allow_tf32": false,
+      "cudnn_allow_tf32": false,
+      "cudnn_benchmark": false,
+      "cudnn_deterministic": false,
+      "cudnn_enabled": true,
+      "default_dtype": "torch.float32",
+      "deterministic_algorithms": false,
+      "deterministic_warn_only": false,
+      "float32_matmul_precision": "highest",
+      "fp16_reduced_precision_reduction": true,
+      "sdpa_cudnn": true,
+      "sdpa_flash": true,
+      "sdpa_math": true,
+      "sdpa_mem_efficient": true
+    },
+    "source_commit": "11854bf7d161a40b03ac5560c700888b266b43ac"
+  }
+}
